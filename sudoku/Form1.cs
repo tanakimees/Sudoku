@@ -12,9 +12,12 @@ namespace sudoku
 {
     public partial class Form1 : Form
     {
-
         int selectedshit = 1;
+        int checkshitlmao = 0;
 
+        int sudokuline = 1;
+        int sudokurow = 1;
+        
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +26,7 @@ namespace sudoku
         private void Form1_Load(object sender, EventArgs e)
         {
             fadein.Start();
+            loop.Start();
         }
 
         protected override void WndProc(ref Message m)
@@ -168,6 +172,67 @@ namespace sudoku
             textBox17.Visible = true;
             textBox18.Visible = true;
             textBox14.Visible = false;
+        }
+
+        private void loop_Tick(object sender, EventArgs e)
+        {
+            label8.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void label9_MouseEnter(object sender, EventArgs e)
+        {
+            label9.ForeColor = Color.White;
+        }
+
+        private void label9_MouseLeave(object sender, EventArgs e)
+        {
+            label9.ForeColor = Color.Gray;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            fadeout.Start();
+            fadein.Stop();
+        }
+
+        private void fadeout_Tick(object sender, EventArgs e)
+        {
+            this.Opacity -= 0.02;
+            if(this.Opacity == 0)
+            {
+                this.Close();
+                Application.Exit();
+            }
+        }
+
+        private void panel8_Click(object sender, EventArgs e)
+        {
+            createsudoku.Start();
+        }
+
+        public List<int> randomList = new List<int>();
+        private void createsudoku_Tick(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int int1 = rnd.Next(1, 10);
+
+            if(!randomList.Contains(int1))
+            {
+                randomList.Add(int1);
+                foreach(Label l in panel1.Controls.OfType<Label>())
+                {
+                    if(l.Name == "l" + sudokuline + "r" + sudokurow)
+                    {
+                        l.Text = int1.ToString();
+                        sudokurow++;
+                    }       
+                }
+                checkshitlmao++;
+            }
+            if(checkshitlmao == 9)
+            {
+                
+            }
         }
     }
 }
