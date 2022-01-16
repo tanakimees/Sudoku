@@ -57,6 +57,11 @@ namespace sudoku
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gamepanel = new System.Windows.Forms.Panel();
+            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.textBox37 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.textBox33 = new System.Windows.Forms.TextBox();
@@ -68,6 +73,107 @@ namespace sudoku
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.l9r9 = new System.Windows.Forms.Label();
+            this.l9r8 = new System.Windows.Forms.Label();
+            this.l9r7 = new System.Windows.Forms.Label();
+            this.l9r6 = new System.Windows.Forms.Label();
+            this.l9r5 = new System.Windows.Forms.Label();
+            this.l9r4 = new System.Windows.Forms.Label();
+            this.l9r3 = new System.Windows.Forms.Label();
+            this.l9r2 = new System.Windows.Forms.Label();
+            this.l8r9 = new System.Windows.Forms.Label();
+            this.l8r8 = new System.Windows.Forms.Label();
+            this.l8r7 = new System.Windows.Forms.Label();
+            this.l8r6 = new System.Windows.Forms.Label();
+            this.l8r5 = new System.Windows.Forms.Label();
+            this.l8r4 = new System.Windows.Forms.Label();
+            this.l8r3 = new System.Windows.Forms.Label();
+            this.l8r2 = new System.Windows.Forms.Label();
+            this.l7r9 = new System.Windows.Forms.Label();
+            this.l7r8 = new System.Windows.Forms.Label();
+            this.l7r7 = new System.Windows.Forms.Label();
+            this.l7r6 = new System.Windows.Forms.Label();
+            this.l7r5 = new System.Windows.Forms.Label();
+            this.l7r4 = new System.Windows.Forms.Label();
+            this.l7r3 = new System.Windows.Forms.Label();
+            this.l7r2 = new System.Windows.Forms.Label();
+            this.l6r9 = new System.Windows.Forms.Label();
+            this.l6r8 = new System.Windows.Forms.Label();
+            this.l6r7 = new System.Windows.Forms.Label();
+            this.l6r6 = new System.Windows.Forms.Label();
+            this.l6r5 = new System.Windows.Forms.Label();
+            this.l6r4 = new System.Windows.Forms.Label();
+            this.l6r3 = new System.Windows.Forms.Label();
+            this.l6r2 = new System.Windows.Forms.Label();
+            this.l5r9 = new System.Windows.Forms.Label();
+            this.l5r8 = new System.Windows.Forms.Label();
+            this.l5r7 = new System.Windows.Forms.Label();
+            this.l5r6 = new System.Windows.Forms.Label();
+            this.l5r5 = new System.Windows.Forms.Label();
+            this.l5r4 = new System.Windows.Forms.Label();
+            this.l5r3 = new System.Windows.Forms.Label();
+            this.l5r2 = new System.Windows.Forms.Label();
+            this.l4r9 = new System.Windows.Forms.Label();
+            this.l4r8 = new System.Windows.Forms.Label();
+            this.l4r7 = new System.Windows.Forms.Label();
+            this.l4r6 = new System.Windows.Forms.Label();
+            this.l4r5 = new System.Windows.Forms.Label();
+            this.l4r4 = new System.Windows.Forms.Label();
+            this.l4r3 = new System.Windows.Forms.Label();
+            this.l4r2 = new System.Windows.Forms.Label();
+            this.l3r9 = new System.Windows.Forms.Label();
+            this.l3r8 = new System.Windows.Forms.Label();
+            this.l3r7 = new System.Windows.Forms.Label();
+            this.l3r6 = new System.Windows.Forms.Label();
+            this.l3r5 = new System.Windows.Forms.Label();
+            this.l3r4 = new System.Windows.Forms.Label();
+            this.l3r3 = new System.Windows.Forms.Label();
+            this.l3r2 = new System.Windows.Forms.Label();
+            this.l2r9 = new System.Windows.Forms.Label();
+            this.l2r8 = new System.Windows.Forms.Label();
+            this.l2r7 = new System.Windows.Forms.Label();
+            this.l2r6 = new System.Windows.Forms.Label();
+            this.l2r5 = new System.Windows.Forms.Label();
+            this.l2r4 = new System.Windows.Forms.Label();
+            this.l2r3 = new System.Windows.Forms.Label();
+            this.l2r2 = new System.Windows.Forms.Label();
+            this.l9r1 = new System.Windows.Forms.Label();
+            this.l8r1 = new System.Windows.Forms.Label();
+            this.l7r1 = new System.Windows.Forms.Label();
+            this.l6r1 = new System.Windows.Forms.Label();
+            this.l5r1 = new System.Windows.Forms.Label();
+            this.l4r1 = new System.Windows.Forms.Label();
+            this.l3r1 = new System.Windows.Forms.Label();
+            this.l2r1 = new System.Windows.Forms.Label();
+            this.l1r9 = new System.Windows.Forms.Label();
+            this.l1r8 = new System.Windows.Forms.Label();
+            this.l1r7 = new System.Windows.Forms.Label();
+            this.l1r6 = new System.Windows.Forms.Label();
+            this.l1r5 = new System.Windows.Forms.Label();
+            this.l1r4 = new System.Windows.Forms.Label();
+            this.l1r3 = new System.Windows.Forms.Label();
+            this.l1r2 = new System.Windows.Forms.Label();
+            this.textBox59 = new System.Windows.Forms.TextBox();
+            this.textBox58 = new System.Windows.Forms.TextBox();
+            this.textBox57 = new System.Windows.Forms.TextBox();
+            this.textBox56 = new System.Windows.Forms.TextBox();
+            this.textBox55 = new System.Windows.Forms.TextBox();
+            this.textBox54 = new System.Windows.Forms.TextBox();
+            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.textBox52 = new System.Windows.Forms.TextBox();
+            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.l1r1 = new System.Windows.Forms.Label();
             this.settingspanel = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.aboutpanel = new System.Windows.Forms.Panel();
@@ -88,15 +194,6 @@ namespace sudoku
             this.loop = new System.Windows.Forms.Timer(this.components);
             this.fadeout = new System.Windows.Forms.Timer(this.components);
             this.createsudoku = new System.Windows.Forms.Timer(this.components);
-            this.l1r1 = new System.Windows.Forms.Label();
-            this.l1r2 = new System.Windows.Forms.Label();
-            this.l1r4 = new System.Windows.Forms.Label();
-            this.l1r3 = new System.Windows.Forms.Label();
-            this.l1r8 = new System.Windows.Forms.Label();
-            this.l1r7 = new System.Windows.Forms.Label();
-            this.l1r6 = new System.Windows.Forms.Label();
-            this.l1r5 = new System.Windows.Forms.Label();
-            this.l1r9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -475,6 +572,11 @@ namespace sudoku
             // gamepanel
             // 
             this.gamepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.gamepanel.Controls.Add(this.textBox43);
+            this.gamepanel.Controls.Add(this.textBox42);
+            this.gamepanel.Controls.Add(this.textBox41);
+            this.gamepanel.Controls.Add(this.textBox38);
+            this.gamepanel.Controls.Add(this.textBox37);
             this.gamepanel.Controls.Add(this.panel8);
             this.gamepanel.Controls.Add(this.panel7);
             this.gamepanel.Controls.Add(this.panel1);
@@ -482,6 +584,76 @@ namespace sudoku
             this.gamepanel.Name = "gamepanel";
             this.gamepanel.Size = new System.Drawing.Size(538, 554);
             this.gamepanel.TabIndex = 8;
+            // 
+            // textBox43
+            // 
+            this.textBox43.BackColor = System.Drawing.Color.Gray;
+            this.textBox43.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox43.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox43.Enabled = false;
+            this.textBox43.Location = new System.Drawing.Point(9, 411);
+            this.textBox43.Multiline = true;
+            this.textBox43.Name = "textBox43";
+            this.textBox43.ReadOnly = true;
+            this.textBox43.Size = new System.Drawing.Size(401, 1);
+            this.textBox43.TabIndex = 33;
+            this.textBox43.TabStop = false;
+            // 
+            // textBox42
+            // 
+            this.textBox42.BackColor = System.Drawing.Color.Gray;
+            this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox42.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox42.Enabled = false;
+            this.textBox42.Location = new System.Drawing.Point(410, 9);
+            this.textBox42.Multiline = true;
+            this.textBox42.Name = "textBox42";
+            this.textBox42.ReadOnly = true;
+            this.textBox42.Size = new System.Drawing.Size(1, 403);
+            this.textBox42.TabIndex = 32;
+            this.textBox42.TabStop = false;
+            // 
+            // textBox41
+            // 
+            this.textBox41.BackColor = System.Drawing.Color.Gray;
+            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox41.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox41.Enabled = false;
+            this.textBox41.Location = new System.Drawing.Point(9, 9);
+            this.textBox41.Multiline = true;
+            this.textBox41.Name = "textBox41";
+            this.textBox41.ReadOnly = true;
+            this.textBox41.Size = new System.Drawing.Size(1, 402);
+            this.textBox41.TabIndex = 31;
+            this.textBox41.TabStop = false;
+            // 
+            // textBox38
+            // 
+            this.textBox38.BackColor = System.Drawing.Color.Gray;
+            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox38.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox38.Enabled = false;
+            this.textBox38.Location = new System.Drawing.Point(10, 410);
+            this.textBox38.Multiline = true;
+            this.textBox38.Name = "textBox38";
+            this.textBox38.ReadOnly = true;
+            this.textBox38.Size = new System.Drawing.Size(400, 1);
+            this.textBox38.TabIndex = 30;
+            this.textBox38.TabStop = false;
+            // 
+            // textBox37
+            // 
+            this.textBox37.BackColor = System.Drawing.Color.Gray;
+            this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox37.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox37.Enabled = false;
+            this.textBox37.Location = new System.Drawing.Point(10, 9);
+            this.textBox37.Multiline = true;
+            this.textBox37.Name = "textBox37";
+            this.textBox37.ReadOnly = true;
+            this.textBox37.Size = new System.Drawing.Size(400, 1);
+            this.textBox37.TabIndex = 29;
+            this.textBox37.TabStop = false;
             // 
             // panel8
             // 
@@ -623,6 +795,78 @@ namespace sudoku
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel1.Controls.Add(this.l9r9);
+            this.panel1.Controls.Add(this.l9r8);
+            this.panel1.Controls.Add(this.l9r7);
+            this.panel1.Controls.Add(this.l9r6);
+            this.panel1.Controls.Add(this.l9r5);
+            this.panel1.Controls.Add(this.l9r4);
+            this.panel1.Controls.Add(this.l9r3);
+            this.panel1.Controls.Add(this.l9r2);
+            this.panel1.Controls.Add(this.l8r9);
+            this.panel1.Controls.Add(this.l8r8);
+            this.panel1.Controls.Add(this.l8r7);
+            this.panel1.Controls.Add(this.l8r6);
+            this.panel1.Controls.Add(this.l8r5);
+            this.panel1.Controls.Add(this.l8r4);
+            this.panel1.Controls.Add(this.l8r3);
+            this.panel1.Controls.Add(this.l8r2);
+            this.panel1.Controls.Add(this.l7r9);
+            this.panel1.Controls.Add(this.l7r8);
+            this.panel1.Controls.Add(this.l7r7);
+            this.panel1.Controls.Add(this.l7r6);
+            this.panel1.Controls.Add(this.l7r5);
+            this.panel1.Controls.Add(this.l7r4);
+            this.panel1.Controls.Add(this.l7r3);
+            this.panel1.Controls.Add(this.l7r2);
+            this.panel1.Controls.Add(this.l6r9);
+            this.panel1.Controls.Add(this.l6r8);
+            this.panel1.Controls.Add(this.l6r7);
+            this.panel1.Controls.Add(this.l6r6);
+            this.panel1.Controls.Add(this.l6r5);
+            this.panel1.Controls.Add(this.l6r4);
+            this.panel1.Controls.Add(this.l6r3);
+            this.panel1.Controls.Add(this.l6r2);
+            this.panel1.Controls.Add(this.l5r9);
+            this.panel1.Controls.Add(this.l5r8);
+            this.panel1.Controls.Add(this.l5r7);
+            this.panel1.Controls.Add(this.l5r6);
+            this.panel1.Controls.Add(this.l5r5);
+            this.panel1.Controls.Add(this.l5r4);
+            this.panel1.Controls.Add(this.l5r3);
+            this.panel1.Controls.Add(this.l5r2);
+            this.panel1.Controls.Add(this.l4r9);
+            this.panel1.Controls.Add(this.l4r8);
+            this.panel1.Controls.Add(this.l4r7);
+            this.panel1.Controls.Add(this.l4r6);
+            this.panel1.Controls.Add(this.l4r5);
+            this.panel1.Controls.Add(this.l4r4);
+            this.panel1.Controls.Add(this.l4r3);
+            this.panel1.Controls.Add(this.l4r2);
+            this.panel1.Controls.Add(this.l3r9);
+            this.panel1.Controls.Add(this.l3r8);
+            this.panel1.Controls.Add(this.l3r7);
+            this.panel1.Controls.Add(this.l3r6);
+            this.panel1.Controls.Add(this.l3r5);
+            this.panel1.Controls.Add(this.l3r4);
+            this.panel1.Controls.Add(this.l3r3);
+            this.panel1.Controls.Add(this.l3r2);
+            this.panel1.Controls.Add(this.l2r9);
+            this.panel1.Controls.Add(this.l2r8);
+            this.panel1.Controls.Add(this.l2r7);
+            this.panel1.Controls.Add(this.l2r6);
+            this.panel1.Controls.Add(this.l2r5);
+            this.panel1.Controls.Add(this.l2r4);
+            this.panel1.Controls.Add(this.l2r3);
+            this.panel1.Controls.Add(this.l2r2);
+            this.panel1.Controls.Add(this.l9r1);
+            this.panel1.Controls.Add(this.l8r1);
+            this.panel1.Controls.Add(this.l7r1);
+            this.panel1.Controls.Add(this.l6r1);
+            this.panel1.Controls.Add(this.l5r1);
+            this.panel1.Controls.Add(this.l4r1);
+            this.panel1.Controls.Add(this.l3r1);
+            this.panel1.Controls.Add(this.l2r1);
             this.panel1.Controls.Add(this.l1r9);
             this.panel1.Controls.Add(this.l1r8);
             this.panel1.Controls.Add(this.l1r7);
@@ -631,12 +875,1209 @@ namespace sudoku
             this.panel1.Controls.Add(this.l1r4);
             this.panel1.Controls.Add(this.l1r3);
             this.panel1.Controls.Add(this.l1r2);
+            this.panel1.Controls.Add(this.textBox59);
+            this.panel1.Controls.Add(this.textBox58);
+            this.panel1.Controls.Add(this.textBox57);
+            this.panel1.Controls.Add(this.textBox56);
+            this.panel1.Controls.Add(this.textBox55);
+            this.panel1.Controls.Add(this.textBox54);
+            this.panel1.Controls.Add(this.textBox53);
+            this.panel1.Controls.Add(this.textBox52);
+            this.panel1.Controls.Add(this.textBox51);
+            this.panel1.Controls.Add(this.textBox50);
+            this.panel1.Controls.Add(this.textBox49);
+            this.panel1.Controls.Add(this.textBox48);
+            this.panel1.Controls.Add(this.textBox47);
+            this.panel1.Controls.Add(this.textBox46);
+            this.panel1.Controls.Add(this.textBox45);
+            this.panel1.Controls.Add(this.textBox44);
+            this.panel1.Controls.Add(this.textBox40);
+            this.panel1.Controls.Add(this.textBox39);
+            this.panel1.Controls.Add(this.textBox36);
+            this.panel1.Controls.Add(this.textBox27);
             this.panel1.Controls.Add(this.l1r1);
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 400);
             this.panel1.TabIndex = 0;
+            // 
+            // l9r9
+            // 
+            this.l9r9.AutoSize = true;
+            this.l9r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r9.ForeColor = System.Drawing.Color.White;
+            this.l9r9.Location = new System.Drawing.Point(361, 356);
+            this.l9r9.Name = "l9r9";
+            this.l9r9.Size = new System.Drawing.Size(33, 40);
+            this.l9r9.TabIndex = 126;
+            this.l9r9.Text = "0";
+            // 
+            // l9r8
+            // 
+            this.l9r8.AutoSize = true;
+            this.l9r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r8.ForeColor = System.Drawing.Color.White;
+            this.l9r8.Location = new System.Drawing.Point(317, 356);
+            this.l9r8.Name = "l9r8";
+            this.l9r8.Size = new System.Drawing.Size(33, 40);
+            this.l9r8.TabIndex = 125;
+            this.l9r8.Text = "0";
+            // 
+            // l9r7
+            // 
+            this.l9r7.AutoSize = true;
+            this.l9r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r7.ForeColor = System.Drawing.Color.White;
+            this.l9r7.Location = new System.Drawing.Point(272, 356);
+            this.l9r7.Name = "l9r7";
+            this.l9r7.Size = new System.Drawing.Size(33, 40);
+            this.l9r7.TabIndex = 124;
+            this.l9r7.Text = "0";
+            // 
+            // l9r6
+            // 
+            this.l9r6.AutoSize = true;
+            this.l9r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r6.ForeColor = System.Drawing.Color.White;
+            this.l9r6.Location = new System.Drawing.Point(227, 356);
+            this.l9r6.Name = "l9r6";
+            this.l9r6.Size = new System.Drawing.Size(33, 40);
+            this.l9r6.TabIndex = 123;
+            this.l9r6.Text = "0";
+            // 
+            // l9r5
+            // 
+            this.l9r5.AutoSize = true;
+            this.l9r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r5.ForeColor = System.Drawing.Color.White;
+            this.l9r5.Location = new System.Drawing.Point(183, 356);
+            this.l9r5.Name = "l9r5";
+            this.l9r5.Size = new System.Drawing.Size(33, 40);
+            this.l9r5.TabIndex = 122;
+            this.l9r5.Text = "0";
+            // 
+            // l9r4
+            // 
+            this.l9r4.AutoSize = true;
+            this.l9r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r4.ForeColor = System.Drawing.Color.White;
+            this.l9r4.Location = new System.Drawing.Point(140, 356);
+            this.l9r4.Name = "l9r4";
+            this.l9r4.Size = new System.Drawing.Size(33, 40);
+            this.l9r4.TabIndex = 121;
+            this.l9r4.Text = "0";
+            // 
+            // l9r3
+            // 
+            this.l9r3.AutoSize = true;
+            this.l9r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r3.ForeColor = System.Drawing.Color.White;
+            this.l9r3.Location = new System.Drawing.Point(95, 356);
+            this.l9r3.Name = "l9r3";
+            this.l9r3.Size = new System.Drawing.Size(33, 40);
+            this.l9r3.TabIndex = 120;
+            this.l9r3.Text = "0";
+            // 
+            // l9r2
+            // 
+            this.l9r2.AutoSize = true;
+            this.l9r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r2.ForeColor = System.Drawing.Color.White;
+            this.l9r2.Location = new System.Drawing.Point(51, 356);
+            this.l9r2.Name = "l9r2";
+            this.l9r2.Size = new System.Drawing.Size(33, 40);
+            this.l9r2.TabIndex = 119;
+            this.l9r2.Text = "0";
+            // 
+            // l8r9
+            // 
+            this.l8r9.AutoSize = true;
+            this.l8r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r9.ForeColor = System.Drawing.Color.White;
+            this.l8r9.Location = new System.Drawing.Point(361, 311);
+            this.l8r9.Name = "l8r9";
+            this.l8r9.Size = new System.Drawing.Size(33, 40);
+            this.l8r9.TabIndex = 118;
+            this.l8r9.Text = "0";
+            // 
+            // l8r8
+            // 
+            this.l8r8.AutoSize = true;
+            this.l8r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r8.ForeColor = System.Drawing.Color.White;
+            this.l8r8.Location = new System.Drawing.Point(317, 311);
+            this.l8r8.Name = "l8r8";
+            this.l8r8.Size = new System.Drawing.Size(33, 40);
+            this.l8r8.TabIndex = 117;
+            this.l8r8.Text = "0";
+            // 
+            // l8r7
+            // 
+            this.l8r7.AutoSize = true;
+            this.l8r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r7.ForeColor = System.Drawing.Color.White;
+            this.l8r7.Location = new System.Drawing.Point(272, 311);
+            this.l8r7.Name = "l8r7";
+            this.l8r7.Size = new System.Drawing.Size(33, 40);
+            this.l8r7.TabIndex = 116;
+            this.l8r7.Text = "0";
+            // 
+            // l8r6
+            // 
+            this.l8r6.AutoSize = true;
+            this.l8r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r6.ForeColor = System.Drawing.Color.White;
+            this.l8r6.Location = new System.Drawing.Point(227, 311);
+            this.l8r6.Name = "l8r6";
+            this.l8r6.Size = new System.Drawing.Size(33, 40);
+            this.l8r6.TabIndex = 115;
+            this.l8r6.Text = "0";
+            // 
+            // l8r5
+            // 
+            this.l8r5.AutoSize = true;
+            this.l8r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r5.ForeColor = System.Drawing.Color.White;
+            this.l8r5.Location = new System.Drawing.Point(183, 311);
+            this.l8r5.Name = "l8r5";
+            this.l8r5.Size = new System.Drawing.Size(33, 40);
+            this.l8r5.TabIndex = 114;
+            this.l8r5.Text = "0";
+            // 
+            // l8r4
+            // 
+            this.l8r4.AutoSize = true;
+            this.l8r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r4.ForeColor = System.Drawing.Color.White;
+            this.l8r4.Location = new System.Drawing.Point(140, 311);
+            this.l8r4.Name = "l8r4";
+            this.l8r4.Size = new System.Drawing.Size(33, 40);
+            this.l8r4.TabIndex = 113;
+            this.l8r4.Text = "0";
+            // 
+            // l8r3
+            // 
+            this.l8r3.AutoSize = true;
+            this.l8r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r3.ForeColor = System.Drawing.Color.White;
+            this.l8r3.Location = new System.Drawing.Point(95, 311);
+            this.l8r3.Name = "l8r3";
+            this.l8r3.Size = new System.Drawing.Size(33, 40);
+            this.l8r3.TabIndex = 112;
+            this.l8r3.Text = "0";
+            // 
+            // l8r2
+            // 
+            this.l8r2.AutoSize = true;
+            this.l8r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r2.ForeColor = System.Drawing.Color.White;
+            this.l8r2.Location = new System.Drawing.Point(51, 311);
+            this.l8r2.Name = "l8r2";
+            this.l8r2.Size = new System.Drawing.Size(33, 40);
+            this.l8r2.TabIndex = 111;
+            this.l8r2.Text = "0";
+            // 
+            // l7r9
+            // 
+            this.l7r9.AutoSize = true;
+            this.l7r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r9.ForeColor = System.Drawing.Color.White;
+            this.l7r9.Location = new System.Drawing.Point(361, 267);
+            this.l7r9.Name = "l7r9";
+            this.l7r9.Size = new System.Drawing.Size(33, 40);
+            this.l7r9.TabIndex = 110;
+            this.l7r9.Text = "0";
+            // 
+            // l7r8
+            // 
+            this.l7r8.AutoSize = true;
+            this.l7r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r8.ForeColor = System.Drawing.Color.White;
+            this.l7r8.Location = new System.Drawing.Point(317, 267);
+            this.l7r8.Name = "l7r8";
+            this.l7r8.Size = new System.Drawing.Size(33, 40);
+            this.l7r8.TabIndex = 109;
+            this.l7r8.Text = "0";
+            // 
+            // l7r7
+            // 
+            this.l7r7.AutoSize = true;
+            this.l7r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r7.ForeColor = System.Drawing.Color.White;
+            this.l7r7.Location = new System.Drawing.Point(272, 267);
+            this.l7r7.Name = "l7r7";
+            this.l7r7.Size = new System.Drawing.Size(33, 40);
+            this.l7r7.TabIndex = 108;
+            this.l7r7.Text = "0";
+            // 
+            // l7r6
+            // 
+            this.l7r6.AutoSize = true;
+            this.l7r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r6.ForeColor = System.Drawing.Color.White;
+            this.l7r6.Location = new System.Drawing.Point(227, 267);
+            this.l7r6.Name = "l7r6";
+            this.l7r6.Size = new System.Drawing.Size(33, 40);
+            this.l7r6.TabIndex = 107;
+            this.l7r6.Text = "0";
+            // 
+            // l7r5
+            // 
+            this.l7r5.AutoSize = true;
+            this.l7r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r5.ForeColor = System.Drawing.Color.White;
+            this.l7r5.Location = new System.Drawing.Point(183, 267);
+            this.l7r5.Name = "l7r5";
+            this.l7r5.Size = new System.Drawing.Size(33, 40);
+            this.l7r5.TabIndex = 106;
+            this.l7r5.Text = "0";
+            // 
+            // l7r4
+            // 
+            this.l7r4.AutoSize = true;
+            this.l7r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r4.ForeColor = System.Drawing.Color.White;
+            this.l7r4.Location = new System.Drawing.Point(140, 267);
+            this.l7r4.Name = "l7r4";
+            this.l7r4.Size = new System.Drawing.Size(33, 40);
+            this.l7r4.TabIndex = 105;
+            this.l7r4.Text = "0";
+            // 
+            // l7r3
+            // 
+            this.l7r3.AutoSize = true;
+            this.l7r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r3.ForeColor = System.Drawing.Color.White;
+            this.l7r3.Location = new System.Drawing.Point(95, 267);
+            this.l7r3.Name = "l7r3";
+            this.l7r3.Size = new System.Drawing.Size(33, 40);
+            this.l7r3.TabIndex = 104;
+            this.l7r3.Text = "0";
+            // 
+            // l7r2
+            // 
+            this.l7r2.AutoSize = true;
+            this.l7r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r2.ForeColor = System.Drawing.Color.White;
+            this.l7r2.Location = new System.Drawing.Point(51, 267);
+            this.l7r2.Name = "l7r2";
+            this.l7r2.Size = new System.Drawing.Size(33, 40);
+            this.l7r2.TabIndex = 103;
+            this.l7r2.Text = "0";
+            // 
+            // l6r9
+            // 
+            this.l6r9.AutoSize = true;
+            this.l6r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r9.ForeColor = System.Drawing.Color.White;
+            this.l6r9.Location = new System.Drawing.Point(361, 222);
+            this.l6r9.Name = "l6r9";
+            this.l6r9.Size = new System.Drawing.Size(33, 40);
+            this.l6r9.TabIndex = 102;
+            this.l6r9.Text = "0";
+            // 
+            // l6r8
+            // 
+            this.l6r8.AutoSize = true;
+            this.l6r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r8.ForeColor = System.Drawing.Color.White;
+            this.l6r8.Location = new System.Drawing.Point(317, 222);
+            this.l6r8.Name = "l6r8";
+            this.l6r8.Size = new System.Drawing.Size(33, 40);
+            this.l6r8.TabIndex = 101;
+            this.l6r8.Text = "0";
+            // 
+            // l6r7
+            // 
+            this.l6r7.AutoSize = true;
+            this.l6r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r7.ForeColor = System.Drawing.Color.White;
+            this.l6r7.Location = new System.Drawing.Point(272, 222);
+            this.l6r7.Name = "l6r7";
+            this.l6r7.Size = new System.Drawing.Size(33, 40);
+            this.l6r7.TabIndex = 100;
+            this.l6r7.Text = "0";
+            // 
+            // l6r6
+            // 
+            this.l6r6.AutoSize = true;
+            this.l6r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r6.ForeColor = System.Drawing.Color.White;
+            this.l6r6.Location = new System.Drawing.Point(227, 222);
+            this.l6r6.Name = "l6r6";
+            this.l6r6.Size = new System.Drawing.Size(33, 40);
+            this.l6r6.TabIndex = 99;
+            this.l6r6.Text = "0";
+            // 
+            // l6r5
+            // 
+            this.l6r5.AutoSize = true;
+            this.l6r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r5.ForeColor = System.Drawing.Color.White;
+            this.l6r5.Location = new System.Drawing.Point(183, 222);
+            this.l6r5.Name = "l6r5";
+            this.l6r5.Size = new System.Drawing.Size(33, 40);
+            this.l6r5.TabIndex = 98;
+            this.l6r5.Text = "0";
+            // 
+            // l6r4
+            // 
+            this.l6r4.AutoSize = true;
+            this.l6r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r4.ForeColor = System.Drawing.Color.White;
+            this.l6r4.Location = new System.Drawing.Point(140, 222);
+            this.l6r4.Name = "l6r4";
+            this.l6r4.Size = new System.Drawing.Size(33, 40);
+            this.l6r4.TabIndex = 97;
+            this.l6r4.Text = "0";
+            // 
+            // l6r3
+            // 
+            this.l6r3.AutoSize = true;
+            this.l6r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r3.ForeColor = System.Drawing.Color.White;
+            this.l6r3.Location = new System.Drawing.Point(95, 222);
+            this.l6r3.Name = "l6r3";
+            this.l6r3.Size = new System.Drawing.Size(33, 40);
+            this.l6r3.TabIndex = 96;
+            this.l6r3.Text = "0";
+            // 
+            // l6r2
+            // 
+            this.l6r2.AutoSize = true;
+            this.l6r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r2.ForeColor = System.Drawing.Color.White;
+            this.l6r2.Location = new System.Drawing.Point(51, 222);
+            this.l6r2.Name = "l6r2";
+            this.l6r2.Size = new System.Drawing.Size(33, 40);
+            this.l6r2.TabIndex = 95;
+            this.l6r2.Text = "0";
+            // 
+            // l5r9
+            // 
+            this.l5r9.AutoSize = true;
+            this.l5r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r9.ForeColor = System.Drawing.Color.White;
+            this.l5r9.Location = new System.Drawing.Point(361, 178);
+            this.l5r9.Name = "l5r9";
+            this.l5r9.Size = new System.Drawing.Size(33, 40);
+            this.l5r9.TabIndex = 94;
+            this.l5r9.Text = "0";
+            // 
+            // l5r8
+            // 
+            this.l5r8.AutoSize = true;
+            this.l5r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r8.ForeColor = System.Drawing.Color.White;
+            this.l5r8.Location = new System.Drawing.Point(317, 178);
+            this.l5r8.Name = "l5r8";
+            this.l5r8.Size = new System.Drawing.Size(33, 40);
+            this.l5r8.TabIndex = 93;
+            this.l5r8.Text = "0";
+            // 
+            // l5r7
+            // 
+            this.l5r7.AutoSize = true;
+            this.l5r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r7.ForeColor = System.Drawing.Color.White;
+            this.l5r7.Location = new System.Drawing.Point(272, 178);
+            this.l5r7.Name = "l5r7";
+            this.l5r7.Size = new System.Drawing.Size(33, 40);
+            this.l5r7.TabIndex = 92;
+            this.l5r7.Text = "0";
+            // 
+            // l5r6
+            // 
+            this.l5r6.AutoSize = true;
+            this.l5r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r6.ForeColor = System.Drawing.Color.White;
+            this.l5r6.Location = new System.Drawing.Point(227, 178);
+            this.l5r6.Name = "l5r6";
+            this.l5r6.Size = new System.Drawing.Size(33, 40);
+            this.l5r6.TabIndex = 91;
+            this.l5r6.Text = "0";
+            // 
+            // l5r5
+            // 
+            this.l5r5.AutoSize = true;
+            this.l5r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r5.ForeColor = System.Drawing.Color.White;
+            this.l5r5.Location = new System.Drawing.Point(183, 178);
+            this.l5r5.Name = "l5r5";
+            this.l5r5.Size = new System.Drawing.Size(33, 40);
+            this.l5r5.TabIndex = 90;
+            this.l5r5.Text = "0";
+            // 
+            // l5r4
+            // 
+            this.l5r4.AutoSize = true;
+            this.l5r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r4.ForeColor = System.Drawing.Color.White;
+            this.l5r4.Location = new System.Drawing.Point(140, 178);
+            this.l5r4.Name = "l5r4";
+            this.l5r4.Size = new System.Drawing.Size(33, 40);
+            this.l5r4.TabIndex = 89;
+            this.l5r4.Text = "0";
+            // 
+            // l5r3
+            // 
+            this.l5r3.AutoSize = true;
+            this.l5r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r3.ForeColor = System.Drawing.Color.White;
+            this.l5r3.Location = new System.Drawing.Point(95, 178);
+            this.l5r3.Name = "l5r3";
+            this.l5r3.Size = new System.Drawing.Size(33, 40);
+            this.l5r3.TabIndex = 88;
+            this.l5r3.Text = "0";
+            // 
+            // l5r2
+            // 
+            this.l5r2.AutoSize = true;
+            this.l5r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r2.ForeColor = System.Drawing.Color.White;
+            this.l5r2.Location = new System.Drawing.Point(51, 178);
+            this.l5r2.Name = "l5r2";
+            this.l5r2.Size = new System.Drawing.Size(33, 40);
+            this.l5r2.TabIndex = 87;
+            this.l5r2.Text = "0";
+            // 
+            // l4r9
+            // 
+            this.l4r9.AutoSize = true;
+            this.l4r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r9.ForeColor = System.Drawing.Color.White;
+            this.l4r9.Location = new System.Drawing.Point(361, 135);
+            this.l4r9.Name = "l4r9";
+            this.l4r9.Size = new System.Drawing.Size(33, 40);
+            this.l4r9.TabIndex = 86;
+            this.l4r9.Text = "0";
+            // 
+            // l4r8
+            // 
+            this.l4r8.AutoSize = true;
+            this.l4r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r8.ForeColor = System.Drawing.Color.White;
+            this.l4r8.Location = new System.Drawing.Point(317, 135);
+            this.l4r8.Name = "l4r8";
+            this.l4r8.Size = new System.Drawing.Size(33, 40);
+            this.l4r8.TabIndex = 85;
+            this.l4r8.Text = "0";
+            // 
+            // l4r7
+            // 
+            this.l4r7.AutoSize = true;
+            this.l4r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r7.ForeColor = System.Drawing.Color.White;
+            this.l4r7.Location = new System.Drawing.Point(272, 135);
+            this.l4r7.Name = "l4r7";
+            this.l4r7.Size = new System.Drawing.Size(33, 40);
+            this.l4r7.TabIndex = 84;
+            this.l4r7.Text = "0";
+            // 
+            // l4r6
+            // 
+            this.l4r6.AutoSize = true;
+            this.l4r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r6.ForeColor = System.Drawing.Color.White;
+            this.l4r6.Location = new System.Drawing.Point(227, 135);
+            this.l4r6.Name = "l4r6";
+            this.l4r6.Size = new System.Drawing.Size(33, 40);
+            this.l4r6.TabIndex = 83;
+            this.l4r6.Text = "0";
+            // 
+            // l4r5
+            // 
+            this.l4r5.AutoSize = true;
+            this.l4r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r5.ForeColor = System.Drawing.Color.White;
+            this.l4r5.Location = new System.Drawing.Point(183, 135);
+            this.l4r5.Name = "l4r5";
+            this.l4r5.Size = new System.Drawing.Size(33, 40);
+            this.l4r5.TabIndex = 82;
+            this.l4r5.Text = "0";
+            // 
+            // l4r4
+            // 
+            this.l4r4.AutoSize = true;
+            this.l4r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r4.ForeColor = System.Drawing.Color.White;
+            this.l4r4.Location = new System.Drawing.Point(140, 135);
+            this.l4r4.Name = "l4r4";
+            this.l4r4.Size = new System.Drawing.Size(33, 40);
+            this.l4r4.TabIndex = 81;
+            this.l4r4.Text = "0";
+            // 
+            // l4r3
+            // 
+            this.l4r3.AutoSize = true;
+            this.l4r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r3.ForeColor = System.Drawing.Color.White;
+            this.l4r3.Location = new System.Drawing.Point(95, 135);
+            this.l4r3.Name = "l4r3";
+            this.l4r3.Size = new System.Drawing.Size(33, 40);
+            this.l4r3.TabIndex = 80;
+            this.l4r3.Text = "0";
+            // 
+            // l4r2
+            // 
+            this.l4r2.AutoSize = true;
+            this.l4r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r2.ForeColor = System.Drawing.Color.White;
+            this.l4r2.Location = new System.Drawing.Point(51, 135);
+            this.l4r2.Name = "l4r2";
+            this.l4r2.Size = new System.Drawing.Size(33, 40);
+            this.l4r2.TabIndex = 79;
+            this.l4r2.Text = "0";
+            // 
+            // l3r9
+            // 
+            this.l3r9.AutoSize = true;
+            this.l3r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r9.ForeColor = System.Drawing.Color.White;
+            this.l3r9.Location = new System.Drawing.Point(361, 90);
+            this.l3r9.Name = "l3r9";
+            this.l3r9.Size = new System.Drawing.Size(33, 40);
+            this.l3r9.TabIndex = 78;
+            this.l3r9.Text = "0";
+            // 
+            // l3r8
+            // 
+            this.l3r8.AutoSize = true;
+            this.l3r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r8.ForeColor = System.Drawing.Color.White;
+            this.l3r8.Location = new System.Drawing.Point(317, 90);
+            this.l3r8.Name = "l3r8";
+            this.l3r8.Size = new System.Drawing.Size(33, 40);
+            this.l3r8.TabIndex = 77;
+            this.l3r8.Text = "0";
+            // 
+            // l3r7
+            // 
+            this.l3r7.AutoSize = true;
+            this.l3r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r7.ForeColor = System.Drawing.Color.White;
+            this.l3r7.Location = new System.Drawing.Point(272, 90);
+            this.l3r7.Name = "l3r7";
+            this.l3r7.Size = new System.Drawing.Size(33, 40);
+            this.l3r7.TabIndex = 76;
+            this.l3r7.Text = "0";
+            // 
+            // l3r6
+            // 
+            this.l3r6.AutoSize = true;
+            this.l3r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r6.ForeColor = System.Drawing.Color.White;
+            this.l3r6.Location = new System.Drawing.Point(227, 90);
+            this.l3r6.Name = "l3r6";
+            this.l3r6.Size = new System.Drawing.Size(33, 40);
+            this.l3r6.TabIndex = 75;
+            this.l3r6.Text = "0";
+            // 
+            // l3r5
+            // 
+            this.l3r5.AutoSize = true;
+            this.l3r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r5.ForeColor = System.Drawing.Color.White;
+            this.l3r5.Location = new System.Drawing.Point(183, 90);
+            this.l3r5.Name = "l3r5";
+            this.l3r5.Size = new System.Drawing.Size(33, 40);
+            this.l3r5.TabIndex = 74;
+            this.l3r5.Text = "0";
+            // 
+            // l3r4
+            // 
+            this.l3r4.AutoSize = true;
+            this.l3r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r4.ForeColor = System.Drawing.Color.White;
+            this.l3r4.Location = new System.Drawing.Point(140, 90);
+            this.l3r4.Name = "l3r4";
+            this.l3r4.Size = new System.Drawing.Size(33, 40);
+            this.l3r4.TabIndex = 73;
+            this.l3r4.Text = "0";
+            // 
+            // l3r3
+            // 
+            this.l3r3.AutoSize = true;
+            this.l3r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r3.ForeColor = System.Drawing.Color.White;
+            this.l3r3.Location = new System.Drawing.Point(95, 90);
+            this.l3r3.Name = "l3r3";
+            this.l3r3.Size = new System.Drawing.Size(33, 40);
+            this.l3r3.TabIndex = 72;
+            this.l3r3.Text = "0";
+            // 
+            // l3r2
+            // 
+            this.l3r2.AutoSize = true;
+            this.l3r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r2.ForeColor = System.Drawing.Color.White;
+            this.l3r2.Location = new System.Drawing.Point(51, 90);
+            this.l3r2.Name = "l3r2";
+            this.l3r2.Size = new System.Drawing.Size(33, 40);
+            this.l3r2.TabIndex = 71;
+            this.l3r2.Text = "0";
+            // 
+            // l2r9
+            // 
+            this.l2r9.AutoSize = true;
+            this.l2r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r9.ForeColor = System.Drawing.Color.White;
+            this.l2r9.Location = new System.Drawing.Point(361, 46);
+            this.l2r9.Name = "l2r9";
+            this.l2r9.Size = new System.Drawing.Size(33, 40);
+            this.l2r9.TabIndex = 70;
+            this.l2r9.Text = "0";
+            // 
+            // l2r8
+            // 
+            this.l2r8.AutoSize = true;
+            this.l2r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r8.ForeColor = System.Drawing.Color.White;
+            this.l2r8.Location = new System.Drawing.Point(317, 46);
+            this.l2r8.Name = "l2r8";
+            this.l2r8.Size = new System.Drawing.Size(33, 40);
+            this.l2r8.TabIndex = 69;
+            this.l2r8.Text = "0";
+            // 
+            // l2r7
+            // 
+            this.l2r7.AutoSize = true;
+            this.l2r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r7.ForeColor = System.Drawing.Color.White;
+            this.l2r7.Location = new System.Drawing.Point(272, 46);
+            this.l2r7.Name = "l2r7";
+            this.l2r7.Size = new System.Drawing.Size(33, 40);
+            this.l2r7.TabIndex = 68;
+            this.l2r7.Text = "0";
+            // 
+            // l2r6
+            // 
+            this.l2r6.AutoSize = true;
+            this.l2r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r6.ForeColor = System.Drawing.Color.White;
+            this.l2r6.Location = new System.Drawing.Point(227, 46);
+            this.l2r6.Name = "l2r6";
+            this.l2r6.Size = new System.Drawing.Size(33, 40);
+            this.l2r6.TabIndex = 67;
+            this.l2r6.Text = "0";
+            // 
+            // l2r5
+            // 
+            this.l2r5.AutoSize = true;
+            this.l2r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r5.ForeColor = System.Drawing.Color.White;
+            this.l2r5.Location = new System.Drawing.Point(183, 46);
+            this.l2r5.Name = "l2r5";
+            this.l2r5.Size = new System.Drawing.Size(33, 40);
+            this.l2r5.TabIndex = 66;
+            this.l2r5.Text = "0";
+            // 
+            // l2r4
+            // 
+            this.l2r4.AutoSize = true;
+            this.l2r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r4.ForeColor = System.Drawing.Color.White;
+            this.l2r4.Location = new System.Drawing.Point(140, 46);
+            this.l2r4.Name = "l2r4";
+            this.l2r4.Size = new System.Drawing.Size(33, 40);
+            this.l2r4.TabIndex = 65;
+            this.l2r4.Text = "0";
+            // 
+            // l2r3
+            // 
+            this.l2r3.AutoSize = true;
+            this.l2r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r3.ForeColor = System.Drawing.Color.White;
+            this.l2r3.Location = new System.Drawing.Point(95, 46);
+            this.l2r3.Name = "l2r3";
+            this.l2r3.Size = new System.Drawing.Size(33, 40);
+            this.l2r3.TabIndex = 64;
+            this.l2r3.Text = "0";
+            // 
+            // l2r2
+            // 
+            this.l2r2.AutoSize = true;
+            this.l2r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r2.ForeColor = System.Drawing.Color.White;
+            this.l2r2.Location = new System.Drawing.Point(51, 46);
+            this.l2r2.Name = "l2r2";
+            this.l2r2.Size = new System.Drawing.Size(33, 40);
+            this.l2r2.TabIndex = 63;
+            this.l2r2.Text = "0";
+            // 
+            // l9r1
+            // 
+            this.l9r1.AutoSize = true;
+            this.l9r1.BackColor = System.Drawing.Color.Transparent;
+            this.l9r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9r1.ForeColor = System.Drawing.Color.White;
+            this.l9r1.Location = new System.Drawing.Point(7, 356);
+            this.l9r1.Name = "l9r1";
+            this.l9r1.Size = new System.Drawing.Size(33, 40);
+            this.l9r1.TabIndex = 62;
+            this.l9r1.Text = "0";
+            // 
+            // l8r1
+            // 
+            this.l8r1.AutoSize = true;
+            this.l8r1.BackColor = System.Drawing.Color.Transparent;
+            this.l8r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8r1.ForeColor = System.Drawing.Color.White;
+            this.l8r1.Location = new System.Drawing.Point(7, 311);
+            this.l8r1.Name = "l8r1";
+            this.l8r1.Size = new System.Drawing.Size(33, 40);
+            this.l8r1.TabIndex = 61;
+            this.l8r1.Text = "0";
+            // 
+            // l7r1
+            // 
+            this.l7r1.AutoSize = true;
+            this.l7r1.BackColor = System.Drawing.Color.Transparent;
+            this.l7r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7r1.ForeColor = System.Drawing.Color.White;
+            this.l7r1.Location = new System.Drawing.Point(7, 267);
+            this.l7r1.Name = "l7r1";
+            this.l7r1.Size = new System.Drawing.Size(33, 40);
+            this.l7r1.TabIndex = 60;
+            this.l7r1.Text = "0";
+            // 
+            // l6r1
+            // 
+            this.l6r1.AutoSize = true;
+            this.l6r1.BackColor = System.Drawing.Color.Transparent;
+            this.l6r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6r1.ForeColor = System.Drawing.Color.White;
+            this.l6r1.Location = new System.Drawing.Point(7, 222);
+            this.l6r1.Name = "l6r1";
+            this.l6r1.Size = new System.Drawing.Size(33, 40);
+            this.l6r1.TabIndex = 59;
+            this.l6r1.Text = "0";
+            // 
+            // l5r1
+            // 
+            this.l5r1.AutoSize = true;
+            this.l5r1.BackColor = System.Drawing.Color.Transparent;
+            this.l5r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5r1.ForeColor = System.Drawing.Color.White;
+            this.l5r1.Location = new System.Drawing.Point(7, 178);
+            this.l5r1.Name = "l5r1";
+            this.l5r1.Size = new System.Drawing.Size(33, 40);
+            this.l5r1.TabIndex = 58;
+            this.l5r1.Text = "0";
+            // 
+            // l4r1
+            // 
+            this.l4r1.AutoSize = true;
+            this.l4r1.BackColor = System.Drawing.Color.Transparent;
+            this.l4r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4r1.ForeColor = System.Drawing.Color.White;
+            this.l4r1.Location = new System.Drawing.Point(7, 135);
+            this.l4r1.Name = "l4r1";
+            this.l4r1.Size = new System.Drawing.Size(33, 40);
+            this.l4r1.TabIndex = 57;
+            this.l4r1.Text = "0";
+            // 
+            // l3r1
+            // 
+            this.l3r1.AutoSize = true;
+            this.l3r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3r1.ForeColor = System.Drawing.Color.White;
+            this.l3r1.Location = new System.Drawing.Point(7, 90);
+            this.l3r1.Name = "l3r1";
+            this.l3r1.Size = new System.Drawing.Size(33, 40);
+            this.l3r1.TabIndex = 56;
+            this.l3r1.Text = "0";
+            // 
+            // l2r1
+            // 
+            this.l2r1.AutoSize = true;
+            this.l2r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2r1.ForeColor = System.Drawing.Color.White;
+            this.l2r1.Location = new System.Drawing.Point(7, 46);
+            this.l2r1.Name = "l2r1";
+            this.l2r1.Size = new System.Drawing.Size(33, 40);
+            this.l2r1.TabIndex = 55;
+            this.l2r1.Text = "0";
+            // 
+            // l1r9
+            // 
+            this.l1r9.AutoSize = true;
+            this.l1r9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r9.ForeColor = System.Drawing.Color.White;
+            this.l1r9.Location = new System.Drawing.Point(361, 2);
+            this.l1r9.Name = "l1r9";
+            this.l1r9.Size = new System.Drawing.Size(33, 40);
+            this.l1r9.TabIndex = 54;
+            this.l1r9.Text = "0";
+            // 
+            // l1r8
+            // 
+            this.l1r8.AutoSize = true;
+            this.l1r8.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r8.ForeColor = System.Drawing.Color.White;
+            this.l1r8.Location = new System.Drawing.Point(317, 2);
+            this.l1r8.Name = "l1r8";
+            this.l1r8.Size = new System.Drawing.Size(33, 40);
+            this.l1r8.TabIndex = 53;
+            this.l1r8.Text = "0";
+            // 
+            // l1r7
+            // 
+            this.l1r7.AutoSize = true;
+            this.l1r7.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r7.ForeColor = System.Drawing.Color.White;
+            this.l1r7.Location = new System.Drawing.Point(272, 2);
+            this.l1r7.Name = "l1r7";
+            this.l1r7.Size = new System.Drawing.Size(33, 40);
+            this.l1r7.TabIndex = 52;
+            this.l1r7.Text = "0";
+            // 
+            // l1r6
+            // 
+            this.l1r6.AutoSize = true;
+            this.l1r6.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r6.ForeColor = System.Drawing.Color.White;
+            this.l1r6.Location = new System.Drawing.Point(227, 2);
+            this.l1r6.Name = "l1r6";
+            this.l1r6.Size = new System.Drawing.Size(33, 40);
+            this.l1r6.TabIndex = 51;
+            this.l1r6.Text = "0";
+            // 
+            // l1r5
+            // 
+            this.l1r5.AutoSize = true;
+            this.l1r5.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r5.ForeColor = System.Drawing.Color.White;
+            this.l1r5.Location = new System.Drawing.Point(183, 2);
+            this.l1r5.Name = "l1r5";
+            this.l1r5.Size = new System.Drawing.Size(33, 40);
+            this.l1r5.TabIndex = 50;
+            this.l1r5.Text = "0";
+            // 
+            // l1r4
+            // 
+            this.l1r4.AutoSize = true;
+            this.l1r4.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r4.ForeColor = System.Drawing.Color.White;
+            this.l1r4.Location = new System.Drawing.Point(140, 2);
+            this.l1r4.Name = "l1r4";
+            this.l1r4.Size = new System.Drawing.Size(33, 40);
+            this.l1r4.TabIndex = 49;
+            this.l1r4.Text = "0";
+            // 
+            // l1r3
+            // 
+            this.l1r3.AutoSize = true;
+            this.l1r3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r3.ForeColor = System.Drawing.Color.White;
+            this.l1r3.Location = new System.Drawing.Point(95, 2);
+            this.l1r3.Name = "l1r3";
+            this.l1r3.Size = new System.Drawing.Size(33, 40);
+            this.l1r3.TabIndex = 48;
+            this.l1r3.Text = "0";
+            // 
+            // l1r2
+            // 
+            this.l1r2.AutoSize = true;
+            this.l1r2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r2.ForeColor = System.Drawing.Color.White;
+            this.l1r2.Location = new System.Drawing.Point(51, 2);
+            this.l1r2.Name = "l1r2";
+            this.l1r2.Size = new System.Drawing.Size(33, 40);
+            this.l1r2.TabIndex = 47;
+            this.l1r2.Text = "0";
+            // 
+            // textBox59
+            // 
+            this.textBox59.BackColor = System.Drawing.Color.Gray;
+            this.textBox59.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox59.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox59.Enabled = false;
+            this.textBox59.Location = new System.Drawing.Point(355, 0);
+            this.textBox59.Multiline = true;
+            this.textBox59.Name = "textBox59";
+            this.textBox59.ReadOnly = true;
+            this.textBox59.Size = new System.Drawing.Size(1, 400);
+            this.textBox59.TabIndex = 46;
+            this.textBox59.TabStop = false;
+            // 
+            // textBox58
+            // 
+            this.textBox58.BackColor = System.Drawing.Color.Gray;
+            this.textBox58.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox58.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox58.Enabled = false;
+            this.textBox58.Location = new System.Drawing.Point(309, 0);
+            this.textBox58.Multiline = true;
+            this.textBox58.Name = "textBox58";
+            this.textBox58.ReadOnly = true;
+            this.textBox58.Size = new System.Drawing.Size(1, 400);
+            this.textBox58.TabIndex = 45;
+            this.textBox58.TabStop = false;
+            // 
+            // textBox57
+            // 
+            this.textBox57.BackColor = System.Drawing.Color.Gray;
+            this.textBox57.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox57.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox57.Enabled = false;
+            this.textBox57.Location = new System.Drawing.Point(264, 0);
+            this.textBox57.Multiline = true;
+            this.textBox57.Name = "textBox57";
+            this.textBox57.ReadOnly = true;
+            this.textBox57.Size = new System.Drawing.Size(3, 400);
+            this.textBox57.TabIndex = 44;
+            this.textBox57.TabStop = false;
+            // 
+            // textBox56
+            // 
+            this.textBox56.BackColor = System.Drawing.Color.Gray;
+            this.textBox56.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox56.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox56.Enabled = false;
+            this.textBox56.Location = new System.Drawing.Point(220, 0);
+            this.textBox56.Multiline = true;
+            this.textBox56.Name = "textBox56";
+            this.textBox56.ReadOnly = true;
+            this.textBox56.Size = new System.Drawing.Size(1, 400);
+            this.textBox56.TabIndex = 43;
+            this.textBox56.TabStop = false;
+            // 
+            // textBox55
+            // 
+            this.textBox55.BackColor = System.Drawing.Color.Gray;
+            this.textBox55.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox55.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox55.Enabled = false;
+            this.textBox55.Location = new System.Drawing.Point(176, 0);
+            this.textBox55.Multiline = true;
+            this.textBox55.Name = "textBox55";
+            this.textBox55.ReadOnly = true;
+            this.textBox55.Size = new System.Drawing.Size(1, 400);
+            this.textBox55.TabIndex = 42;
+            this.textBox55.TabStop = false;
+            // 
+            // textBox54
+            // 
+            this.textBox54.BackColor = System.Drawing.Color.Gray;
+            this.textBox54.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox54.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox54.Enabled = false;
+            this.textBox54.Location = new System.Drawing.Point(132, 0);
+            this.textBox54.Multiline = true;
+            this.textBox54.Name = "textBox54";
+            this.textBox54.ReadOnly = true;
+            this.textBox54.Size = new System.Drawing.Size(3, 400);
+            this.textBox54.TabIndex = 41;
+            this.textBox54.TabStop = false;
+            // 
+            // textBox53
+            // 
+            this.textBox53.BackColor = System.Drawing.Color.Gray;
+            this.textBox53.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox53.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox53.Enabled = false;
+            this.textBox53.Location = new System.Drawing.Point(88, 0);
+            this.textBox53.Multiline = true;
+            this.textBox53.Name = "textBox53";
+            this.textBox53.ReadOnly = true;
+            this.textBox53.Size = new System.Drawing.Size(1, 400);
+            this.textBox53.TabIndex = 40;
+            this.textBox53.TabStop = false;
+            // 
+            // textBox52
+            // 
+            this.textBox52.BackColor = System.Drawing.Color.Gray;
+            this.textBox52.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox52.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox52.Enabled = false;
+            this.textBox52.Location = new System.Drawing.Point(44, 0);
+            this.textBox52.Multiline = true;
+            this.textBox52.Name = "textBox52";
+            this.textBox52.ReadOnly = true;
+            this.textBox52.Size = new System.Drawing.Size(1, 400);
+            this.textBox52.TabIndex = 39;
+            this.textBox52.TabStop = false;
+            // 
+            // textBox51
+            // 
+            this.textBox51.BackColor = System.Drawing.Color.Gray;
+            this.textBox51.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox51.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox51.Enabled = false;
+            this.textBox51.Location = new System.Drawing.Point(0, 355);
+            this.textBox51.Multiline = true;
+            this.textBox51.Name = "textBox51";
+            this.textBox51.ReadOnly = true;
+            this.textBox51.Size = new System.Drawing.Size(400, 1);
+            this.textBox51.TabIndex = 38;
+            this.textBox51.TabStop = false;
+            // 
+            // textBox50
+            // 
+            this.textBox50.BackColor = System.Drawing.Color.Gray;
+            this.textBox50.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox50.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox50.Enabled = false;
+            this.textBox50.Location = new System.Drawing.Point(0, 309);
+            this.textBox50.Multiline = true;
+            this.textBox50.Name = "textBox50";
+            this.textBox50.ReadOnly = true;
+            this.textBox50.Size = new System.Drawing.Size(400, 1);
+            this.textBox50.TabIndex = 37;
+            this.textBox50.TabStop = false;
+            // 
+            // textBox49
+            // 
+            this.textBox49.BackColor = System.Drawing.Color.Gray;
+            this.textBox49.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox49.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox49.Enabled = false;
+            this.textBox49.Location = new System.Drawing.Point(0, 264);
+            this.textBox49.Multiline = true;
+            this.textBox49.Name = "textBox49";
+            this.textBox49.ReadOnly = true;
+            this.textBox49.Size = new System.Drawing.Size(400, 3);
+            this.textBox49.TabIndex = 36;
+            this.textBox49.TabStop = false;
+            // 
+            // textBox48
+            // 
+            this.textBox48.BackColor = System.Drawing.Color.Gray;
+            this.textBox48.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox48.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox48.Enabled = false;
+            this.textBox48.Location = new System.Drawing.Point(0, 220);
+            this.textBox48.Multiline = true;
+            this.textBox48.Name = "textBox48";
+            this.textBox48.ReadOnly = true;
+            this.textBox48.Size = new System.Drawing.Size(400, 1);
+            this.textBox48.TabIndex = 35;
+            this.textBox48.TabStop = false;
+            // 
+            // textBox47
+            // 
+            this.textBox47.BackColor = System.Drawing.Color.Gray;
+            this.textBox47.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox47.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox47.Enabled = false;
+            this.textBox47.Location = new System.Drawing.Point(0, 176);
+            this.textBox47.Multiline = true;
+            this.textBox47.Name = "textBox47";
+            this.textBox47.ReadOnly = true;
+            this.textBox47.Size = new System.Drawing.Size(400, 1);
+            this.textBox47.TabIndex = 34;
+            this.textBox47.TabStop = false;
+            // 
+            // textBox46
+            // 
+            this.textBox46.BackColor = System.Drawing.Color.Gray;
+            this.textBox46.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox46.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox46.Enabled = false;
+            this.textBox46.Location = new System.Drawing.Point(0, 132);
+            this.textBox46.Multiline = true;
+            this.textBox46.Name = "textBox46";
+            this.textBox46.ReadOnly = true;
+            this.textBox46.Size = new System.Drawing.Size(400, 3);
+            this.textBox46.TabIndex = 33;
+            this.textBox46.TabStop = false;
+            // 
+            // textBox45
+            // 
+            this.textBox45.BackColor = System.Drawing.Color.Gray;
+            this.textBox45.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox45.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox45.Enabled = false;
+            this.textBox45.Location = new System.Drawing.Point(0, 88);
+            this.textBox45.Multiline = true;
+            this.textBox45.Name = "textBox45";
+            this.textBox45.ReadOnly = true;
+            this.textBox45.Size = new System.Drawing.Size(400, 1);
+            this.textBox45.TabIndex = 32;
+            this.textBox45.TabStop = false;
+            // 
+            // textBox44
+            // 
+            this.textBox44.BackColor = System.Drawing.Color.Gray;
+            this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox44.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox44.Enabled = false;
+            this.textBox44.Location = new System.Drawing.Point(0, 44);
+            this.textBox44.Multiline = true;
+            this.textBox44.Name = "textBox44";
+            this.textBox44.ReadOnly = true;
+            this.textBox44.Size = new System.Drawing.Size(400, 1);
+            this.textBox44.TabIndex = 31;
+            this.textBox44.TabStop = false;
+            // 
+            // textBox40
+            // 
+            this.textBox40.BackColor = System.Drawing.Color.Gray;
+            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox40.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox40.Enabled = false;
+            this.textBox40.Location = new System.Drawing.Point(398, 0);
+            this.textBox40.Multiline = true;
+            this.textBox40.Name = "textBox40";
+            this.textBox40.ReadOnly = true;
+            this.textBox40.Size = new System.Drawing.Size(2, 400);
+            this.textBox40.TabIndex = 30;
+            this.textBox40.TabStop = false;
+            // 
+            // textBox39
+            // 
+            this.textBox39.BackColor = System.Drawing.Color.Gray;
+            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox39.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox39.Enabled = false;
+            this.textBox39.Location = new System.Drawing.Point(0, 0);
+            this.textBox39.Multiline = true;
+            this.textBox39.Name = "textBox39";
+            this.textBox39.ReadOnly = true;
+            this.textBox39.Size = new System.Drawing.Size(2, 400);
+            this.textBox39.TabIndex = 29;
+            this.textBox39.TabStop = false;
+            // 
+            // textBox36
+            // 
+            this.textBox36.BackColor = System.Drawing.Color.Gray;
+            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox36.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox36.Enabled = false;
+            this.textBox36.Location = new System.Drawing.Point(0, 398);
+            this.textBox36.Multiline = true;
+            this.textBox36.Name = "textBox36";
+            this.textBox36.ReadOnly = true;
+            this.textBox36.Size = new System.Drawing.Size(400, 2);
+            this.textBox36.TabIndex = 28;
+            this.textBox36.TabStop = false;
+            // 
+            // textBox27
+            // 
+            this.textBox27.BackColor = System.Drawing.Color.Gray;
+            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox27.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox27.Enabled = false;
+            this.textBox27.Location = new System.Drawing.Point(0, 0);
+            this.textBox27.Multiline = true;
+            this.textBox27.Name = "textBox27";
+            this.textBox27.ReadOnly = true;
+            this.textBox27.Size = new System.Drawing.Size(400, 2);
+            this.textBox27.TabIndex = 27;
+            this.textBox27.TabStop = false;
+            // 
+            // l1r1
+            // 
+            this.l1r1.AutoSize = true;
+            this.l1r1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1r1.ForeColor = System.Drawing.Color.White;
+            this.l1r1.Location = new System.Drawing.Point(7, 2);
+            this.l1r1.Name = "l1r1";
+            this.l1r1.Size = new System.Drawing.Size(33, 40);
+            this.l1r1.TabIndex = 0;
+            this.l1r1.Text = "0";
             // 
             // settingspanel
             // 
@@ -864,105 +2305,6 @@ namespace sudoku
             this.createsudoku.Interval = 1;
             this.createsudoku.Tick += new System.EventHandler(this.createsudoku_Tick);
             // 
-            // l1r1
-            // 
-            this.l1r1.AutoSize = true;
-            this.l1r1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r1.ForeColor = System.Drawing.Color.White;
-            this.l1r1.Location = new System.Drawing.Point(18, 15);
-            this.l1r1.Name = "l1r1";
-            this.l1r1.Size = new System.Drawing.Size(18, 19);
-            this.l1r1.TabIndex = 0;
-            this.l1r1.Text = "0";
-            // 
-            // l1r2
-            // 
-            this.l1r2.AutoSize = true;
-            this.l1r2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r2.ForeColor = System.Drawing.Color.White;
-            this.l1r2.Location = new System.Drawing.Point(53, 15);
-            this.l1r2.Name = "l1r2";
-            this.l1r2.Size = new System.Drawing.Size(18, 19);
-            this.l1r2.TabIndex = 1;
-            this.l1r2.Text = "0";
-            // 
-            // l1r4
-            // 
-            this.l1r4.AutoSize = true;
-            this.l1r4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r4.ForeColor = System.Drawing.Color.White;
-            this.l1r4.Location = new System.Drawing.Point(119, 15);
-            this.l1r4.Name = "l1r4";
-            this.l1r4.Size = new System.Drawing.Size(18, 19);
-            this.l1r4.TabIndex = 3;
-            this.l1r4.Text = "0";
-            // 
-            // l1r3
-            // 
-            this.l1r3.AutoSize = true;
-            this.l1r3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r3.ForeColor = System.Drawing.Color.White;
-            this.l1r3.Location = new System.Drawing.Point(84, 15);
-            this.l1r3.Name = "l1r3";
-            this.l1r3.Size = new System.Drawing.Size(18, 19);
-            this.l1r3.TabIndex = 2;
-            this.l1r3.Text = "0";
-            // 
-            // l1r8
-            // 
-            this.l1r8.AutoSize = true;
-            this.l1r8.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r8.ForeColor = System.Drawing.Color.White;
-            this.l1r8.Location = new System.Drawing.Point(263, 15);
-            this.l1r8.Name = "l1r8";
-            this.l1r8.Size = new System.Drawing.Size(18, 19);
-            this.l1r8.TabIndex = 7;
-            this.l1r8.Text = "0";
-            // 
-            // l1r7
-            // 
-            this.l1r7.AutoSize = true;
-            this.l1r7.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r7.ForeColor = System.Drawing.Color.White;
-            this.l1r7.Location = new System.Drawing.Point(228, 15);
-            this.l1r7.Name = "l1r7";
-            this.l1r7.Size = new System.Drawing.Size(18, 19);
-            this.l1r7.TabIndex = 6;
-            this.l1r7.Text = "0";
-            // 
-            // l1r6
-            // 
-            this.l1r6.AutoSize = true;
-            this.l1r6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r6.ForeColor = System.Drawing.Color.White;
-            this.l1r6.Location = new System.Drawing.Point(197, 15);
-            this.l1r6.Name = "l1r6";
-            this.l1r6.Size = new System.Drawing.Size(18, 19);
-            this.l1r6.TabIndex = 5;
-            this.l1r6.Text = "0";
-            // 
-            // l1r5
-            // 
-            this.l1r5.AutoSize = true;
-            this.l1r5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r5.ForeColor = System.Drawing.Color.White;
-            this.l1r5.Location = new System.Drawing.Point(162, 15);
-            this.l1r5.Name = "l1r5";
-            this.l1r5.Size = new System.Drawing.Size(18, 19);
-            this.l1r5.TabIndex = 4;
-            this.l1r5.Text = "0";
-            // 
-            // l1r9
-            // 
-            this.l1r9.AutoSize = true;
-            this.l1r9.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l1r9.ForeColor = System.Drawing.Color.White;
-            this.l1r9.Location = new System.Drawing.Point(302, 15);
-            this.l1r9.Name = "l1r9";
-            this.l1r9.Size = new System.Drawing.Size(18, 19);
-            this.l1r9.TabIndex = 8;
-            this.l1r9.Text = "0";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -996,6 +2338,7 @@ namespace sudoku
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.gamepanel.ResumeLayout(false);
+            this.gamepanel.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1071,15 +2414,112 @@ namespace sudoku
         private System.Windows.Forms.TextBox textBox34;
         private System.Windows.Forms.TextBox textBox35;
         private System.Windows.Forms.Timer createsudoku;
-        private System.Windows.Forms.Label l1r9;
-        private System.Windows.Forms.Label l1r8;
-        private System.Windows.Forms.Label l1r7;
+        private System.Windows.Forms.Label l1r1;
+        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.TextBox textBox27;
         private System.Windows.Forms.Label l1r6;
         private System.Windows.Forms.Label l1r5;
         private System.Windows.Forms.Label l1r4;
         private System.Windows.Forms.Label l1r3;
         private System.Windows.Forms.Label l1r2;
-        private System.Windows.Forms.Label l1r1;
+        private System.Windows.Forms.TextBox textBox59;
+        private System.Windows.Forms.TextBox textBox58;
+        private System.Windows.Forms.TextBox textBox57;
+        private System.Windows.Forms.TextBox textBox56;
+        private System.Windows.Forms.TextBox textBox55;
+        private System.Windows.Forms.TextBox textBox54;
+        private System.Windows.Forms.TextBox textBox53;
+        private System.Windows.Forms.TextBox textBox52;
+        private System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.TextBox textBox50;
+        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.Label l1r9;
+        private System.Windows.Forms.Label l1r8;
+        private System.Windows.Forms.Label l1r7;
+        private System.Windows.Forms.Label l9r1;
+        private System.Windows.Forms.Label l8r1;
+        private System.Windows.Forms.Label l7r1;
+        private System.Windows.Forms.Label l6r1;
+        private System.Windows.Forms.Label l5r1;
+        private System.Windows.Forms.Label l4r1;
+        private System.Windows.Forms.Label l3r1;
+        private System.Windows.Forms.Label l2r1;
+        private System.Windows.Forms.Label l9r9;
+        private System.Windows.Forms.Label l9r8;
+        private System.Windows.Forms.Label l9r7;
+        private System.Windows.Forms.Label l9r6;
+        private System.Windows.Forms.Label l9r5;
+        private System.Windows.Forms.Label l9r4;
+        private System.Windows.Forms.Label l9r3;
+        private System.Windows.Forms.Label l9r2;
+        private System.Windows.Forms.Label l8r9;
+        private System.Windows.Forms.Label l8r8;
+        private System.Windows.Forms.Label l8r7;
+        private System.Windows.Forms.Label l8r6;
+        private System.Windows.Forms.Label l8r5;
+        private System.Windows.Forms.Label l8r4;
+        private System.Windows.Forms.Label l8r3;
+        private System.Windows.Forms.Label l8r2;
+        private System.Windows.Forms.Label l7r9;
+        private System.Windows.Forms.Label l7r8;
+        private System.Windows.Forms.Label l7r7;
+        private System.Windows.Forms.Label l7r6;
+        private System.Windows.Forms.Label l7r5;
+        private System.Windows.Forms.Label l7r4;
+        private System.Windows.Forms.Label l7r3;
+        private System.Windows.Forms.Label l7r2;
+        private System.Windows.Forms.Label l6r9;
+        private System.Windows.Forms.Label l6r8;
+        private System.Windows.Forms.Label l6r7;
+        private System.Windows.Forms.Label l6r6;
+        private System.Windows.Forms.Label l6r5;
+        private System.Windows.Forms.Label l6r4;
+        private System.Windows.Forms.Label l6r3;
+        private System.Windows.Forms.Label l6r2;
+        private System.Windows.Forms.Label l5r9;
+        private System.Windows.Forms.Label l5r8;
+        private System.Windows.Forms.Label l5r7;
+        private System.Windows.Forms.Label l5r6;
+        private System.Windows.Forms.Label l5r5;
+        private System.Windows.Forms.Label l5r4;
+        private System.Windows.Forms.Label l5r3;
+        private System.Windows.Forms.Label l5r2;
+        private System.Windows.Forms.Label l4r9;
+        private System.Windows.Forms.Label l4r8;
+        private System.Windows.Forms.Label l4r7;
+        private System.Windows.Forms.Label l4r6;
+        private System.Windows.Forms.Label l4r5;
+        private System.Windows.Forms.Label l4r4;
+        private System.Windows.Forms.Label l4r3;
+        private System.Windows.Forms.Label l4r2;
+        private System.Windows.Forms.Label l3r9;
+        private System.Windows.Forms.Label l3r8;
+        private System.Windows.Forms.Label l3r7;
+        private System.Windows.Forms.Label l3r6;
+        private System.Windows.Forms.Label l3r5;
+        private System.Windows.Forms.Label l3r4;
+        private System.Windows.Forms.Label l3r3;
+        private System.Windows.Forms.Label l3r2;
+        private System.Windows.Forms.Label l2r9;
+        private System.Windows.Forms.Label l2r8;
+        private System.Windows.Forms.Label l2r7;
+        private System.Windows.Forms.Label l2r6;
+        private System.Windows.Forms.Label l2r5;
+        private System.Windows.Forms.Label l2r4;
+        private System.Windows.Forms.Label l2r3;
+        private System.Windows.Forms.Label l2r2;
     }
 }
 

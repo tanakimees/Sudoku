@@ -13,7 +13,6 @@ namespace sudoku
     public partial class Form1 : Form
     {
         int selectedshit = 1;
-        int checkshitlmao = 0;
 
         int sudokuline = 1;
         int sudokurow = 1;
@@ -209,29 +208,118 @@ namespace sudoku
         {
             createsudoku.Start();
         }
-
+        
+        
         public List<int> randomList = new List<int>();
         private void createsudoku_Tick(object sender, EventArgs e)
         {
             Random rnd = new Random();
             int int1 = rnd.Next(1, 10);
-
-            if(!randomList.Contains(int1))
+            if(sudokuline == 1)
             {
-                randomList.Add(int1);
-                foreach(Label l in panel1.Controls.OfType<Label>())
+                if (!randomList.Contains(int1))
                 {
-                    if(l.Name == "l" + sudokuline + "r" + sudokurow)
+                    randomList.Add(int1);
+                    foreach (Label l in panel1.Controls.OfType<Label>())
                     {
-                        l.Text = int1.ToString();
-                        sudokurow++;
-                    }       
+                        if (l.Name == "l" + sudokuline + "r" + sudokurow)
+                        {
+                            l.Text = int1.ToString();
+                            sudokurow++;
+                        }
+                    }
                 }
-                checkshitlmao++;
+                else
+                {
+                    int tgsum = randomList.Sum();
+                    if(tgsum == 45)
+                    {
+                        sudokuline += 1;
+                    }
+                }
             }
-            if(checkshitlmao == 9)
+
+            if(sudokuline != 1)
             {
-                
+                l2r1.Text = l1r4.Text;
+                l2r2.Text = l1r5.Text;
+                l2r3.Text = l1r6.Text;
+                l2r4.Text = l1r7.Text;
+                l2r5.Text = l1r8.Text;
+                l2r6.Text = l1r9.Text;
+                l2r7.Text = l1r1.Text;
+                l2r8.Text = l1r2.Text;
+                l2r9.Text = l1r3.Text;
+
+                l3r1.Text = l2r4.Text;
+                l3r2.Text = l2r5.Text;
+                l3r3.Text = l2r6.Text;
+                l3r4.Text = l2r7.Text;
+                l3r5.Text = l2r8.Text;
+                l3r6.Text = l2r9.Text;
+                l3r7.Text = l2r1.Text;
+                l3r8.Text = l2r2.Text;
+                l3r9.Text = l2r3.Text;
+
+                l4r1.Text = l3r2.Text;
+                l4r2.Text = l3r3.Text;
+                l4r3.Text = l3r4.Text;
+                l4r4.Text = l3r5.Text;
+                l4r5.Text = l3r6.Text;
+                l4r6.Text = l3r7.Text;
+                l4r7.Text = l3r8.Text;
+                l4r8.Text = l3r9.Text;
+                l4r9.Text = l3r1.Text;
+
+                l5r1.Text = l4r4.Text;
+                l5r2.Text = l4r5.Text;
+                l5r3.Text = l4r6.Text;
+                l5r4.Text = l4r7.Text;
+                l5r5.Text = l4r8.Text;
+                l5r6.Text = l4r9.Text;
+                l5r7.Text = l4r1.Text;
+                l5r8.Text = l4r2.Text;
+                l5r9.Text = l4r3.Text;
+
+                l6r1.Text = l5r4.Text;
+                l6r2.Text = l5r5.Text;
+                l6r3.Text = l5r6.Text;
+                l6r4.Text = l5r7.Text;
+                l6r5.Text = l5r8.Text;
+                l6r6.Text = l5r9.Text;
+                l6r7.Text = l5r1.Text;
+                l6r8.Text = l5r2.Text;
+                l6r9.Text = l5r3.Text;
+
+                l7r1.Text = l6r2.Text;
+                l7r2.Text = l6r3.Text;
+                l7r3.Text = l6r4.Text;
+                l7r4.Text = l6r5.Text;
+                l7r5.Text = l6r6.Text;
+                l7r6.Text = l6r7.Text;
+                l7r7.Text = l6r8.Text;
+                l7r8.Text = l6r9.Text;
+                l7r9.Text = l6r1.Text;
+
+                l8r1.Text = l7r4.Text;
+                l8r2.Text = l7r5.Text;
+                l8r3.Text = l7r6.Text;
+                l8r4.Text = l7r7.Text;
+                l8r5.Text = l7r8.Text;
+                l8r6.Text = l7r9.Text;
+                l8r7.Text = l7r1.Text;
+                l8r8.Text = l7r2.Text;
+                l8r9.Text = l7r3.Text;
+
+                l9r1.Text = l8r4.Text;
+                l9r2.Text = l8r5.Text;
+                l9r3.Text = l8r6.Text;
+                l9r4.Text = l8r7.Text;
+                l9r5.Text = l8r8.Text;
+                l9r6.Text = l8r9.Text;
+                l9r7.Text = l8r1.Text;
+                l9r8.Text = l8r2.Text;
+                l9r9.Text = l8r3.Text;
             }
         }
     }
