@@ -14,9 +14,12 @@ namespace sudoku
     {
         int selectedshit = 1;
 
+        int sudokualreadycreated = 0;
         int sudokuline = 1;
         int sudokurow = 1;
-        
+        int difficulty = 2;
+        int idk = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -26,6 +29,11 @@ namespace sudoku
         {
             fadein.Start();
             loop.Start();
+
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
+                l.AutoSize = false;
+            }
         }
 
         protected override void WndProc(ref Message m)
@@ -202,13 +210,7 @@ namespace sudoku
                 this.Close();
                 Application.Exit();
             }
-        }
-
-        private void panel8_Click(object sender, EventArgs e)
-        {
-            createsudoku.Start();
-        }
-        
+        }        
         
         public List<int> randomList = new List<int>();
         private void createsudoku_Tick(object sender, EventArgs e)
@@ -320,6 +322,243 @@ namespace sudoku
                 l9r7.Text = l8r1.Text;
                 l9r8.Text = l8r2.Text;
                 l9r9.Text = l8r3.Text;
+
+
+                removenr.Start();
+            }
+        }
+
+        private void label4_MouseEnter(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.White;
+        }
+
+        private void label4_MouseLeave(object sender, EventArgs e)
+        {
+            if(label4.Text == "Difficulty ↑")
+            {
+                label4.ForeColor = Color.White;
+            }
+            else
+            {
+                label4.ForeColor = Color.Gray;
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            if(label4.Text == "Difficulty ↑")
+            {
+                label4.Text = "Difficulty ↓";
+                panel9.Visible = false;
+            }
+            else
+            {
+                label4.Text = "Difficulty ↑";
+                panel9.Visible = true;
+            }
+        }
+
+        private void label13_MouseEnter(object sender, EventArgs e)
+        {
+            label13.ForeColor = Color.White;
+        }
+
+        private void label13_MouseLeave(object sender, EventArgs e)
+        {
+            label13.ForeColor = Color.Gray;
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            if(sudokualreadycreated == 1)
+            {
+                sudokualreadycreated = 0;
+                DialogResult dr = MessageBox.Show("You have already created a sudoku, do you want to create another one?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if(dr == DialogResult.Yes)
+                {
+                    createsudoku.Stop();
+                    removenr.Stop();                  
+                    sudokuline = 0;
+                    sudokurow = 0;
+                    randomList.Clear();
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {              
+                        l.Text = "0";     
+                    }
+                    createsudoku.Start();
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                createsudoku.Start();
+            }
+        }
+
+        private void label10_MouseEnter(object sender, EventArgs e)
+        {
+            label10.ForeColor = Color.White;
+        }
+
+        private void label10_MouseLeave(object sender, EventArgs e)
+        {
+            if(difficulty == 1)
+            {
+                label10.ForeColor = Color.White;
+            }
+            else
+            {
+                label10.ForeColor = Color.Gray;
+            }
+        }
+
+        private void label11_MouseEnter(object sender, EventArgs e)
+        {
+            label11.ForeColor = Color.White;
+        }
+
+        private void label11_MouseLeave(object sender, EventArgs e)
+        {
+            if (difficulty == 2)
+            {
+                label11.ForeColor = Color.White;
+            }
+            else
+            {
+                label11.ForeColor = Color.Gray;
+            }
+        }
+
+        private void label12_MouseEnter(object sender, EventArgs e)
+        {
+            label12.ForeColor = Color.White;
+        }
+
+        private void label12_MouseLeave(object sender, EventArgs e)
+        {
+            if (difficulty == 3)
+            {
+                label12.ForeColor = Color.White;
+            }
+            else
+            {
+                label12.ForeColor = Color.Gray;
+            }
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            difficulty = 1;
+            label11.ForeColor = Color.Gray;
+            label12.ForeColor = Color.Gray;
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            difficulty = 2;
+            label10.ForeColor = Color.Gray;
+            label12.ForeColor = Color.Gray;
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            difficulty = 3;
+            label11.ForeColor = Color.Gray;
+            label10.ForeColor = Color.Gray;
+        }
+        
+        private void removenr_Tick(object sender, EventArgs e)
+        {
+            createsudoku.Stop();
+            sudokuline = 1;
+            sudokurow = 1;
+            if(difficulty == 1)
+            {         
+                Random rnd3 = new Random();
+                int lines = rnd3.Next(0, 10);
+                int rows = rnd3.Next(0, 10);
+                foreach(Label l in panel1.Controls.OfType<Label>())
+                {
+                    if(l.Name == "l" + lines + "r" + rows)
+                    {
+                        if(l.Text != "")
+                        {
+                            l.Text = "";
+                            idk++;
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
+                }
+                if(idk > 40)
+                {
+                    removenr.Stop();
+                    difficulty = 0;
+                    sudokualreadycreated = 1;
+                    idk = 0;
+                }
+            }
+            if (difficulty == 2)
+            {              
+                Random rnd3 = new Random();
+                int lines = rnd3.Next(0, 10);
+                int rows = rnd3.Next(0, 10);
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == "l" + lines + "r" + rows)
+                    {
+                        if (l.Text != "")
+                        {
+                            l.Text = "";
+                            idk++;
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
+                }
+                if (idk > 50)
+                {
+                    removenr.Stop();
+                    difficulty = 0;
+                    sudokualreadycreated = 1;
+                    idk = 0;
+                }
+            }
+            if (difficulty == 3)
+            {
+                Random rnd3 = new Random();
+                int lines = rnd3.Next(0, 10);
+                int rows = rnd3.Next(0, 10);
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == "l" + lines + "r" + rows)
+                    {
+                        if (l.Text != "")
+                        {
+                            l.Text = "";
+                            idk++;
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
+                }
+                if (idk > 60)
+                {
+                    removenr.Stop();
+                    difficulty = 0;
+                    sudokualreadycreated = 1;
+                    idk = 0;
+                }
             }
         }
     }
