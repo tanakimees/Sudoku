@@ -33,9 +33,9 @@ namespace sudoku
             foreach(Label l in panel1.Controls.OfType<Label>())
             {
                 l.AutoSize = false;
+                l.Text = "";
             }
         }
-
         protected override void WndProc(ref Message m)
         {
             switch (m.Msg)
@@ -49,7 +49,6 @@ namespace sudoku
 
             base.WndProc(ref m);
         }
-
         private void fadein_Tick(object sender, EventArgs e)
         {
             this.Opacity += 0.02;
@@ -58,17 +57,10 @@ namespace sudoku
                 fadein.Stop();
             }
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void label1_MouseEnter(object sender, EventArgs e)
         {
             label1.ForeColor = Color.White;
         }
-
         private void label1_MouseLeave(object sender, EventArgs e)
         {
             if(selectedshit != 1)
@@ -372,29 +364,32 @@ namespace sudoku
         private void label13_Click(object sender, EventArgs e)
         {
             if(sudokualreadycreated == 1)
-            {
-                sudokualreadycreated = 0;
+            {   
                 DialogResult dr = MessageBox.Show("You have already created a sudoku, do you want to create another one?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if(dr == DialogResult.Yes)
                 {
                     createsudoku.Stop();
                     removenr.Stop();                  
-                    sudokuline = 0;
-                    sudokurow = 0;
+                    sudokuline = 1;
+                    sudokurow = 1;
                     randomList.Clear();
+                    idk = 0;
+
                     foreach (Label l in panel1.Controls.OfType<Label>())
                     {              
-                        l.Text = "0";     
+                        l.Text = "";     
                     }
                     createsudoku.Start();
+                    sudokualreadycreated = 0;
                 }
-                else
+                else if(dr == DialogResult.No)
                 {
                     return;
                 }
             }
-            else
+            if(sudokualreadycreated == 0)
             {
+                sudokualreadycreated = 1;
                 createsudoku.Start();
             }
         }
@@ -499,7 +494,6 @@ namespace sudoku
                 if(idk > 40)
                 {
                     removenr.Stop();
-                    difficulty = 0;
                     sudokualreadycreated = 1;
                     idk = 0;
                 }
@@ -527,7 +521,6 @@ namespace sudoku
                 if (idk > 50)
                 {
                     removenr.Stop();
-                    difficulty = 0;
                     sudokualreadycreated = 1;
                     idk = 0;
                 }
@@ -555,10 +548,34 @@ namespace sudoku
                 if (idk > 60)
                 {
                     removenr.Stop();
-                    difficulty = 0;
                     sudokualreadycreated = 1;
                     idk = 0;
                 }
+            }
+        }
+
+        private void label15_MouseEnter(object sender, EventArgs e)
+        {
+            label15.ForeColor = Color.White;
+        }
+
+        private void label15_MouseLeave(object sender, EventArgs e)
+        {
+            label15.ForeColor = Color.Gray;
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            createsudoku.Stop();
+            removenr.Stop();
+            randomList.Clear();
+            sudokualreadycreated = 0;
+            sudokuline = 1;
+            sudokurow = 1;
+            idk = 0;
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
+                l.Text = "";
             }
         }
     }
