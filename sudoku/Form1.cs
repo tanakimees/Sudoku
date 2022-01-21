@@ -19,6 +19,7 @@ namespace sudoku
         int sudokurow = 1;
         int difficulty = 2;
         int idk = 0;
+        string lblname = "";
 
         public Form1()
         {
@@ -32,10 +33,14 @@ namespace sudoku
 
             foreach(Label l in panel1.Controls.OfType<Label>())
             {
+
                 l.AutoSize = false;
                 l.Text = "";
+                l.Cursor = Cursors.Hand;
+                l.ForeColor = Color.Gray;
             }
         }
+
         protected override void WndProc(ref Message m)
         {
             switch (m.Msg)
@@ -577,6 +582,31 @@ namespace sudoku
             {
                 l.Text = "";
             }
+        }
+
+        private void l1r1_MouseEnter(object sender, EventArgs e)
+        {
+            l1r1.ForeColor = Color.White;
+            l1r1.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void l1r1_MouseLeave(object sender, EventArgs e)
+        {
+            if(lblname == "l1r1")
+            {
+                l1r1.BackColor = Color.FromArgb(45, 45, 45);
+                l1r1.ForeColor = Color.White;
+            }
+            else
+            {
+                l1r1.BackColor = Color.FromArgb(35, 35, 35);
+                l1r1.ForeColor = Color.Gray;
+            }
+        }
+
+        private void l1r1_Click(object sender, EventArgs e)
+        {
+            lblname = "l1r1";
         }
     }
 }
