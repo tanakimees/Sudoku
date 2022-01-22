@@ -33,7 +33,7 @@ namespace sudoku
 
             foreach(Label l in panel1.Controls.OfType<Label>())
             {
-
+                l.BackColor = Color.FromArgb(25,25,25);
                 l.AutoSize = false;
                 l.Text = "";
                 l.Cursor = Cursors.Hand;
@@ -584,6 +584,9 @@ namespace sudoku
             }
         }
 
+
+        //TABLE UI
+
         private void l1r1_MouseEnter(object sender, EventArgs e)
         {
             l1r1.ForeColor = Color.White;
@@ -599,14 +602,104 @@ namespace sudoku
             }
             else
             {
-                l1r1.BackColor = Color.FromArgb(35, 35, 35);
+                l1r1.BackColor = Color.FromArgb(25,25,25);
                 l1r1.ForeColor = Color.Gray;
             }
         }
 
+        void clearbc()
+        {
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
+                if(l.Name == lblname)
+                {
+                    l.BackColor = Color.FromArgb(25, 25, 25);
+                    l.ForeColor = Color.Gray;
+                }
+            }
+        }
         private void l1r1_Click(object sender, EventArgs e)
         {
+            clearbc();
             lblname = "l1r1";
+        }
+
+        private void l1r2_MouseEnter(object sender, EventArgs e)
+        {
+            l1r2.ForeColor = Color.White;
+            l1r2.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void l1r2_MouseLeave(object sender, EventArgs e)
+        {
+            if (lblname == "l1r2")
+            {
+                l1r2.BackColor = Color.FromArgb(45, 45, 45);
+                l1r2.ForeColor = Color.White;
+            }
+            else
+            {
+                l1r2.BackColor = Color.FromArgb(25, 25, 25);
+                l1r2.ForeColor = Color.Gray;
+            }
+        }
+
+        private void l1r2_Click(object sender, EventArgs e)
+        {
+            clearbc();
+            lblname = "l1r2";
+        }
+
+        private void l1r3_MouseEnter(object sender, EventArgs e)
+        {
+            l1r3.ForeColor = Color.White;
+            l1r3.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void l1r3_MouseLeave(object sender, EventArgs e)
+        {
+            if (lblname == "l1r3")
+            {
+                l1r3.BackColor = Color.FromArgb(45, 45, 45);
+                l1r3.ForeColor = Color.White;
+            }
+            else
+            {
+                l1r3.BackColor = Color.FromArgb(25, 25, 25);
+                l1r3.ForeColor = Color.Gray;
+            }
+        }
+
+        private void l1r3_Click(object sender, EventArgs e)
+        {
+            clearbc();
+            lblname = "l1r3";
+        }
+
+        private void l2r1_MouseEnter(object sender, EventArgs e)
+        {
+            l2r1.ForeColor = Color.White;
+            l2r1.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void l2r1_MouseLeave(object sender, EventArgs e)
+        {
+            if (lblname == "l2r1")
+            {
+                l2r1.BackColor = Color.FromArgb(45, 45, 45);
+                l2r1.ForeColor = Color.White;
+            }
+            else
+            {
+                l2r1.BackColor = Color.FromArgb(25, 25, 25);
+                l2r1.ForeColor = Color.Gray;
+            }
+        }
+
+        private void l2r1_Click(object sender, EventArgs e)
+        {
+            clearbc();
+            lblname = "l2r1";
         }
     }
 }
