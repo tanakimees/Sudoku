@@ -596,6 +596,8 @@ namespace sudoku
             }
         }
 
+
+        //DIPSHIT UI
         void mleave()
         {
             foreach (Label l in panel1.Controls.OfType<Label>())
@@ -607,7 +609,6 @@ namespace sudoku
                 }
             }
         }
-
         private void l1r1_MouseEnter(object sender, EventArgs e)
         {
             lblname = "l1r1";
@@ -707,7 +708,596 @@ namespace sudoku
             mleave();
         }
 
-        //TABLE UI
+        private void l1r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l1r4";
+            menter();
+        }
 
+        private void l1r4_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l1r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l1r5";
+            menter();
+        }
+
+        private void l1r5_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l1r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l1r6";
+            menter();
+        }
+
+        private void l1r6_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l2r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l2r4";
+            menter();
+        }
+
+        private void l2r4_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l2r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l2r5";
+            menter();
+        }
+
+        private void l2r5_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l2r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l2r6";
+            menter();
+        }
+
+        private void l2r6_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r4";
+            menter();
+        }
+
+        private void l3r4_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r5";
+            menter();
+        }
+
+        private void l3r5_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r6";
+            menter();
+        }
+
+        private void l3r6_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l1r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l1r7";
+            menter();
+        }
+
+        private void l1r7_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l1r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l1r8";
+            menter();
+        }
+
+        private void l1r8_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l1r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l1r9";
+            menter();
+        }
+
+        private void l1r9_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l2r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l2r7";
+            menter();
+        }
+
+        private void l2r7_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l2r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l2r8";
+            menter();
+        }
+
+        private void l2r8_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l2r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l2r9";
+            menter();
+        }
+
+        private void l2r9_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r7";
+            menter();
+        }
+
+        private void l3r7_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r8";
+            menter();
+        }
+
+        private void l3r8_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r9";
+            menter();
+        }
+
+        private void l3r9_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r1_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r1";
+            menter();
+        }
+
+        private void l4r2_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r2";
+            menter();
+        }
+
+        private void l4r3_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r3";
+            menter();
+        }
+
+        private void l4r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r4";
+            menter();
+        }
+
+        private void l4r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r5";
+            menter();
+        }
+
+        private void l4r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r6";
+            menter();
+        }
+
+        private void l4r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r7";
+            menter();
+        }
+
+        private void l4r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r8";
+            menter();
+        }
+
+        private void l4r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l4r9";
+            menter();
+        }
+
+        private void l4r1_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r2_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r3_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r4_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r5_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r6_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r7_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r8_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l4r9_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l5r1_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r1";
+            menter();
+        }
+
+        private void l5r2_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r2";
+            menter();
+        }
+
+        private void l5r3_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r3";
+            menter();
+        }
+
+        private void l5r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r4";
+            menter();
+        }
+
+        private void l5r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r5";
+            menter();
+        }
+
+        private void l5r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r6";
+            menter();
+        }
+
+        private void l5r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r7";
+            menter();
+        }
+
+        private void l5r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r8";
+            menter();
+        }
+
+        private void l5r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l5r9";
+            menter();
+        }
+
+        private void l5r1_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l6r1_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r1";
+            menter();
+        }
+
+        private void l6r2_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r2";
+            menter();
+        }
+
+        private void l6r3_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r3";
+            menter();
+        }
+
+        private void l6r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r4";
+            menter();
+        }
+
+        private void l6r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r5";
+            menter();
+        }
+
+        private void l6r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r6";
+            menter();
+        }
+
+        private void l6r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r7";
+            menter();
+        }
+
+        private void l6r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r8";
+            menter();
+        }
+
+        private void l6r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l6r9";
+            menter();
+        }
+
+        private void l6r1_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l7r1_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r1";
+            menter();
+        }
+
+        private void l7r2_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r2";
+            menter();
+        }
+
+        private void l7r3_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r3";
+            menter();
+        }
+
+        private void l8r1_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r1";
+            menter();
+        }
+
+        private void l8r2_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r2";
+            menter();
+        }
+
+        private void l8r3_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r3";
+            menter();
+        }
+
+        private void l9r1_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r1";
+            menter();
+        }
+
+        private void l9r2_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r2";
+            menter();
+        }
+
+        private void l9r3_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r3";
+            menter();
+        }
+
+        private void l7r1_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l7r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r4";
+            menter();
+        }
+
+        private void l7r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r5";
+            menter();
+        }
+
+        private void l7r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r6";
+            menter();
+        }
+
+        private void l8r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r4";
+            menter();
+        }
+
+        private void l8r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r5";
+            menter();
+        }
+
+        private void l8r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r6";
+            menter();
+        }
+
+        private void l9r4_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r4";
+            menter();
+        }
+
+        private void l9r5_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r5";
+            menter();
+        }
+
+        private void l9r6_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r6";
+            menter();
+        }
+
+        private void l7r4_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l7r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r7";
+            menter();
+        }
+
+        private void l7r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r8";
+            menter();
+        }
+
+        private void l7r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l7r9";
+            menter();
+        }
+
+        private void l8r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r7";
+            menter();
+        }
+
+        private void l8r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r8";
+            menter();
+        }
+
+        private void l8r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l8r9";
+            menter();
+        }
+
+        private void l9r7_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r7";
+            menter();
+        }
+
+        private void l9r8_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r8";
+            menter();
+        }
+
+        private void l9r9_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l9r9";
+            menter();
+        }
+
+        private void l7r7_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
     }
 }

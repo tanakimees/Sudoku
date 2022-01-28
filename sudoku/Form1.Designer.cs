@@ -1094,6 +1094,8 @@ namespace sudoku
             this.l9r9.TabIndex = 194;
             this.l9r9.Text = "0";
             this.l9r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r9.MouseEnter += new System.EventHandler(this.l9r9_MouseEnter);
+            this.l9r9.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l6r9
             // 
@@ -1106,6 +1108,8 @@ namespace sudoku
             this.l6r9.TabIndex = 193;
             this.l6r9.Text = "0";
             this.l6r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r9.MouseEnter += new System.EventHandler(this.l6r9_MouseEnter);
+            this.l6r9.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l6r6
             // 
@@ -1118,6 +1122,8 @@ namespace sudoku
             this.l6r6.TabIndex = 192;
             this.l6r6.Text = "0";
             this.l6r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r6.MouseEnter += new System.EventHandler(this.l6r6_MouseEnter);
+            this.l6r6.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l9r6
             // 
@@ -1130,6 +1136,8 @@ namespace sudoku
             this.l9r6.TabIndex = 191;
             this.l9r6.Text = "0";
             this.l9r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r6.MouseEnter += new System.EventHandler(this.l9r6_MouseEnter);
+            this.l9r6.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l9r3
             // 
@@ -1142,6 +1150,8 @@ namespace sudoku
             this.l9r3.TabIndex = 190;
             this.l9r3.Text = "0";
             this.l9r3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r3.MouseEnter += new System.EventHandler(this.l9r3_MouseEnter);
+            this.l9r3.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l6r3
             // 
@@ -1154,6 +1164,8 @@ namespace sudoku
             this.l6r3.TabIndex = 189;
             this.l6r3.Text = "0";
             this.l6r3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r3.MouseEnter += new System.EventHandler(this.l6r3_MouseEnter);
+            this.l6r3.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l7r4
             // 
@@ -1166,6 +1178,8 @@ namespace sudoku
             this.l7r4.TabIndex = 188;
             this.l7r4.Text = "0";
             this.l7r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r4.MouseEnter += new System.EventHandler(this.l7r4_MouseEnter);
+            this.l7r4.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l7r7
             // 
@@ -1178,6 +1192,8 @@ namespace sudoku
             this.l7r7.TabIndex = 187;
             this.l7r7.Text = "0";
             this.l7r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r7.MouseEnter += new System.EventHandler(this.l7r7_MouseEnter);
+            this.l7r7.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l4r7
             // 
@@ -1190,6 +1206,8 @@ namespace sudoku
             this.l4r7.TabIndex = 186;
             this.l4r7.Text = "0";
             this.l4r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r7.MouseEnter += new System.EventHandler(this.l4r7_MouseEnter);
+            this.l4r7.MouseLeave += new System.EventHandler(this.l4r7_MouseLeave);
             // 
             // l4r4
             // 
@@ -1202,6 +1220,8 @@ namespace sudoku
             this.l4r4.TabIndex = 185;
             this.l4r4.Text = "0";
             this.l4r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r4.MouseEnter += new System.EventHandler(this.l4r4_MouseEnter);
+            this.l4r4.MouseLeave += new System.EventHandler(this.l4r4_MouseLeave);
             // 
             // l4r6
             // 
@@ -1214,6 +1234,8 @@ namespace sudoku
             this.l4r6.TabIndex = 184;
             this.l4r6.Text = "0";
             this.l4r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r6.MouseEnter += new System.EventHandler(this.l4r6_MouseEnter);
+            this.l4r6.MouseLeave += new System.EventHandler(this.l4r6_MouseLeave);
             // 
             // l4r9
             // 
@@ -1226,6 +1248,8 @@ namespace sudoku
             this.l4r9.TabIndex = 183;
             this.l4r9.Text = "0";
             this.l4r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r9.MouseEnter += new System.EventHandler(this.l4r9_MouseEnter);
+            this.l4r9.MouseLeave += new System.EventHandler(this.l4r9_MouseLeave);
             // 
             // l7r9
             // 
@@ -1238,6 +1262,8 @@ namespace sudoku
             this.l7r9.TabIndex = 182;
             this.l7r9.Text = "0";
             this.l7r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r9.MouseEnter += new System.EventHandler(this.l7r9_MouseEnter);
+            this.l7r9.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l7r6
             // 
@@ -1250,6 +1276,8 @@ namespace sudoku
             this.l7r6.TabIndex = 181;
             this.l7r6.Text = "0";
             this.l7r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r6.MouseEnter += new System.EventHandler(this.l7r6_MouseEnter);
+            this.l7r6.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l7r3
             // 
@@ -1262,6 +1290,8 @@ namespace sudoku
             this.l7r3.TabIndex = 180;
             this.l7r3.Text = "0";
             this.l7r3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r3.MouseEnter += new System.EventHandler(this.l7r3_MouseEnter);
+            this.l7r3.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l4r3
             // 
@@ -1274,6 +1304,8 @@ namespace sudoku
             this.l4r3.TabIndex = 179;
             this.l4r3.Text = "0";
             this.l4r3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r3.MouseEnter += new System.EventHandler(this.l4r3_MouseEnter);
+            this.l4r3.MouseLeave += new System.EventHandler(this.l4r3_MouseLeave);
             // 
             // l7r1
             // 
@@ -1286,6 +1318,8 @@ namespace sudoku
             this.l7r1.TabIndex = 178;
             this.l7r1.Text = "0";
             this.l7r1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r1.MouseEnter += new System.EventHandler(this.l7r1_MouseEnter);
+            this.l7r1.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l3r9
             // 
@@ -1298,6 +1332,8 @@ namespace sudoku
             this.l3r9.TabIndex = 177;
             this.l3r9.Text = "0";
             this.l3r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l3r9.MouseEnter += new System.EventHandler(this.l3r9_MouseEnter);
+            this.l3r9.MouseLeave += new System.EventHandler(this.l3r9_MouseLeave);
             // 
             // l3r6
             // 
@@ -1310,6 +1346,8 @@ namespace sudoku
             this.l3r6.TabIndex = 176;
             this.l3r6.Text = "0";
             this.l3r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l3r6.MouseEnter += new System.EventHandler(this.l3r6_MouseEnter);
+            this.l3r6.MouseLeave += new System.EventHandler(this.l3r6_MouseLeave);
             // 
             // l3r3
             // 
@@ -1350,6 +1388,8 @@ namespace sudoku
             this.l3r4.TabIndex = 173;
             this.l3r4.Text = "0";
             this.l3r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l3r4.MouseEnter += new System.EventHandler(this.l3r4_MouseEnter);
+            this.l3r4.MouseLeave += new System.EventHandler(this.l3r4_MouseLeave);
             // 
             // l6r1
             // 
@@ -1362,6 +1402,8 @@ namespace sudoku
             this.l6r1.TabIndex = 172;
             this.l6r1.Text = "0";
             this.l6r1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r1.MouseEnter += new System.EventHandler(this.l6r1_MouseEnter);
+            this.l6r1.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l6r4
             // 
@@ -1374,6 +1416,8 @@ namespace sudoku
             this.l6r4.TabIndex = 171;
             this.l6r4.Text = "0";
             this.l6r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r4.MouseEnter += new System.EventHandler(this.l6r4_MouseEnter);
+            this.l6r4.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l9r1
             // 
@@ -1386,6 +1430,8 @@ namespace sudoku
             this.l9r1.TabIndex = 170;
             this.l9r1.Text = "0";
             this.l9r1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r1.MouseEnter += new System.EventHandler(this.l9r1_MouseEnter);
+            this.l9r1.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l9r4
             // 
@@ -1398,6 +1444,8 @@ namespace sudoku
             this.l9r4.TabIndex = 169;
             this.l9r4.Text = "0";
             this.l9r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r4.MouseEnter += new System.EventHandler(this.l9r4_MouseEnter);
+            this.l9r4.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l9r7
             // 
@@ -1410,6 +1458,8 @@ namespace sudoku
             this.l9r7.TabIndex = 168;
             this.l9r7.Text = "0";
             this.l9r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r7.MouseEnter += new System.EventHandler(this.l9r7_MouseEnter);
+            this.l9r7.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l6r7
             // 
@@ -1422,6 +1472,8 @@ namespace sudoku
             this.l6r7.TabIndex = 167;
             this.l6r7.Text = "0";
             this.l6r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r7.MouseEnter += new System.EventHandler(this.l6r7_MouseEnter);
+            this.l6r7.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l6r5
             // 
@@ -1434,6 +1486,8 @@ namespace sudoku
             this.l6r5.TabIndex = 166;
             this.l6r5.Text = "0";
             this.l6r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r5.MouseEnter += new System.EventHandler(this.l6r5_MouseEnter);
+            this.l6r5.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l9r5
             // 
@@ -1446,6 +1500,8 @@ namespace sudoku
             this.l9r5.TabIndex = 165;
             this.l9r5.Text = "0";
             this.l9r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r5.MouseEnter += new System.EventHandler(this.l9r5_MouseEnter);
+            this.l9r5.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l9r2
             // 
@@ -1458,6 +1514,8 @@ namespace sudoku
             this.l9r2.TabIndex = 164;
             this.l9r2.Text = "0";
             this.l9r2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r2.MouseEnter += new System.EventHandler(this.l9r2_MouseEnter);
+            this.l9r2.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l6r2
             // 
@@ -1470,6 +1528,8 @@ namespace sudoku
             this.l6r2.TabIndex = 163;
             this.l6r2.Text = "0";
             this.l6r2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r2.MouseEnter += new System.EventHandler(this.l6r2_MouseEnter);
+            this.l6r2.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l3r2
             // 
@@ -1496,6 +1556,8 @@ namespace sudoku
             this.l3r5.TabIndex = 161;
             this.l3r5.Text = "0";
             this.l3r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l3r5.MouseEnter += new System.EventHandler(this.l3r5_MouseEnter);
+            this.l3r5.MouseLeave += new System.EventHandler(this.l3r5_MouseLeave);
             // 
             // l8r9
             // 
@@ -1508,6 +1570,8 @@ namespace sudoku
             this.l8r9.TabIndex = 160;
             this.l8r9.Text = "0";
             this.l8r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r9.MouseEnter += new System.EventHandler(this.l8r9_MouseEnter);
+            this.l8r9.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l5r9
             // 
@@ -1520,6 +1584,8 @@ namespace sudoku
             this.l5r9.TabIndex = 159;
             this.l5r9.Text = "0";
             this.l5r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r9.MouseEnter += new System.EventHandler(this.l5r9_MouseEnter);
+            this.l5r9.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l2r9
             // 
@@ -1532,6 +1598,8 @@ namespace sudoku
             this.l2r9.TabIndex = 158;
             this.l2r9.Text = "0";
             this.l2r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l2r9.MouseEnter += new System.EventHandler(this.l2r9_MouseEnter);
+            this.l2r9.MouseLeave += new System.EventHandler(this.l2r9_MouseLeave);
             // 
             // l2r6
             // 
@@ -1544,6 +1612,8 @@ namespace sudoku
             this.l2r6.TabIndex = 157;
             this.l2r6.Text = "0";
             this.l2r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l2r6.MouseEnter += new System.EventHandler(this.l2r6_MouseEnter);
+            this.l2r6.MouseLeave += new System.EventHandler(this.l2r6_MouseLeave);
             // 
             // l5r6
             // 
@@ -1556,6 +1626,8 @@ namespace sudoku
             this.l5r6.TabIndex = 156;
             this.l5r6.Text = "0";
             this.l5r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r6.MouseEnter += new System.EventHandler(this.l5r6_MouseEnter);
+            this.l5r6.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l8r6
             // 
@@ -1568,6 +1640,8 @@ namespace sudoku
             this.l8r6.TabIndex = 155;
             this.l8r6.Text = "0";
             this.l8r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r6.MouseEnter += new System.EventHandler(this.l8r6_MouseEnter);
+            this.l8r6.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l8r3
             // 
@@ -1580,6 +1654,8 @@ namespace sudoku
             this.l8r3.TabIndex = 154;
             this.l8r3.Text = "0";
             this.l8r3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r3.MouseEnter += new System.EventHandler(this.l8r3_MouseEnter);
+            this.l8r3.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l5r3
             // 
@@ -1592,6 +1668,8 @@ namespace sudoku
             this.l5r3.TabIndex = 153;
             this.l5r3.Text = "0";
             this.l5r3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r3.MouseEnter += new System.EventHandler(this.l5r3_MouseEnter);
+            this.l5r3.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l8r1
             // 
@@ -1604,6 +1682,8 @@ namespace sudoku
             this.l8r1.TabIndex = 152;
             this.l8r1.Text = "0";
             this.l8r1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r1.MouseEnter += new System.EventHandler(this.l8r1_MouseEnter);
+            this.l8r1.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l5r1
             // 
@@ -1616,6 +1696,8 @@ namespace sudoku
             this.l5r1.TabIndex = 151;
             this.l5r1.Text = "0";
             this.l5r1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r1.MouseEnter += new System.EventHandler(this.l5r1_MouseEnter);
+            this.l5r1.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l2r1
             // 
@@ -1642,6 +1724,8 @@ namespace sudoku
             this.l2r4.TabIndex = 149;
             this.l2r4.Text = "0";
             this.l2r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l2r4.MouseEnter += new System.EventHandler(this.l2r4_MouseEnter);
+            this.l2r4.MouseLeave += new System.EventHandler(this.l2r4_MouseLeave);
             // 
             // l5r4
             // 
@@ -1654,6 +1738,8 @@ namespace sudoku
             this.l5r4.TabIndex = 148;
             this.l5r4.Text = "0";
             this.l5r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r4.MouseEnter += new System.EventHandler(this.l5r4_MouseEnter);
+            this.l5r4.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l8r4
             // 
@@ -1666,6 +1752,8 @@ namespace sudoku
             this.l8r4.TabIndex = 147;
             this.l8r4.Text = "0";
             this.l8r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r4.MouseEnter += new System.EventHandler(this.l8r4_MouseEnter);
+            this.l8r4.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l8r7
             // 
@@ -1678,6 +1766,8 @@ namespace sudoku
             this.l8r7.TabIndex = 146;
             this.l8r7.Text = "0";
             this.l8r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r7.MouseEnter += new System.EventHandler(this.l8r7_MouseEnter);
+            this.l8r7.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l5r7
             // 
@@ -1690,6 +1780,8 @@ namespace sudoku
             this.l5r7.TabIndex = 145;
             this.l5r7.Text = "0";
             this.l5r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r7.MouseEnter += new System.EventHandler(this.l5r7_MouseEnter);
+            this.l5r7.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l9r8
             // 
@@ -1702,6 +1794,8 @@ namespace sudoku
             this.l9r8.TabIndex = 144;
             this.l9r8.Text = "0";
             this.l9r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l9r8.MouseEnter += new System.EventHandler(this.l9r8_MouseEnter);
+            this.l9r8.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l6r8
             // 
@@ -1714,6 +1808,8 @@ namespace sudoku
             this.l6r8.TabIndex = 143;
             this.l6r8.Text = "0";
             this.l6r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l6r8.MouseEnter += new System.EventHandler(this.l6r8_MouseEnter);
+            this.l6r8.MouseLeave += new System.EventHandler(this.l6r1_MouseLeave);
             // 
             // l7r2
             // 
@@ -1726,6 +1822,8 @@ namespace sudoku
             this.l7r2.TabIndex = 142;
             this.l7r2.Text = "0";
             this.l7r2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r2.MouseEnter += new System.EventHandler(this.l7r2_MouseEnter);
+            this.l7r2.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l4r2
             // 
@@ -1738,6 +1836,8 @@ namespace sudoku
             this.l4r2.TabIndex = 141;
             this.l4r2.Text = "0";
             this.l4r2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r2.MouseEnter += new System.EventHandler(this.l4r2_MouseEnter);
+            this.l4r2.MouseLeave += new System.EventHandler(this.l4r2_MouseLeave);
             // 
             // l4r5
             // 
@@ -1750,6 +1850,8 @@ namespace sudoku
             this.l4r5.TabIndex = 140;
             this.l4r5.Text = "0";
             this.l4r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r5.MouseEnter += new System.EventHandler(this.l4r5_MouseEnter);
+            this.l4r5.MouseLeave += new System.EventHandler(this.l4r5_MouseLeave);
             // 
             // l7r5
             // 
@@ -1762,6 +1864,8 @@ namespace sudoku
             this.l7r5.TabIndex = 139;
             this.l7r5.Text = "0";
             this.l7r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r5.MouseEnter += new System.EventHandler(this.l7r5_MouseEnter);
+            this.l7r5.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l7r8
             // 
@@ -1774,6 +1878,8 @@ namespace sudoku
             this.l7r8.TabIndex = 138;
             this.l7r8.Text = "0";
             this.l7r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l7r8.MouseEnter += new System.EventHandler(this.l7r8_MouseEnter);
+            this.l7r8.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l8r8
             // 
@@ -1787,6 +1893,8 @@ namespace sudoku
             this.l8r8.TabIndex = 137;
             this.l8r8.Text = "0";
             this.l8r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r8.MouseEnter += new System.EventHandler(this.l8r8_MouseEnter);
+            this.l8r8.MouseLeave += new System.EventHandler(this.l7r7_MouseLeave);
             // 
             // l5r8
             // 
@@ -1800,6 +1908,8 @@ namespace sudoku
             this.l5r8.TabIndex = 136;
             this.l5r8.Text = "0";
             this.l5r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r8.MouseEnter += new System.EventHandler(this.l5r8_MouseEnter);
+            this.l5r8.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l5r5
             // 
@@ -1813,6 +1923,8 @@ namespace sudoku
             this.l5r5.TabIndex = 135;
             this.l5r5.Text = "0";
             this.l5r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r5.MouseEnter += new System.EventHandler(this.l5r5_MouseEnter);
+            this.l5r5.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l8r5
             // 
@@ -1826,6 +1938,8 @@ namespace sudoku
             this.l8r5.TabIndex = 134;
             this.l8r5.Text = "0";
             this.l8r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r5.MouseEnter += new System.EventHandler(this.l8r5_MouseEnter);
+            this.l8r5.MouseLeave += new System.EventHandler(this.l7r4_MouseLeave);
             // 
             // l8r2
             // 
@@ -1839,6 +1953,8 @@ namespace sudoku
             this.l8r2.TabIndex = 133;
             this.l8r2.Text = "0";
             this.l8r2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l8r2.MouseEnter += new System.EventHandler(this.l8r2_MouseEnter);
+            this.l8r2.MouseLeave += new System.EventHandler(this.l7r1_MouseLeave);
             // 
             // l5r2
             // 
@@ -1852,6 +1968,8 @@ namespace sudoku
             this.l5r2.TabIndex = 132;
             this.l5r2.Text = "0";
             this.l5r2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l5r2.MouseEnter += new System.EventHandler(this.l5r2_MouseEnter);
+            this.l5r2.MouseLeave += new System.EventHandler(this.l5r1_MouseLeave);
             // 
             // l2r2
             // 
@@ -1880,6 +1998,8 @@ namespace sudoku
             this.l2r5.TabIndex = 130;
             this.l2r5.Text = "0";
             this.l2r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l2r5.MouseEnter += new System.EventHandler(this.l2r5_MouseEnter);
+            this.l2r5.MouseLeave += new System.EventHandler(this.l2r5_MouseLeave);
             // 
             // l1r9
             // 
@@ -1892,6 +2012,8 @@ namespace sudoku
             this.l1r9.TabIndex = 129;
             this.l1r9.Text = "0";
             this.l1r9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l1r9.MouseEnter += new System.EventHandler(this.l1r9_MouseEnter);
+            this.l1r9.MouseLeave += new System.EventHandler(this.l1r9_MouseLeave);
             // 
             // l1r8
             // 
@@ -1904,6 +2026,8 @@ namespace sudoku
             this.l1r8.TabIndex = 128;
             this.l1r8.Text = "0";
             this.l1r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l1r8.MouseEnter += new System.EventHandler(this.l1r8_MouseEnter);
+            this.l1r8.MouseLeave += new System.EventHandler(this.l1r8_MouseLeave);
             // 
             // l1r7
             // 
@@ -1916,6 +2040,8 @@ namespace sudoku
             this.l1r7.TabIndex = 127;
             this.l1r7.Text = "0";
             this.l1r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l1r7.MouseEnter += new System.EventHandler(this.l1r7_MouseEnter);
+            this.l1r7.MouseLeave += new System.EventHandler(this.l1r7_MouseLeave);
             // 
             // l4r8
             // 
@@ -1928,6 +2054,8 @@ namespace sudoku
             this.l4r8.TabIndex = 85;
             this.l4r8.Text = "0";
             this.l4r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r8.MouseEnter += new System.EventHandler(this.l4r8_MouseEnter);
+            this.l4r8.MouseLeave += new System.EventHandler(this.l4r8_MouseLeave);
             // 
             // l3r8
             // 
@@ -1940,6 +2068,8 @@ namespace sudoku
             this.l3r8.TabIndex = 77;
             this.l3r8.Text = "0";
             this.l3r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l3r8.MouseEnter += new System.EventHandler(this.l3r8_MouseEnter);
+            this.l3r8.MouseLeave += new System.EventHandler(this.l3r8_MouseLeave);
             // 
             // l3r7
             // 
@@ -1952,6 +2082,8 @@ namespace sudoku
             this.l3r7.TabIndex = 76;
             this.l3r7.Text = "0";
             this.l3r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l3r7.MouseEnter += new System.EventHandler(this.l3r7_MouseEnter);
+            this.l3r7.MouseLeave += new System.EventHandler(this.l3r7_MouseLeave);
             // 
             // l2r8
             // 
@@ -1965,6 +2097,8 @@ namespace sudoku
             this.l2r8.TabIndex = 69;
             this.l2r8.Text = "0";
             this.l2r8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l2r8.MouseEnter += new System.EventHandler(this.l2r8_MouseEnter);
+            this.l2r8.MouseLeave += new System.EventHandler(this.l2r8_MouseLeave);
             // 
             // l2r7
             // 
@@ -1977,6 +2111,8 @@ namespace sudoku
             this.l2r7.TabIndex = 68;
             this.l2r7.Text = "0";
             this.l2r7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l2r7.MouseEnter += new System.EventHandler(this.l2r7_MouseEnter);
+            this.l2r7.MouseLeave += new System.EventHandler(this.l2r7_MouseLeave);
             // 
             // l2r3
             // 
@@ -2003,6 +2139,8 @@ namespace sudoku
             this.l4r1.TabIndex = 57;
             this.l4r1.Text = "0";
             this.l4r1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4r1.MouseEnter += new System.EventHandler(this.l4r1_MouseEnter);
+            this.l4r1.MouseLeave += new System.EventHandler(this.l4r1_MouseLeave);
             // 
             // l1r6
             // 
@@ -2015,6 +2153,8 @@ namespace sudoku
             this.l1r6.TabIndex = 51;
             this.l1r6.Text = "0";
             this.l1r6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l1r6.MouseEnter += new System.EventHandler(this.l1r6_MouseEnter);
+            this.l1r6.MouseLeave += new System.EventHandler(this.l1r6_MouseLeave);
             // 
             // l1r5
             // 
@@ -2027,6 +2167,8 @@ namespace sudoku
             this.l1r5.TabIndex = 50;
             this.l1r5.Text = "0";
             this.l1r5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l1r5.MouseEnter += new System.EventHandler(this.l1r5_MouseEnter);
+            this.l1r5.MouseLeave += new System.EventHandler(this.l1r5_MouseLeave);
             // 
             // l1r4
             // 
@@ -2039,6 +2181,8 @@ namespace sudoku
             this.l1r4.TabIndex = 49;
             this.l1r4.Text = "0";
             this.l1r4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l1r4.MouseEnter += new System.EventHandler(this.l1r4_MouseEnter);
+            this.l1r4.MouseLeave += new System.EventHandler(this.l1r4_MouseLeave);
             // 
             // l1r3
             // 
@@ -2700,7 +2844,7 @@ namespace sudoku
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Opacity = 0D;
-            this.Text = "88888888";
+            this.Text = "Sudoku";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
