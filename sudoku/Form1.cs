@@ -584,122 +584,130 @@ namespace sudoku
             }
         }
 
-
-        //TABLE UI
-
-        private void l1r1_MouseEnter(object sender, EventArgs e)
-        {
-            l1r1.ForeColor = Color.White;
-            l1r1.BackColor = Color.FromArgb(45, 45, 45);
-        }
-
-        private void l1r1_MouseLeave(object sender, EventArgs e)
-        {
-            if(lblname == "l1r1")
-            {
-                l1r1.BackColor = Color.FromArgb(45, 45, 45);
-                l1r1.ForeColor = Color.White;
-            }
-            else
-            {
-                l1r1.BackColor = Color.FromArgb(25,25,25);
-                l1r1.ForeColor = Color.Gray;
-            }
-        }
-
-        void clearbc()
+        void menter()
         {
             foreach(Label l in panel1.Controls.OfType<Label>())
             {
                 if(l.Name == lblname)
                 {
-                    l.BackColor = Color.FromArgb(25, 25, 25);
-                    l.ForeColor = Color.Gray;
+                    l.ForeColor = Color.White;
+                    l.BackColor = Color.FromArgb(35, 35, 35);
                 }
             }
         }
-        private void l1r1_Click(object sender, EventArgs e)
+
+        void mleave()
         {
-            clearbc();
+            foreach (Label l in panel1.Controls.OfType<Label>())
+            {
+                if (l.Name == lblname)
+                {
+                    l.ForeColor = Color.Gray;
+                    l.BackColor = Color.FromArgb(25,25,25);
+                }
+            }
+        }
+
+        private void l1r1_MouseEnter(object sender, EventArgs e)
+        {
             lblname = "l1r1";
+            menter();
+        }
+
+        private void l1r1_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
         }
 
         private void l1r2_MouseEnter(object sender, EventArgs e)
         {
-            l1r2.ForeColor = Color.White;
-            l1r2.BackColor = Color.FromArgb(45, 45, 45);
+            lblname = "l1r2";
+            menter();
         }
 
         private void l1r2_MouseLeave(object sender, EventArgs e)
         {
-            if (lblname == "l1r2")
-            {
-                l1r2.BackColor = Color.FromArgb(45, 45, 45);
-                l1r2.ForeColor = Color.White;
-            }
-            else
-            {
-                l1r2.BackColor = Color.FromArgb(25, 25, 25);
-                l1r2.ForeColor = Color.Gray;
-            }
-        }
-
-        private void l1r2_Click(object sender, EventArgs e)
-        {
-            clearbc();
-            lblname = "l1r2";
+            mleave();
         }
 
         private void l1r3_MouseEnter(object sender, EventArgs e)
         {
-            l1r3.ForeColor = Color.White;
-            l1r3.BackColor = Color.FromArgb(45, 45, 45);
+            lblname = "l1r3";
+            menter();
         }
 
         private void l1r3_MouseLeave(object sender, EventArgs e)
         {
-            if (lblname == "l1r3")
-            {
-                l1r3.BackColor = Color.FromArgb(45, 45, 45);
-                l1r3.ForeColor = Color.White;
-            }
-            else
-            {
-                l1r3.BackColor = Color.FromArgb(25, 25, 25);
-                l1r3.ForeColor = Color.Gray;
-            }
-        }
-
-        private void l1r3_Click(object sender, EventArgs e)
-        {
-            clearbc();
-            lblname = "l1r3";
+            mleave();
         }
 
         private void l2r1_MouseEnter(object sender, EventArgs e)
         {
-            l2r1.ForeColor = Color.White;
-            l2r1.BackColor = Color.FromArgb(45, 45, 45);
+            lblname = "l2r1";
+            menter();
         }
 
         private void l2r1_MouseLeave(object sender, EventArgs e)
         {
-            if (lblname == "l2r1")
-            {
-                l2r1.BackColor = Color.FromArgb(45, 45, 45);
-                l2r1.ForeColor = Color.White;
-            }
-            else
-            {
-                l2r1.BackColor = Color.FromArgb(25, 25, 25);
-                l2r1.ForeColor = Color.Gray;
-            }
+            mleave();
         }
 
-        private void l2r1_Click(object sender, EventArgs e)
+        private void l2r2_MouseEnter(object sender, EventArgs e)
         {
-            clearbc();
-            lblname = "l2r1";
+            lblname = "l2r2";
+            menter();
         }
+
+        private void l2r2_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l2r3_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l2r3";
+            menter();
+        }
+
+        private void l2r3_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r1_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r1";
+            menter();
+        }
+
+        private void l3r1_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r2_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r2";
+            menter();
+        }
+
+        private void l3r2_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        private void l3r3_MouseEnter(object sender, EventArgs e)
+        {
+            lblname = "l3r3";
+            menter();
+        }
+
+        private void l3r3_MouseLeave(object sender, EventArgs e)
+        {
+            mleave();
+        }
+
+        //TABLE UI
+
     }
 }
