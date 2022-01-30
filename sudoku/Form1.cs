@@ -1514,378 +1514,504 @@ namespace sudoku
 
         private void l3r1_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r1";         
             lbltxt = l3r1.Text;
             lblclick();
         }
 
         private void l3r2_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r2";
             lbltxt = l3r2.Text;
             lblclick();
         }
 
         private void l3r3_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r3";
             lbltxt = l3r3.Text;
             lblclick();
         }
 
         private void l3r4_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r4";
             lbltxt = l3r4.Text;
             lblclick();
         }
 
         private void l3r5_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r5";
             lbltxt = l3r5.Text;
             lblclick();
         }
 
         private void l3r6_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r6";
             lbltxt = l3r6.Text;
             lblclick();
         }
 
         private void l3r7_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r7";
             lbltxt = l3r7.Text;
             lblclick();
         }
 
         private void l3r8_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r8";
             lbltxt = l3r8.Text;
             lblclick();
         }
 
         private void l3r9_Click(object sender, EventArgs e)
         {
+            line = "l3";
+            row = "r9";
             lbltxt = l3r9.Text;
             lblclick();
         }
 
         private void l4r1_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r1";
             lbltxt = l4r1.Text;
             lblclick();
         }
 
         private void l4r2_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r2";
             lbltxt = l4r2.Text;
             lblclick();
         }
 
         private void l4r3_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r3";
             lbltxt = l4r3.Text;
             lblclick();
         }
 
         private void l4r4_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r4";
             lbltxt = l4r4.Text;
             lblclick();
         }
 
         private void l4r5_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r5";
             lbltxt = l4r5.Text;
             lblclick();
         }
 
         private void l4r6_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r6";
             lbltxt = l4r6.Text;
             lblclick();
         }
 
         private void l4r7_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r7";
             lbltxt = l4r7.Text;
             lblclick();
         }
 
         private void l4r8_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r8";
             lbltxt = l4r8.Text;
             lblclick();
         }
 
         private void l4r9_Click(object sender, EventArgs e)
         {
+            line = "l4";
+            row = "r9";
             lbltxt = l4r9.Text;
             lblclick();
         }
 
         private void l5r1_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r1";
             lbltxt = l5r1.Text;
             lblclick();
         }
 
         private void l5r2_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r2";
             lbltxt = l5r2.Text;
             lblclick();
         }
 
         private void l5r3_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r3";
             lbltxt = l5r3.Text;
             lblclick();
         }
 
         private void l5r4_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r4";
             lbltxt = l5r4.Text;
             lblclick();
         }
 
         private void l5r5_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r5";
             lbltxt = l5r5.Text;
             lblclick();
         }
 
         private void l5r6_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r6";
             lbltxt = l5r6.Text;
             lblclick();
         }
 
         private void l5r7_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r7";
             lbltxt = l5r7.Text;
             lblclick();
         }
 
         private void l5r8_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r8";
             lbltxt = l5r8.Text;
             lblclick();
         }
 
         private void l5r9_Click(object sender, EventArgs e)
         {
+            line = "l5";
+            row = "r9";
             lbltxt = l5r9.Text;
             lblclick();
         }
 
         private void l6r9_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r9";
             lbltxt = l6r9.Text;
             lblclick();
         }
 
         private void l6r2_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r2";
             lbltxt = l6r2.Text;
             lblclick();
         }
 
         private void l6r3_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r3";
             lbltxt = l6r3.Text;
             lblclick();
         }
 
         private void l6r4_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r4";
             lbltxt = l6r4.Text;
             lblclick();
         }
 
         private void l6r5_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r5";
             lbltxt = l6r5.Text;
             lblclick();
         }
 
         private void l6r6_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r6";
             lbltxt = l6r6.Text;
             lblclick();
         }
 
         private void l6r7_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r7";
             lbltxt = l6r7.Text;
             lblclick();
         }
 
         private void l6r8_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r8";
             lbltxt = l6r8.Text;
             lblclick();
         }
 
         private void l6r1_Click(object sender, EventArgs e)
         {
+            line = "l6";
+            row = "r1";
             lbltxt = l6r1.Text;
             lblclick();
         }
 
         private void l7r9_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r9";
             lbltxt = l7r9.Text;
             lblclick();
         }
 
         private void l7r2_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r2";
             lbltxt = l7r2.Text;
             lblclick();
         }
 
         private void l7r3_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r3";
             lbltxt = l7r3.Text;
             lblclick();
         }
 
         private void l7r4_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r4";
             lbltxt = l7r4.Text;
             lblclick();
         }
 
         private void l7r5_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r5";
             lbltxt = l7r5.Text;
             lblclick();
         }
 
         private void l7r6_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r6";
             lbltxt = l7r6.Text;
             lblclick();
         }
 
         private void l7r7_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r7";
             lbltxt = l7r7.Text;
             lblclick();
         }
 
         private void l7r8_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r8";
             lbltxt = l7r8.Text;
             lblclick();
         }
 
         private void l7r1_Click(object sender, EventArgs e)
         {
+            line = "l7";
+            row = "r1";
             lbltxt = l7r1.Text;
             lblclick();
         }
 
         private void l8r9_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r9";
             lbltxt = l8r9.Text;
             lblclick();
         }
 
         private void l8r2_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r2";
             lbltxt = l8r2.Text;
             lblclick();
         }
 
         private void l8r3_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r3";
             lbltxt = l8r3.Text;
             lblclick();
         }
 
         private void l8r4_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r4";
             lbltxt = l8r4.Text;
             lblclick();
         }
 
         private void l8r5_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r5";
             lbltxt = l8r5.Text;
             lblclick();
         }
 
         private void l8r6_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r6";
             lbltxt = l8r6.Text;
             lblclick();
         }
 
         private void l8r7_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r7";
             lbltxt = l8r7.Text;
             lblclick();
         }
 
         private void l8r8_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r8";
             lbltxt = l8r8.Text;
             lblclick();
         }
 
         private void l8r1_Click(object sender, EventArgs e)
         {
+            line = "l8";
+            row = "r1";
             lbltxt = l8r1.Text;
             lblclick();
         }
 
         private void l9r9_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r9";
             lbltxt = l9r9.Text;
             lblclick();
         }
 
         private void l9r2_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r2";
             lbltxt = l9r2.Text;
             lblclick();
         }
 
         private void l9r3_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r3";
             lbltxt = l9r3.Text;
             lblclick();
         }
 
         private void l9r4_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r4";
             lbltxt = l9r4.Text;
             lblclick();
         }
 
         private void l9r5_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r5";
             lbltxt = l9r5.Text;
             lblclick();
         }
 
         private void l9r6_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r6";
             lbltxt = l9r6.Text;
             lblclick();
         }
 
         private void l9r7_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r7";
             lbltxt = l9r7.Text;
             lblclick();
         }
 
         private void l9r8_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r8";
             lbltxt = l9r8.Text;
             lblclick();
         }
 
         private void l9r1_Click(object sender, EventArgs e)
         {
+            line = "l9";
+            row = "r1";
             lbltxt = l9r1.Text;
             lblclick();
         }
