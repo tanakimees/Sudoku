@@ -25,6 +25,8 @@ namespace sudoku
         string line = "s";
         string row = "s";
 
+        int bigcell = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -1370,7 +1372,7 @@ namespace sudoku
         {
             row = "r1";
             line = "l1";
-
+            bigcell = 1;
             lbltxt = l1r1.Text;
             lblclick();
         }
@@ -2014,6 +2016,11 @@ namespace sudoku
             row = "r1";
             lbltxt = l9r1.Text;
             lblclick();
+        }
+
+        private void textBox69_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
