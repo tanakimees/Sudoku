@@ -1389,6 +1389,7 @@ namespace sudoku
         {
             row = "r3";
             line = "l1";
+            bigcell = 1;
             lbltxt = l1r3.Text;
             lblclick();
         }
@@ -1429,6 +1430,7 @@ namespace sudoku
         {
             row = "r2";
             line = "l1";
+            bigcell = 1;
             lbltxt = l1r2.Text;
             lblclick();
         }
@@ -1454,6 +1456,7 @@ namespace sudoku
         {
             row = "r2";
             line = "l2";
+            bigcell = 1;
             lbltxt = l2r2.Text;
             lblclick();
         }
@@ -1461,6 +1464,7 @@ namespace sudoku
         private void l2r3_Click(object sender, EventArgs e)
         {
             row = "r3";
+            bigcell = 1;
             line = "l2";
             lbltxt = l2r3.Text;
             lblclick();
@@ -1510,6 +1514,7 @@ namespace sudoku
         {
             row = "r1";
             line = "l2";
+            bigcell = 1;
             lbltxt = l2r1.Text;
             lblclick();
         }
@@ -1517,7 +1522,8 @@ namespace sudoku
         private void l3r1_Click(object sender, EventArgs e)
         {
             line = "l3";
-            row = "r1";         
+            row = "r1";
+            bigcell = 1;
             lbltxt = l3r1.Text;
             lblclick();
         }
@@ -1526,6 +1532,7 @@ namespace sudoku
         {
             line = "l3";
             row = "r2";
+            bigcell = 1;
             lbltxt = l3r2.Text;
             lblclick();
         }
@@ -1533,6 +1540,7 @@ namespace sudoku
         private void l3r3_Click(object sender, EventArgs e)
         {
             line = "l3";
+            bigcell = 1;
             row = "r3";
             lbltxt = l3r3.Text;
             lblclick();
