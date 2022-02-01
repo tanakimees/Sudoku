@@ -632,6 +632,12 @@ namespace sudoku
                             l.BackColor = Color.FromArgb(25, 25, 25);
                             l.ForeColor = Color.Gray;
                     }
+
+                    else if(bigcell == 1)
+                    {
+                        //hahahahahaha
+                    }
+
                     else
                     {
                         l.BackColor = Color.FromArgb(25, 25, 25);
@@ -1366,6 +1372,19 @@ namespace sudoku
                     l.ForeColor = Color.Gray;
                     l.BackColor = Color.FromArgb(25, 25, 25);
                 }
+            }
+
+            if(bigcell == 1)
+            {
+                l1r1.BackColor = Color.FromArgb(35, 35, 35);
+                l1r2.BackColor = Color.FromArgb(35, 35, 35);
+                l1r3.BackColor = Color.FromArgb(35, 35, 35);
+                l2r1.BackColor = Color.FromArgb(35, 35, 35);
+                l2r2.BackColor = Color.FromArgb(35, 35, 35);
+                l2r3.BackColor = Color.FromArgb(35, 35, 35);
+                l3r1.BackColor = Color.FromArgb(35, 35, 35);
+                l3r2.BackColor = Color.FromArgb(35, 35, 35);
+                l3r3.BackColor = Color.FromArgb(35, 35, 35);
             }
         }
         private void l1r1_Click(object sender, EventArgs e)
