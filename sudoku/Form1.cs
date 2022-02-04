@@ -27,6 +27,10 @@ namespace sudoku
 
         int bigcell = 0;
 
+        string[] cell1 = { "l1r1","l1r2","l1r3", "l2r1", "l2r2", "l2r3", "l3r1", "l3r2", "l3r3" };
+        string[] cell2 = { "l1r4", "l1r5", "l1r6", "l2r4", "l2r5", "l2r6", "l3r4", "l3r5", "l3r6" };
+        string[] cell3 = { "l1r7", "l1r8", "l1r9", "l2r7", "l2r8", "l2r9", "l3r7", "l3r8", "l3r9" };
+
         public Form1()
         {
             InitializeComponent();
@@ -394,6 +398,7 @@ namespace sudoku
                         row = "s";
                         line = "s";
                         lblname = "";
+                        bigcell = 0;
                         lbltxt = "";
                     }
                     createsudoku.Start();
@@ -599,6 +604,7 @@ namespace sudoku
                 line = "s";
                 lblname = "";
                 lbltxt = "";
+                bigcell = 0;
             }
         }
 
@@ -622,26 +628,62 @@ namespace sudoku
             {
                 if (l.Name == lblname)
                 {
-                    if(l.Name.Contains(line) || l.Name.Contains(row))
+                    if (l.Name.Contains(line) || l.Name.Contains(row))
                     {
-                            l.ForeColor = Color.White;
-                            l.BackColor = Color.FromArgb(35, 35, 35);
+                        l.ForeColor = Color.White;
+                        l.BackColor = Color.FromArgb(35, 35, 35);
                     }
-                    else if(l.Text != lbltxt)
+                    else if (l.Text != lbltxt && l.ForeColor != Color.White && l.BackColor != Color.FromArgb(35,35,35))
                     {
-                            l.BackColor = Color.FromArgb(25, 25, 25);
-                            l.ForeColor = Color.Gray;
+                        l.BackColor = Color.FromArgb(25, 25, 25);
+                        l.ForeColor = Color.Gray;
                     }
-
-                    else if(bigcell == 1)
+                    else if(bigcell != 0)
                     {
-                        //hahahahahaha
+                        if (bigcell == 1)
+                        {
+                            if (cell1.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
+                        else if (bigcell == 2)
+                        {
+                            if (cell2.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
+                        else if (bigcell == 3)
+                        {
+                            if (cell3.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
                     }
-
                     else
                     {
                         l.BackColor = Color.FromArgb(25, 25, 25);
-                        l.ForeColor = Color.White;
+                        l.ForeColor = Color.Gray;
                     }
                 }
             }
@@ -1374,17 +1416,35 @@ namespace sudoku
                 }
             }
 
-            if(bigcell == 1)
+            foreach(Label l in panel1.Controls.OfType<Label>())
             {
-                l1r1.BackColor = Color.FromArgb(35, 35, 35);
-                l1r2.BackColor = Color.FromArgb(35, 35, 35);
-                l1r3.BackColor = Color.FromArgb(35, 35, 35);
-                l2r1.BackColor = Color.FromArgb(35, 35, 35);
-                l2r2.BackColor = Color.FromArgb(35, 35, 35);
-                l2r3.BackColor = Color.FromArgb(35, 35, 35);
-                l3r1.BackColor = Color.FromArgb(35, 35, 35);
-                l3r2.BackColor = Color.FromArgb(35, 35, 35);
-                l3r3.BackColor = Color.FromArgb(35, 35, 35);
+                if (bigcell != 0)
+                {
+                    if (bigcell == 1)
+                    {
+                        if (cell1.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                    else if (bigcell == 2)
+                    {
+                        if (cell2.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                    else if (bigcell == 3)
+                    {
+                        if (cell3.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
             }
         }
         private void l1r1_Click(object sender, EventArgs e)
@@ -1398,6 +1458,7 @@ namespace sudoku
 
         private void l1r8_Click(object sender, EventArgs e)
         {
+            bigcell = 3;
             row = "r8";
             line = "l1";
             lbltxt = l1r8.Text;
@@ -1417,12 +1478,14 @@ namespace sudoku
         {
             row = "r4";
             line = "l1";
+            bigcell = 2;
             lbltxt = l1r4.Text;
             lblclick();
         }
 
         private void l1r5_Click(object sender, EventArgs e)
         {
+            bigcell = 2;
             row = "r5";
             line = "l1";
             lbltxt = l1r5.Text;
@@ -1431,6 +1494,7 @@ namespace sudoku
 
         private void l1r6_Click(object sender, EventArgs e)
         {
+            bigcell = 2;
             row = "r6";
             line = "l1";
             lbltxt = l1r6.Text;
@@ -1439,6 +1503,7 @@ namespace sudoku
 
         private void l1r7_Click(object sender, EventArgs e)
         {
+            bigcell = 3;
             row = "r7";
             line = "l1";
             lbltxt = l1r7.Text;
@@ -1456,6 +1521,7 @@ namespace sudoku
 
         private void l1r9_Click(object sender, EventArgs e)
         {
+            bigcell = 3;
             row = "r9";
             line = "l1";
             lbltxt = l1r9.Text;
@@ -1466,7 +1532,7 @@ namespace sudoku
         {
             row = "r9";
             line = "l2";
-
+            bigcell = 3;
             lbltxt = l2r9.Text;
             lblclick();
         }
@@ -1491,6 +1557,7 @@ namespace sudoku
 
         private void l2r4_Click(object sender, EventArgs e)
         {
+            bigcell = 2;
             row = "r4";
             line = "l2";
             lbltxt = l2r4.Text;
@@ -1499,6 +1566,7 @@ namespace sudoku
 
         private void l2r5_Click(object sender, EventArgs e)
         {
+            bigcell = 2;
             row = "r5";
             line = "l2";
             lbltxt = l2r5.Text;
@@ -1507,6 +1575,7 @@ namespace sudoku
 
         private void l2r6_Click(object sender, EventArgs e)
         {
+            bigcell = 2;
             row = "r6";
             line = "l2";
             lbltxt = l2r6.Text;
@@ -1515,6 +1584,7 @@ namespace sudoku
 
         private void l2r7_Click(object sender, EventArgs e)
         {
+            bigcell = 3;
             row = "r7";
             line = "l2";
             lbltxt = l2r7.Text;
@@ -1523,6 +1593,7 @@ namespace sudoku
 
         private void l2r8_Click(object sender, EventArgs e)
         {
+            bigcell = 3;
             row = "r8";
             line = "l2";
             lbltxt = l2r8.Text;
@@ -1567,6 +1638,7 @@ namespace sudoku
 
         private void l3r4_Click(object sender, EventArgs e)
         {
+            bigcell = 2;
             line = "l3";
             row = "r4";
             lbltxt = l3r4.Text;
@@ -1575,6 +1647,7 @@ namespace sudoku
 
         private void l3r5_Click(object sender, EventArgs e)
         {
+            bigcell = 2;
             line = "l3";
             row = "r5";
             lbltxt = l3r5.Text;
@@ -1583,6 +1656,7 @@ namespace sudoku
 
         private void l3r6_Click(object sender, EventArgs e)
         {
+            bigcell = 2;
             line = "l3";
             row = "r6";
             lbltxt = l3r6.Text;
@@ -1591,6 +1665,7 @@ namespace sudoku
 
         private void l3r7_Click(object sender, EventArgs e)
         {
+            bigcell = 3;
             line = "l3";
             row = "r7";
             lbltxt = l3r7.Text;
@@ -1599,6 +1674,7 @@ namespace sudoku
 
         private void l3r8_Click(object sender, EventArgs e)
         {
+            bigcell = 3;
             line = "l3";
             row = "r8";
             lbltxt = l3r8.Text;
@@ -1607,6 +1683,7 @@ namespace sudoku
 
         private void l3r9_Click(object sender, EventArgs e)
         {
+            bigcell = 3;
             line = "l3";
             row = "r9";
             lbltxt = l3r9.Text;
@@ -1616,6 +1693,7 @@ namespace sudoku
         private void l4r1_Click(object sender, EventArgs e)
         {
             line = "l4";
+            bigcell = 4;
             row = "r1";
             lbltxt = l4r1.Text;
             lblclick();
@@ -1623,6 +1701,7 @@ namespace sudoku
 
         private void l4r2_Click(object sender, EventArgs e)
         {
+            bigcell = 4;
             line = "l4";
             row = "r2";
             lbltxt = l4r2.Text;
@@ -1631,6 +1710,7 @@ namespace sudoku
 
         private void l4r3_Click(object sender, EventArgs e)
         {
+            bigcell = 4;
             line = "l4";
             row = "r3";
             lbltxt = l4r3.Text;
@@ -1639,6 +1719,7 @@ namespace sudoku
 
         private void l4r4_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l4";
             row = "r4";
             lbltxt = l4r4.Text;
@@ -1647,6 +1728,7 @@ namespace sudoku
 
         private void l4r5_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l4";
             row = "r5";
             lbltxt = l4r5.Text;
@@ -1655,6 +1737,7 @@ namespace sudoku
 
         private void l4r6_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l4";
             row = "r6";
             lbltxt = l4r6.Text;
@@ -1663,6 +1746,7 @@ namespace sudoku
 
         private void l4r7_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l4";
             row = "r7";
             lbltxt = l4r7.Text;
@@ -1671,6 +1755,7 @@ namespace sudoku
 
         private void l4r8_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l4";
             row = "r8";
             lbltxt = l4r8.Text;
@@ -1679,6 +1764,7 @@ namespace sudoku
 
         private void l4r9_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l4";
             row = "r9";
             lbltxt = l4r9.Text;
@@ -1687,6 +1773,7 @@ namespace sudoku
 
         private void l5r1_Click(object sender, EventArgs e)
         {
+            bigcell = 4;
             line = "l5";
             row = "r1";
             lbltxt = l5r1.Text;
@@ -1695,6 +1782,7 @@ namespace sudoku
 
         private void l5r2_Click(object sender, EventArgs e)
         {
+            bigcell = 4;
             line = "l5";
             row = "r2";
             lbltxt = l5r2.Text;
@@ -1703,6 +1791,7 @@ namespace sudoku
 
         private void l5r3_Click(object sender, EventArgs e)
         {
+            bigcell = 4;
             line = "l5";
             row = "r3";
             lbltxt = l5r3.Text;
@@ -1711,6 +1800,7 @@ namespace sudoku
 
         private void l5r4_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l5";
             row = "r4";
             lbltxt = l5r4.Text;
@@ -1719,6 +1809,7 @@ namespace sudoku
 
         private void l5r5_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l5";
             row = "r5";
             lbltxt = l5r5.Text;
@@ -1727,6 +1818,7 @@ namespace sudoku
 
         private void l5r6_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l5";
             row = "r6";
             lbltxt = l5r6.Text;
@@ -1735,6 +1827,7 @@ namespace sudoku
 
         private void l5r7_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l5";
             row = "r7";
             lbltxt = l5r7.Text;
@@ -1743,6 +1836,7 @@ namespace sudoku
 
         private void l5r8_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l5";
             row = "r8";
             lbltxt = l5r8.Text;
@@ -1751,6 +1845,7 @@ namespace sudoku
 
         private void l5r9_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l5";
             row = "r9";
             lbltxt = l5r9.Text;
@@ -1759,6 +1854,7 @@ namespace sudoku
 
         private void l6r9_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l6";
             row = "r9";
             lbltxt = l6r9.Text;
@@ -1767,6 +1863,7 @@ namespace sudoku
 
         private void l6r2_Click(object sender, EventArgs e)
         {
+            bigcell = 4;
             line = "l6";
             row = "r2";
             lbltxt = l6r2.Text;
@@ -1775,6 +1872,7 @@ namespace sudoku
 
         private void l6r3_Click(object sender, EventArgs e)
         {
+            bigcell = 4;
             line = "l6";
             row = "r3";
             lbltxt = l6r3.Text;
@@ -1783,6 +1881,7 @@ namespace sudoku
 
         private void l6r4_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l6";
             row = "r4";
             lbltxt = l6r4.Text;
@@ -1791,6 +1890,7 @@ namespace sudoku
 
         private void l6r5_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l6";
             row = "r5";
             lbltxt = l6r5.Text;
@@ -1799,6 +1899,7 @@ namespace sudoku
 
         private void l6r6_Click(object sender, EventArgs e)
         {
+            bigcell = 5;
             line = "l6";
             row = "r6";
             lbltxt = l6r6.Text;
@@ -1807,6 +1908,7 @@ namespace sudoku
 
         private void l6r7_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l6";
             row = "r7";
             lbltxt = l6r7.Text;
@@ -1815,6 +1917,7 @@ namespace sudoku
 
         private void l6r8_Click(object sender, EventArgs e)
         {
+            bigcell = 6;
             line = "l6";
             row = "r8";
             lbltxt = l6r8.Text;
@@ -1823,6 +1926,7 @@ namespace sudoku
 
         private void l6r1_Click(object sender, EventArgs e)
         {
+            bigcell = 4;
             line = "l6";
             row = "r1";
             lbltxt = l6r1.Text;
@@ -1831,6 +1935,7 @@ namespace sudoku
 
         private void l7r9_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l7";
             row = "r9";
             lbltxt = l7r9.Text;
@@ -1839,6 +1944,7 @@ namespace sudoku
 
         private void l7r2_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l7";
             row = "r2";
             lbltxt = l7r2.Text;
@@ -1847,6 +1953,7 @@ namespace sudoku
 
         private void l7r3_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l7";
             row = "r3";
             lbltxt = l7r3.Text;
@@ -1855,6 +1962,7 @@ namespace sudoku
 
         private void l7r4_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l7";
             row = "r4";
             lbltxt = l7r4.Text;
@@ -1863,6 +1971,7 @@ namespace sudoku
 
         private void l7r5_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l7";
             row = "r5";
             lbltxt = l7r5.Text;
@@ -1871,6 +1980,7 @@ namespace sudoku
 
         private void l7r6_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l7";
             row = "r6";
             lbltxt = l7r6.Text;
@@ -1879,6 +1989,7 @@ namespace sudoku
 
         private void l7r7_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l7";
             row = "r7";
             lbltxt = l7r7.Text;
@@ -1887,6 +1998,7 @@ namespace sudoku
 
         private void l7r8_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l7";
             row = "r8";
             lbltxt = l7r8.Text;
@@ -1895,6 +2007,7 @@ namespace sudoku
 
         private void l7r1_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l7";
             row = "r1";
             lbltxt = l7r1.Text;
@@ -1903,6 +2016,7 @@ namespace sudoku
 
         private void l8r9_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l8";
             row = "r9";
             lbltxt = l8r9.Text;
@@ -1911,6 +2025,7 @@ namespace sudoku
 
         private void l8r2_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l8";
             row = "r2";
             lbltxt = l8r2.Text;
@@ -1919,6 +2034,7 @@ namespace sudoku
 
         private void l8r3_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l8";
             row = "r3";
             lbltxt = l8r3.Text;
@@ -1927,6 +2043,7 @@ namespace sudoku
 
         private void l8r4_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l8";
             row = "r4";
             lbltxt = l8r4.Text;
@@ -1935,6 +2052,7 @@ namespace sudoku
 
         private void l8r5_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l8";
             row = "r5";
             lbltxt = l8r5.Text;
@@ -1943,6 +2061,7 @@ namespace sudoku
 
         private void l8r6_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l8";
             row = "r6";
             lbltxt = l8r6.Text;
@@ -1951,6 +2070,7 @@ namespace sudoku
 
         private void l8r7_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l8";
             row = "r7";
             lbltxt = l8r7.Text;
@@ -1959,6 +2079,7 @@ namespace sudoku
 
         private void l8r8_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l8";
             row = "r8";
             lbltxt = l8r8.Text;
@@ -1967,6 +2088,7 @@ namespace sudoku
 
         private void l8r1_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l8";
             row = "r1";
             lbltxt = l8r1.Text;
@@ -1975,6 +2097,7 @@ namespace sudoku
 
         private void l9r9_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l9";
             row = "r9";
             lbltxt = l9r9.Text;
@@ -1983,6 +2106,7 @@ namespace sudoku
 
         private void l9r2_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l9";
             row = "r2";
             lbltxt = l9r2.Text;
@@ -1991,6 +2115,7 @@ namespace sudoku
 
         private void l9r3_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l9";
             row = "r3";
             lbltxt = l9r3.Text;
@@ -1999,6 +2124,7 @@ namespace sudoku
 
         private void l9r4_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l9";
             row = "r4";
             lbltxt = l9r4.Text;
@@ -2007,6 +2133,7 @@ namespace sudoku
 
         private void l9r5_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l9";
             row = "r5";
             lbltxt = l9r5.Text;
@@ -2015,6 +2142,7 @@ namespace sudoku
 
         private void l9r6_Click(object sender, EventArgs e)
         {
+            bigcell = 8;
             line = "l9";
             row = "r6";
             lbltxt = l9r6.Text;
@@ -2023,6 +2151,7 @@ namespace sudoku
 
         private void l9r7_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l9";
             row = "r7";
             lbltxt = l9r7.Text;
@@ -2031,6 +2160,7 @@ namespace sudoku
 
         private void l9r8_Click(object sender, EventArgs e)
         {
+            bigcell = 9;
             line = "l9";
             row = "r8";
             lbltxt = l9r8.Text;
@@ -2039,15 +2169,11 @@ namespace sudoku
 
         private void l9r1_Click(object sender, EventArgs e)
         {
+            bigcell = 7;
             line = "l9";
             row = "r1";
             lbltxt = l9r1.Text;
             lblclick();
-        }
-
-        private void textBox69_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

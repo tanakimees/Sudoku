@@ -619,7 +619,7 @@ namespace sudoku
             this.panel9.Controls.Add(this.textBox62);
             this.panel9.Location = new System.Drawing.Point(420, 30);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(108, 60);
+            this.panel9.Size = new System.Drawing.Size(109, 60);
             this.panel9.TabIndex = 28;
             this.panel9.Visible = false;
             // 
