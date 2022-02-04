@@ -31,6 +31,26 @@ namespace sudoku
         string[] cell2 = { "l1r4", "l1r5", "l1r6", "l2r4", "l2r5", "l2r6", "l3r4", "l3r5", "l3r6" };
         string[] cell3 = { "l1r7", "l1r8", "l1r9", "l2r7", "l2r8", "l2r9", "l3r7", "l3r8", "l3r9" };
 
+        string[] cell4 = { "l4r1", "l4r2", "l4r3", "l5r1", "l5r2", "l5r3", "l6r1", "l6r2", "l6r3" };
+        string[] cell5 = { "l4r4", "l4r5", "l4r6", "l5r4", "l5r5", "l5r6", "l6r4", "l6r5", "l6r6" };
+        string[] cell6 = { "l4r7", "l4r8", "l4r9", "l5r7", "l5r8", "l5r9", "l6r7", "l6r8", "l6r9" };
+
+        string[] cell7 = { "l7r1", "l7r2", "l7r3", "l8r1", "l8r2", "l8r3", "l9r1", "l9r2", "l9r3" };
+        string[] cell8 = { "l7r4", "l7r5", "l7r6", "l8r4", "l8r5", "l8r6", "l9r4", "l9r5", "l9r6" };
+        string[] cell9 = { "l7r7", "l7r8", "l7r9", "l8r7", "l8r8", "l8r9", "l9r7", "l9r8", "l9r9" };
+
+        bool shift;
+        bool ctrl;
+        bool nr1;
+        bool nr2;
+        bool nr3;
+        bool nr4;
+        bool nr5;
+        bool nr6;
+        bool nr7;
+        bool nr8;
+        bool nr9;
+
         public Form1()
         {
             InitializeComponent();
@@ -679,12 +699,95 @@ namespace sudoku
                                 l.ForeColor = Color.Gray;
                             }
                         }
+                        else if (bigcell == 4)
+                        {
+                            if (cell4.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
+                        else if (bigcell == 5)
+                        {
+                            if (cell5.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
+                        else if (bigcell == 6)
+                        {
+                            if (cell6.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
+                        else if (bigcell == 7)
+                        {
+                            if (cell7.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
+                        else if (bigcell == 8)
+                        {
+                            if (cell8.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
+                        else if (bigcell == 9)
+                        {
+                            if (cell9.Contains(l.Name))
+                            {
+                                l.BackColor = Color.FromArgb(35, 35, 35);
+                                l.ForeColor = Color.White;
+                            }
+                            else
+                            {
+                                l.BackColor = Color.FromArgb(25, 25, 25);
+                                l.ForeColor = Color.Gray;
+                            }
+                        }
                     }
                     else
                     {
                         l.BackColor = Color.FromArgb(25, 25, 25);
                         l.ForeColor = Color.Gray;
                     }
+                }
+
+                if(l.Text == lbltxt)
+                {
+                    l.ForeColor = Color.White;
                 }
             }
         }
@@ -1444,6 +1547,54 @@ namespace sudoku
                             l.ForeColor = Color.White;
                         }
                     }
+                    else if (bigcell == 4)
+                    {
+                        if (cell4.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                    else if (bigcell == 5)
+                    {
+                        if (cell5.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                    else if (bigcell == 6)
+                    {
+                        if (cell6.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                    else if (bigcell == 7)
+                    {
+                        if (cell7.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                    else if (bigcell == 8)
+                    {
+                        if (cell8.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                    else if (bigcell == 9)
+                    {
+                        if (cell9.Contains(l.Name))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
                 }
             }
         }
@@ -2174,6 +2325,105 @@ namespace sudoku
             row = "r1";
             lbltxt = l9r1.Text;
             lblclick();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            string[] correctnr = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+            string lblnamelol = line + row;
+
+            if(e.KeyCode == Keys.Shift)
+            {
+                shift = true;
+            }
+            if (e.KeyCode == Keys.Control)
+            {
+                ctrl = true;
+            }
+            if (e.KeyCode == Keys.D1)
+            {
+                nr1 = true;
+            }
+            if (e.KeyCode == Keys.D2)
+            {
+                nr2 = true;
+            }
+            if (e.KeyCode == Keys.D3)
+            {
+                nr3 = true;
+            }
+            if (e.KeyCode == Keys.D4)
+            {
+                nr4 = true;
+            }
+            if (e.KeyCode == Keys.D5)
+            {
+                nr5 = true;
+            }
+            if (e.KeyCode == Keys.D6)
+            {
+                nr6 = true;
+            }
+            if (e.KeyCode == Keys.D7)
+            {
+                nr7 = true;
+            }
+            if (e.KeyCode == Keys.D8)
+            {
+                nr8 = true;
+            }
+            if (e.KeyCode == Keys.D9)
+            {
+                nr9 = true;
+            }
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Shift)
+            {
+                shift = false;
+            }
+            if (e.KeyCode == Keys.Control)
+            {
+                ctrl = false;
+            }
+            if (e.KeyCode == Keys.D1)
+            {
+                nr1 = false;
+            }
+            if (e.KeyCode == Keys.D2)
+            {
+                nr2 = false;
+            }
+            if (e.KeyCode == Keys.D3)
+            {
+                nr3 = false;
+            }
+            if (e.KeyCode == Keys.D4)
+            {
+                nr4 = false;
+            }
+            if (e.KeyCode == Keys.D5)
+            {
+                nr5 = false;
+            }
+            if (e.KeyCode == Keys.D6)
+            {
+                nr6 = false;
+            }
+            if (e.KeyCode == Keys.D7)
+            {
+                nr7 = false;
+            }
+            if (e.KeyCode == Keys.D8)
+            {
+                nr8 = false;
+            }
+            if (e.KeyCode == Keys.D9)
+            {
+                nr9 = false;
+            }
         }
     }
 }
