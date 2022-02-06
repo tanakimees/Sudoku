@@ -21,6 +21,7 @@ namespace sudoku
         int idk = 0;
         string lblname = "";
         string lbltxt = "a";
+        string selectedcell = "";
 
         string line = "s";
         string row = "s";
@@ -40,7 +41,6 @@ namespace sudoku
         string[] cell9 = { "l7r7", "l7r8", "l7r9", "l8r7", "l8r8", "l8r9", "l9r7", "l9r8", "l9r9" };
 
         bool shift;
-        bool ctrl;
         bool nr1;
         bool nr2;
         bool nr3;
@@ -68,6 +68,11 @@ namespace sudoku
                 l.Text = "";
                 l.Cursor = Cursors.Hand;
                 l.ForeColor = Color.Gray;
+                string containslol = "h";
+                if(l.Name.Contains(containslol))
+                {
+                    l.Visible = false;
+                }
             }
         }
 
@@ -625,7 +630,16 @@ namespace sudoku
                 lblname = "";
                 lbltxt = "";
                 bigcell = 0;
+                string includethatshet = "h";
+                if(l.Name.Contains(includethatshet))
+                {
+                    l.Visible = false;
+                    l.Text = "";
+                }
+
             }
+            selectedcell = "";
+            bigcell = 0;
         }
 
         void menter()
@@ -789,6 +803,7 @@ namespace sudoku
                 {
                     l.ForeColor = Color.White;
                 }
+              
             }
         }
         private void l1r1_MouseEnter(object sender, EventArgs e)
@@ -1484,6 +1499,7 @@ namespace sudoku
 
         void lblclick()
         {
+            selectedcell = line + row;
             foreach (Label l in panel1.Controls.OfType<Label>())
             {
                 //iga cell millel sama nr
@@ -2326,19 +2342,13 @@ namespace sudoku
             lbltxt = l9r1.Text;
             lblclick();
         }
-
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            string[] correctnr = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
             string lblnamelol = line + row;
 
-            if(e.KeyCode == Keys.Shift)
+            if(e.KeyCode == Keys.ShiftKey)
             {
                 shift = true;
-            }
-            if (e.KeyCode == Keys.Control)
-            {
-                ctrl = true;
             }
             if (e.KeyCode == Keys.D1)
             {
@@ -2376,6 +2386,99 @@ namespace sudoku
             {
                 nr9 = true;
             }
+            if(shift && nr1)
+            {
+                foreach(Label l in panel1.Controls.OfType<Label>())
+                {
+                    if(l.Name == selectedcell)
+                    {
+                        if(l.Text == "")
+                        {
+                            l.Text = "1";
+                        }
+                    }
+                }          
+            }
+            if (shift && nr2)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        l.Text = "2";
+                    }
+                }
+            }
+            if (shift && nr3)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        l.Text = "3";
+                    }
+                }
+            }
+            if (shift && nr4)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        l.Text = "4";
+                    }
+                }
+            }
+            if (shift && nr5)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        l.Text = "5";
+                    }
+                }
+            }
+            if (shift && nr6)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        l.Text = "6";
+                    }
+                }
+            }
+            if (shift && nr7)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        l.Text = "7";
+                    }
+                }
+            }
+            if (shift && nr8)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        l.Text = "8";
+                    }
+                }
+            }
+            if (shift && nr9)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        l.Text = "9";
+                    }
+                }
+            }
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
@@ -2383,10 +2486,6 @@ namespace sudoku
             if (e.KeyCode == Keys.Shift)
             {
                 shift = false;
-            }
-            if (e.KeyCode == Keys.Control)
-            {
-                ctrl = false;
             }
             if (e.KeyCode == Keys.D1)
             {

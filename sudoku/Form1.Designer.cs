@@ -57,6 +57,12 @@ namespace sudoku
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gamepanel = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.textBox72 = new System.Windows.Forms.TextBox();
+            this.textBox71 = new System.Windows.Forms.TextBox();
+            this.textBox70 = new System.Windows.Forms.TextBox();
+            this.textBox69 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -212,17 +218,21 @@ namespace sudoku
             this.fadeout = new System.Windows.Forms.Timer(this.components);
             this.createsudoku = new System.Windows.Forms.Timer(this.components);
             this.removenr = new System.Windows.Forms.Timer(this.components);
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox69 = new System.Windows.Forms.TextBox();
-            this.textBox70 = new System.Windows.Forms.TextBox();
-            this.textBox71 = new System.Windows.Forms.TextBox();
-            this.textBox72 = new System.Windows.Forms.TextBox();
+            this.l1r1h1 = new System.Windows.Forms.Label();
+            this.l1r1h2 = new System.Windows.Forms.Label();
+            this.l1r1h3 = new System.Windows.Forms.Label();
+            this.l1r1h6 = new System.Windows.Forms.Label();
+            this.l1r1h5 = new System.Windows.Forms.Label();
+            this.l1r1h4 = new System.Windows.Forms.Label();
+            this.l1r1h9 = new System.Windows.Forms.Label();
+            this.l1r1h8 = new System.Windows.Forms.Label();
+            this.l1r1h7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.gamepanel.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -231,7 +241,6 @@ namespace sudoku
             this.settingspanel.SuspendLayout();
             this.aboutpanel.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -614,6 +623,87 @@ namespace sudoku
             this.gamepanel.Size = new System.Drawing.Size(538, 554);
             this.gamepanel.TabIndex = 8;
             // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel11.Controls.Add(this.textBox72);
+            this.panel11.Controls.Add(this.textBox71);
+            this.panel11.Controls.Add(this.textBox70);
+            this.panel11.Controls.Add(this.textBox69);
+            this.panel11.Controls.Add(this.label14);
+            this.panel11.Location = new System.Drawing.Point(10, 421);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(276, 122);
+            this.panel11.TabIndex = 31;
+            // 
+            // textBox72
+            // 
+            this.textBox72.BackColor = System.Drawing.Color.Gray;
+            this.textBox72.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox72.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox72.Enabled = false;
+            this.textBox72.Location = new System.Drawing.Point(275, 0);
+            this.textBox72.Multiline = true;
+            this.textBox72.Name = "textBox72";
+            this.textBox72.ReadOnly = true;
+            this.textBox72.Size = new System.Drawing.Size(1, 122);
+            this.textBox72.TabIndex = 34;
+            this.textBox72.TabStop = false;
+            // 
+            // textBox71
+            // 
+            this.textBox71.BackColor = System.Drawing.Color.Gray;
+            this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox71.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox71.Enabled = false;
+            this.textBox71.Location = new System.Drawing.Point(0, 0);
+            this.textBox71.Multiline = true;
+            this.textBox71.Name = "textBox71";
+            this.textBox71.ReadOnly = true;
+            this.textBox71.Size = new System.Drawing.Size(1, 122);
+            this.textBox71.TabIndex = 33;
+            this.textBox71.TabStop = false;
+            // 
+            // textBox70
+            // 
+            this.textBox70.BackColor = System.Drawing.Color.Gray;
+            this.textBox70.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox70.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox70.Enabled = false;
+            this.textBox70.Location = new System.Drawing.Point(0, 121);
+            this.textBox70.Multiline = true;
+            this.textBox70.Name = "textBox70";
+            this.textBox70.ReadOnly = true;
+            this.textBox70.Size = new System.Drawing.Size(276, 1);
+            this.textBox70.TabIndex = 32;
+            this.textBox70.TabStop = false;
+            // 
+            // textBox69
+            // 
+            this.textBox69.BackColor = System.Drawing.Color.Gray;
+            this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox69.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox69.Enabled = false;
+            this.textBox69.Location = new System.Drawing.Point(0, 0);
+            this.textBox69.Multiline = true;
+            this.textBox69.Name = "textBox69";
+            this.textBox69.ReadOnly = true;
+            this.textBox69.Size = new System.Drawing.Size(276, 1);
+            this.textBox69.TabIndex = 27;
+            this.textBox69.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Gray;
+            this.label14.Location = new System.Drawing.Point(10, 15);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(258, 100);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Hold down SHIFT and type in a number\r\nto fill an empty cell in sudoku.\r\n\r\nHold do" +
+    "wn CTRL key and type in a number\r\nto fill in reminders.";
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
@@ -625,7 +715,7 @@ namespace sudoku
             this.panel9.Controls.Add(this.textBox60);
             this.panel9.Controls.Add(this.textBox61);
             this.panel9.Controls.Add(this.textBox62);
-            this.panel9.Location = new System.Drawing.Point(420, 30);
+            this.panel9.Location = new System.Drawing.Point(414, 109);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(109, 60);
             this.panel9.TabIndex = 28;
@@ -984,6 +1074,15 @@ namespace sudoku
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel1.Controls.Add(this.l1r1h9);
+            this.panel1.Controls.Add(this.l1r1h8);
+            this.panel1.Controls.Add(this.l1r1h7);
+            this.panel1.Controls.Add(this.l1r1h6);
+            this.panel1.Controls.Add(this.l1r1h5);
+            this.panel1.Controls.Add(this.l1r1h4);
+            this.panel1.Controls.Add(this.l1r1h3);
+            this.panel1.Controls.Add(this.l1r1h2);
+            this.panel1.Controls.Add(this.l1r1h1);
             this.panel1.Controls.Add(this.l9r9);
             this.panel1.Controls.Add(this.l6r9);
             this.panel1.Controls.Add(this.l6r6);
@@ -2912,86 +3011,122 @@ namespace sudoku
             this.removenr.Interval = 1;
             this.removenr.Tick += new System.EventHandler(this.removenr_Tick);
             // 
-            // panel11
+            // l1r1h1
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.panel11.Controls.Add(this.textBox72);
-            this.panel11.Controls.Add(this.textBox71);
-            this.panel11.Controls.Add(this.textBox70);
-            this.panel11.Controls.Add(this.textBox69);
-            this.panel11.Controls.Add(this.label14);
-            this.panel11.Location = new System.Drawing.Point(10, 421);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(276, 122);
-            this.panel11.TabIndex = 31;
+            this.l1r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h1.ForeColor = System.Drawing.Color.White;
+            this.l1r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h1.Location = new System.Drawing.Point(3, 2);
+            this.l1r1h1.Name = "l1r1h1";
+            this.l1r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h1.TabIndex = 195;
+            this.l1r1h1.Text = "0";
             // 
-            // label14
+            // l1r1h2
             // 
-            this.label14.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(10, 15);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(258, 100);
-            this.label14.TabIndex = 31;
-            this.label14.Text = "Hold down SHIFT and type in a number\r\nto fill an empty cell in sudoku.\r\n\r\nHold do" +
-    "wn CTRL key and type in a number\r\nto fill in reminders.";
+            this.l1r1h2.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h2.ForeColor = System.Drawing.Color.White;
+            this.l1r1h2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h2.Location = new System.Drawing.Point(16, 2);
+            this.l1r1h2.Name = "l1r1h2";
+            this.l1r1h2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h2.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h2.TabIndex = 196;
+            this.l1r1h2.Text = "0";
             // 
-            // textBox69
+            // l1r1h3
             // 
-            this.textBox69.BackColor = System.Drawing.Color.Gray;
-            this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox69.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox69.Enabled = false;
-            this.textBox69.Location = new System.Drawing.Point(0, 0);
-            this.textBox69.Multiline = true;
-            this.textBox69.Name = "textBox69";
-            this.textBox69.ReadOnly = true;
-            this.textBox69.Size = new System.Drawing.Size(276, 1);
-            this.textBox69.TabIndex = 27;
-            this.textBox69.TabStop = false;
+            this.l1r1h3.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h3.ForeColor = System.Drawing.Color.White;
+            this.l1r1h3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h3.Location = new System.Drawing.Point(29, 2);
+            this.l1r1h3.Name = "l1r1h3";
+            this.l1r1h3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h3.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h3.TabIndex = 197;
+            this.l1r1h3.Text = "0";
             // 
-            // textBox70
+            // l1r1h6
             // 
-            this.textBox70.BackColor = System.Drawing.Color.Gray;
-            this.textBox70.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox70.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox70.Enabled = false;
-            this.textBox70.Location = new System.Drawing.Point(0, 121);
-            this.textBox70.Multiline = true;
-            this.textBox70.Name = "textBox70";
-            this.textBox70.ReadOnly = true;
-            this.textBox70.Size = new System.Drawing.Size(276, 1);
-            this.textBox70.TabIndex = 32;
-            this.textBox70.TabStop = false;
+            this.l1r1h6.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h6.ForeColor = System.Drawing.Color.White;
+            this.l1r1h6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h6.Location = new System.Drawing.Point(29, 16);
+            this.l1r1h6.Name = "l1r1h6";
+            this.l1r1h6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h6.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h6.TabIndex = 200;
+            this.l1r1h6.Text = "0";
             // 
-            // textBox71
+            // l1r1h5
             // 
-            this.textBox71.BackColor = System.Drawing.Color.Gray;
-            this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox71.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox71.Enabled = false;
-            this.textBox71.Location = new System.Drawing.Point(0, 0);
-            this.textBox71.Multiline = true;
-            this.textBox71.Name = "textBox71";
-            this.textBox71.ReadOnly = true;
-            this.textBox71.Size = new System.Drawing.Size(1, 122);
-            this.textBox71.TabIndex = 33;
-            this.textBox71.TabStop = false;
+            this.l1r1h5.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h5.ForeColor = System.Drawing.Color.White;
+            this.l1r1h5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h5.Location = new System.Drawing.Point(16, 16);
+            this.l1r1h5.Name = "l1r1h5";
+            this.l1r1h5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h5.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h5.TabIndex = 199;
+            this.l1r1h5.Text = "0";
             // 
-            // textBox72
+            // l1r1h4
             // 
-            this.textBox72.BackColor = System.Drawing.Color.Gray;
-            this.textBox72.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox72.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox72.Enabled = false;
-            this.textBox72.Location = new System.Drawing.Point(275, 0);
-            this.textBox72.Multiline = true;
-            this.textBox72.Name = "textBox72";
-            this.textBox72.ReadOnly = true;
-            this.textBox72.Size = new System.Drawing.Size(1, 122);
-            this.textBox72.TabIndex = 34;
-            this.textBox72.TabStop = false;
+            this.l1r1h4.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h4.ForeColor = System.Drawing.Color.White;
+            this.l1r1h4.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h4.Location = new System.Drawing.Point(3, 16);
+            this.l1r1h4.Name = "l1r1h4";
+            this.l1r1h4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h4.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h4.TabIndex = 198;
+            this.l1r1h4.Text = "0";
+            // 
+            // l1r1h9
+            // 
+            this.l1r1h9.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h9.ForeColor = System.Drawing.Color.White;
+            this.l1r1h9.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h9.Location = new System.Drawing.Point(29, 29);
+            this.l1r1h9.Name = "l1r1h9";
+            this.l1r1h9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h9.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h9.TabIndex = 203;
+            this.l1r1h9.Text = "0";
+            // 
+            // l1r1h8
+            // 
+            this.l1r1h8.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h8.ForeColor = System.Drawing.Color.White;
+            this.l1r1h8.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h8.Location = new System.Drawing.Point(16, 29);
+            this.l1r1h8.Name = "l1r1h8";
+            this.l1r1h8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h8.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h8.TabIndex = 202;
+            this.l1r1h8.Text = "0";
+            // 
+            // l1r1h7
+            // 
+            this.l1r1h7.BackColor = System.Drawing.Color.Transparent;
+            this.l1r1h7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r1h7.ForeColor = System.Drawing.Color.White;
+            this.l1r1h7.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r1h7.Location = new System.Drawing.Point(3, 29);
+            this.l1r1h7.Name = "l1r1h7";
+            this.l1r1h7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r1h7.Size = new System.Drawing.Size(12, 12);
+            this.l1r1h7.TabIndex = 201;
+            this.l1r1h7.Text = "0";
             // 
             // Form1
             // 
@@ -3029,6 +3164,8 @@ namespace sudoku
             this.panel4.PerformLayout();
             this.gamepanel.ResumeLayout(false);
             this.gamepanel.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -3045,8 +3182,6 @@ namespace sudoku
             this.aboutpanel.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3240,6 +3375,15 @@ namespace sudoku
         private System.Windows.Forms.TextBox textBox71;
         private System.Windows.Forms.TextBox textBox70;
         private System.Windows.Forms.TextBox textBox69;
+        private System.Windows.Forms.Label l1r1h1;
+        private System.Windows.Forms.Label l1r1h9;
+        private System.Windows.Forms.Label l1r1h8;
+        private System.Windows.Forms.Label l1r1h7;
+        private System.Windows.Forms.Label l1r1h6;
+        private System.Windows.Forms.Label l1r1h5;
+        private System.Windows.Forms.Label l1r1h4;
+        private System.Windows.Forms.Label l1r1h3;
+        private System.Windows.Forms.Label l1r1h2;
     }
 }
 
