@@ -41,6 +41,7 @@ namespace sudoku
         string[] cell9 = { "l7r7", "l7r8", "l7r9", "l8r7", "l8r8", "l8r9", "l9r7", "l9r8", "l9r9" };
 
         bool shift;
+        bool q;
         bool nr1;
         bool nr2;
         bool nr3;
@@ -2386,7 +2387,11 @@ namespace sudoku
             {
                 nr9 = true;
             }
-            if(shift && nr1)
+            if(e.KeyCode == Keys.Q)
+            {
+                q = true;
+            }
+            if(nr1)
             {
                 foreach(Label l in panel1.Controls.OfType<Label>())
                 {
@@ -2399,83 +2404,120 @@ namespace sudoku
                     }
                 }          
             }
-            if (shift && nr2)
+            if (nr2)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        l.Text = "2";
+                        if(l.Text == "")
+                        {
+                            l.Text = "2";
+                        }
                     }
                 }
             }
-            if (shift && nr3)
+            if (nr3)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        l.Text = "3";
+                        if (l.Text == "")
+                        {
+                            l.Text = "3";
+                        }
                     }
                 }
             }
-            if (shift && nr4)
+            if (nr4)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        l.Text = "4";
+                        if (l.Text == "")
+                        {
+                            l.Text = "4";
+                        }
                     }
                 }
             }
-            if (shift && nr5)
+            if (nr5)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        l.Text = "5";
+                        if (l.Text == "")
+                        {
+                            l.Text = "5";
+                        }
                     }
                 }
             }
-            if (shift && nr6)
+            if (nr6)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        l.Text = "6";
+                        if (l.Text == "")
+                        {
+                            l.Text = "6";
+                        }
                     }
                 }
             }
-            if (shift && nr7)
+            if (nr7)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        l.Text = "7";
+                        if (l.Text == "")
+                        {
+                            l.Text = "7";
+                        }
                     }
                 }
             }
-            if (shift && nr8)
+            if (nr8)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        l.Text = "8";
+                        if (l.Text == "")
+                        {
+                            l.Text = "8";
+                        }
                     }
                 }
             }
-            if (shift && nr9)
+            if (nr9)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        l.Text = "9";
+                        if (l.Text == "")
+                        {
+                            l.Text = "9";
+                        }
+                    }
+                }
+            }
+            if(q)
+            {
+                foreach(Label l in panel1.Controls.OfType<Label>())
+                {
+                    if(l.Name == selectedcell)
+                    {
+                        if(l.Text != "")
+                        {
+                            l.Text = "";
+                        }
                     }
                 }
             }
@@ -2483,7 +2525,7 @@ namespace sudoku
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Shift)
+            if (e.KeyCode == Keys.ShiftKey)
             {
                 shift = false;
             }
@@ -2522,6 +2564,10 @@ namespace sudoku
             if (e.KeyCode == Keys.D9)
             {
                 nr9 = false;
+            }
+            if(e.KeyCode == Keys.Q)
+            {
+                q = false;
             }
         }
     }
