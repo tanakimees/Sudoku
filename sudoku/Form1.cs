@@ -41,7 +41,6 @@ namespace sudoku
         string[] cell9 = { "l7r7", "l7r8", "l7r9", "l8r7", "l8r8", "l8r9", "l9r7", "l9r8", "l9r9" };
 
         bool shift;
-        bool q;
         bool nr1;
         bool nr2;
         bool nr3;
@@ -2345,8 +2344,6 @@ namespace sudoku
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            string lblnamelol = line + row;
-
             if(e.KeyCode == Keys.ShiftKey)
             {
                 shift = true;
@@ -2387,11 +2384,7 @@ namespace sudoku
             {
                 nr9 = true;
             }
-            if(e.KeyCode == Keys.Q)
-            {
-                q = true;
-            }
-            if(nr1)
+            if(nr1 && !shift)
             {
                 foreach(Label l in panel1.Controls.OfType<Label>())
                 {
@@ -2399,126 +2392,211 @@ namespace sudoku
                     {
                         if(l.Text == "")
                         {
+                            lesslines1();
                             l.Text = "1";
+                        }
+                        else if(l.Text == "1")
+                        {
+                            l.Text = "";
+                            lesslines1();
                         }
                     }
                 }          
             }
-            if (nr2)
+            if (nr2 && !shift)
             {
                 foreach (Label l in panel1.Controls.OfType<Label>())
                 {
                     if (l.Name == selectedcell)
                     {
-                        if(l.Text == "")
+                        if (l.Text == "")
                         {
+                            lesslines1();
                             l.Text = "2";
                         }
-                    }
-                }
-            }
-            if (nr3)
-            {
-                foreach (Label l in panel1.Controls.OfType<Label>())
-                {
-                    if (l.Name == selectedcell)
-                    {
-                        if (l.Text == "")
-                        {
-                            l.Text = "3";
-                        }
-                    }
-                }
-            }
-            if (nr4)
-            {
-                foreach (Label l in panel1.Controls.OfType<Label>())
-                {
-                    if (l.Name == selectedcell)
-                    {
-                        if (l.Text == "")
-                        {
-                            l.Text = "4";
-                        }
-                    }
-                }
-            }
-            if (nr5)
-            {
-                foreach (Label l in panel1.Controls.OfType<Label>())
-                {
-                    if (l.Name == selectedcell)
-                    {
-                        if (l.Text == "")
-                        {
-                            l.Text = "5";
-                        }
-                    }
-                }
-            }
-            if (nr6)
-            {
-                foreach (Label l in panel1.Controls.OfType<Label>())
-                {
-                    if (l.Name == selectedcell)
-                    {
-                        if (l.Text == "")
-                        {
-                            l.Text = "6";
-                        }
-                    }
-                }
-            }
-            if (nr7)
-            {
-                foreach (Label l in panel1.Controls.OfType<Label>())
-                {
-                    if (l.Name == selectedcell)
-                    {
-                        if (l.Text == "")
-                        {
-                            l.Text = "7";
-                        }
-                    }
-                }
-            }
-            if (nr8)
-            {
-                foreach (Label l in panel1.Controls.OfType<Label>())
-                {
-                    if (l.Name == selectedcell)
-                    {
-                        if (l.Text == "")
-                        {
-                            l.Text = "8";
-                        }
-                    }
-                }
-            }
-            if (nr9)
-            {
-                foreach (Label l in panel1.Controls.OfType<Label>())
-                {
-                    if (l.Name == selectedcell)
-                    {
-                        if (l.Text == "")
-                        {
-                            l.Text = "9";
-                        }
-                    }
-                }
-            }
-            if(q)
-            {
-                foreach(Label l in panel1.Controls.OfType<Label>())
-                {
-                    if(l.Name == selectedcell)
-                    {
-                        if(l.Text != "")
+                        else if (l.Text == "2")
                         {
                             l.Text = "";
+                            lesslines1();
                         }
                     }
+                }
+            }
+            if (nr3 && !shift)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        if (l.Text == "")
+                        {
+                            lesslines1();
+                            l.Text = "3";
+                        }
+                        else if (l.Text == "3")
+                        {
+                            l.Text = "";
+                            lesslines1();
+                        }
+                    }
+                }
+            }
+            if (nr4 && !shift)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        if (l.Text == "")
+                        {
+                            lesslines1();
+                            l.Text = "4";
+                        }
+                        else if (l.Text == "4")
+                        {
+                            l.Text = "";
+                            lesslines1();
+                        }
+                    }
+                }
+            }
+            if (nr5 && !shift)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        if (l.Text == "")
+                        {
+                            lesslines1();
+                            l.Text = "5";
+                        }
+                        else if (l.Text == "5")
+                        {
+                            l.Text = "";
+                            lesslines1();
+                        }
+                    }
+                }
+            }
+            if (nr6 && !shift)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        if (l.Text == "")
+                        {
+                            lesslines1();
+                            l.Text = "6";
+                        }
+                        else if (l.Text == "6")
+                        {
+                            l.Text = "";
+                            lesslines1();
+                        }
+                    }
+                }
+            }
+            if (nr7 && !shift)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        if (l.Text == "")
+                        {
+                            lesslines1();
+                            l.Text = "7";
+                        }
+                        else if (l.Text == "7")
+                        {
+                            l.Text = "";
+                            lesslines1();
+                        }
+                    }
+                }
+            }
+            if (nr8 && !shift)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        if (l.Text == "")
+                        {
+                            lesslines1();
+                            l.Text = "8";
+                        }
+                        else if (l.Text == "8")
+                        {
+                            l.Text = "";
+                            lesslines1();
+                        }
+                    }
+                }
+            }
+            if (nr9 && !shift)
+            {
+                foreach (Label l in panel1.Controls.OfType<Label>())
+                {
+                    if (l.Name == selectedcell)
+                    {
+                        if (l.Text == "")
+                        {
+                            lesslines1();
+                            l.Text = "9";
+                        }
+                        else if (l.Text == "9")
+                        {
+                            l.Text = "";
+                            lesslines1();
+                        }
+                    }
+                }
+            }
+            if(shift)
+            {
+                if(nr1)
+                {
+                    foreach(Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if(l.Name == selectedcell)
+                        {
+                            if(l.Text == "")
+                            {
+                                foreach(Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if(l1.Name == selectedcell + "h1")
+                                    {
+                                        if(l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "1";
+                                        }
+                                        else if(l1.Text == "1")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        void lesslines1()
+        {
+            string includeslol = "h";
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
+                if(l.Name.Contains(selectedcell + includeslol))
+                {
+                    l.Visible = false;
+                    l.Text = "";
                 }
             }
         }
@@ -2564,10 +2642,6 @@ namespace sudoku
             if (e.KeyCode == Keys.D9)
             {
                 nr9 = false;
-            }
-            if(e.KeyCode == Keys.Q)
-            {
-                q = false;
             }
         }
     }
