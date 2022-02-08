@@ -1613,6 +1613,110 @@ namespace sudoku
                     }
                 }
             }
+
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
+                if(bigcell == 1)
+                {
+                    if(cell1.Any(l.Name.Contains))
+                    {
+                        if(l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+                if (bigcell == 2)
+                {
+                    if (cell2.Any(l.Name.Contains))
+                    {
+                        if (l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+                if (bigcell == 3)
+                {
+                    if (cell3.Any(l.Name.Contains))
+                    {
+                        if (l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+                if (bigcell == 4)
+                {
+                    if (cell4.Any(l.Name.Contains))
+                    {
+                        if (l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+                if (bigcell == 5)
+                {
+                    if (cell5.Any(l.Name.Contains))
+                    {
+                        if (l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+                if (bigcell == 6)
+                {
+                    if (cell6.Any(l.Name.Contains))
+                    {
+                        if (l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+                if (bigcell == 7)
+                {
+                    if (cell7.Any(l.Name.Contains))
+                    {
+                        if (l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+                if (bigcell == 8)
+                {
+                    if (cell8.Any(l.Name.Contains))
+                    {
+                        if (l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+                if (bigcell == 9)
+                {
+                    if (cell9.Any(l.Name.Contains))
+                    {
+                        if (l.Name.Contains("h"))
+                        {
+                            l.BackColor = Color.FromArgb(35, 35, 35);
+                            l.ForeColor = Color.White;
+                        }
+                    }
+                }
+            }
+
         }
         private void l1r1_Click(object sender, EventArgs e)
         {
@@ -2575,6 +2679,230 @@ namespace sudoku
                                             l1.Text = "1";
                                         }
                                         else if(l1.Text == "1")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (nr2)
+                {
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if (l.Name == selectedcell)
+                        {
+                            if (l.Text == "")
+                            {
+                                foreach (Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if (l1.Name == selectedcell + "h2")
+                                    {
+                                        if (l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "2";
+                                        }
+                                        else if (l1.Text == "2")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (nr3)
+                {
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if (l.Name == selectedcell)
+                        {
+                            if (l.Text == "")
+                            {
+                                foreach (Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if (l1.Name == selectedcell + "h3")
+                                    {
+                                        if (l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "3";
+                                        }
+                                        else if (l1.Text == "3")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (nr4)
+                {
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if (l.Name == selectedcell)
+                        {
+                            if (l.Text == "")
+                            {
+                                foreach (Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if (l1.Name == selectedcell + "h4")
+                                    {
+                                        if (l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "4";
+                                        }
+                                        else if (l1.Text == "4")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (nr5)
+                {
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if (l.Name == selectedcell)
+                        {
+                            if (l.Text == "")
+                            {
+                                foreach (Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if (l1.Name == selectedcell + "h5")
+                                    {
+                                        if (l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "5";
+                                        }
+                                        else if (l1.Text == "5")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (nr6)
+                {
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if (l.Name == selectedcell)
+                        {
+                            if (l.Text == "")
+                            {
+                                foreach (Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if (l1.Name == selectedcell + "h6")
+                                    {
+                                        if (l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "6";
+                                        }
+                                        else if (l1.Text == "6")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (nr7)
+                {
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if (l.Name == selectedcell)
+                        {
+                            if (l.Text == "")
+                            {
+                                foreach (Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if (l1.Name == selectedcell + "h7")
+                                    {
+                                        if (l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "7";
+                                        }
+                                        else if (l1.Text == "7")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (nr8)
+                {
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if (l.Name == selectedcell)
+                        {
+                            if (l.Text == "")
+                            {
+                                foreach (Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if (l1.Name == selectedcell + "h8")
+                                    {
+                                        if (l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "8";
+                                        }
+                                        else if (l1.Text == "8")
+                                        {
+                                            l1.Visible = false;
+                                            l1.Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (nr9)
+                {
+                    foreach (Label l in panel1.Controls.OfType<Label>())
+                    {
+                        if (l.Name == selectedcell)
+                        {
+                            if (l.Text == "")
+                            {
+                                foreach (Label l1 in panel1.Controls.OfType<Label>())
+                                {
+                                    if (l1.Name == selectedcell + "h9")
+                                    {
+                                        if (l1.Text == "")
+                                        {
+                                            l1.Visible = true;
+                                            l1.Text = "9";
+                                        }
+                                        else if (l1.Text == "9")
                                         {
                                             l1.Visible = false;
                                             l1.Text = "";

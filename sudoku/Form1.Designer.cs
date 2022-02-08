@@ -1194,7 +1194,7 @@ namespace sudoku
             // 
             this.l1r1h9.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h9.ForeColor = System.Drawing.Color.White;
+            this.l1r1h9.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h9.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h9.Location = new System.Drawing.Point(29, 29);
             this.l1r1h9.Name = "l1r1h9";
@@ -1207,7 +1207,7 @@ namespace sudoku
             // 
             this.l1r1h8.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h8.ForeColor = System.Drawing.Color.White;
+            this.l1r1h8.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h8.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h8.Location = new System.Drawing.Point(16, 29);
             this.l1r1h8.Name = "l1r1h8";
@@ -1220,7 +1220,7 @@ namespace sudoku
             // 
             this.l1r1h7.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h7.ForeColor = System.Drawing.Color.White;
+            this.l1r1h7.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h7.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h7.Location = new System.Drawing.Point(3, 29);
             this.l1r1h7.Name = "l1r1h7";
@@ -1233,7 +1233,7 @@ namespace sudoku
             // 
             this.l1r1h6.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h6.ForeColor = System.Drawing.Color.White;
+            this.l1r1h6.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h6.Location = new System.Drawing.Point(29, 16);
             this.l1r1h6.Name = "l1r1h6";
@@ -1246,7 +1246,7 @@ namespace sudoku
             // 
             this.l1r1h5.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h5.ForeColor = System.Drawing.Color.White;
+            this.l1r1h5.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h5.Location = new System.Drawing.Point(16, 16);
             this.l1r1h5.Name = "l1r1h5";
@@ -1259,7 +1259,7 @@ namespace sudoku
             // 
             this.l1r1h4.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h4.ForeColor = System.Drawing.Color.White;
+            this.l1r1h4.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h4.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h4.Location = new System.Drawing.Point(3, 16);
             this.l1r1h4.Name = "l1r1h4";
@@ -1272,7 +1272,7 @@ namespace sudoku
             // 
             this.l1r1h3.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h3.ForeColor = System.Drawing.Color.White;
+            this.l1r1h3.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h3.Location = new System.Drawing.Point(29, 2);
             this.l1r1h3.Name = "l1r1h3";
@@ -1285,7 +1285,7 @@ namespace sudoku
             // 
             this.l1r1h2.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h2.ForeColor = System.Drawing.Color.White;
+            this.l1r1h2.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h2.Location = new System.Drawing.Point(16, 2);
             this.l1r1h2.Name = "l1r1h2";
@@ -1298,7 +1298,7 @@ namespace sudoku
             // 
             this.l1r1h1.BackColor = System.Drawing.Color.Transparent;
             this.l1r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.l1r1h1.ForeColor = System.Drawing.Color.White;
+            this.l1r1h1.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.l1r1h1.Location = new System.Drawing.Point(3, 2);
             this.l1r1h1.Name = "l1r1h1";
