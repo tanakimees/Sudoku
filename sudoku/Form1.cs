@@ -4143,30 +4143,5 @@ namespace sudoku
                 nr9 = false;
             }
         }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox45_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

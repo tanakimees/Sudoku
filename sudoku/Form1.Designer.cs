@@ -2776,7 +2776,6 @@ namespace sudoku
             this.textBox45.Size = new System.Drawing.Size(400, 1);
             this.textBox45.TabIndex = 32;
             this.textBox45.TabStop = false;
-            this.textBox45.TextChanged += new System.EventHandler(this.textBox45_TextChanged);
             // 
             // textBox44
             // 
@@ -3205,7 +3204,6 @@ namespace sudoku
             this.l1r3h1.Size = new System.Drawing.Size(12, 12);
             this.l1r3h1.TabIndex = 205;
             this.l1r3h1.Text = "0";
-            this.l1r3h1.Click += new System.EventHandler(this.label16_Click);
             // 
             // l1r4h1
             // 
@@ -3271,7 +3269,6 @@ namespace sudoku
             this.l1r8h1.Size = new System.Drawing.Size(12, 12);
             this.l1r8h1.TabIndex = 210;
             this.l1r8h1.Text = "0";
-            this.l1r8h1.Click += new System.EventHandler(this.label16_Click_1);
             // 
             // l1r9h1
             // 
@@ -3324,7 +3321,6 @@ namespace sudoku
             this.l4r1h1.Size = new System.Drawing.Size(12, 12);
             this.l4r1h1.TabIndex = 214;
             this.l4r1h1.Text = "0";
-            this.l4r1h1.Click += new System.EventHandler(this.label18_Click);
             // 
             // l5r1h1
             // 
@@ -3338,7 +3334,6 @@ namespace sudoku
             this.l5r1h1.Size = new System.Drawing.Size(12, 12);
             this.l5r1h1.TabIndex = 215;
             this.l5r1h1.Text = "0";
-            this.l5r1h1.Click += new System.EventHandler(this.label19_Click);
             // 
             // l6r1h1
             // 
