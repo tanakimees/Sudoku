@@ -650,11 +650,16 @@ namespace sudoku
                 {
                     l.ForeColor = Color.White;
                     l.BackColor = Color.FromArgb(35, 35, 35);
+                    red = l.BackColor.R;
+                }
+                if(l.Name.Contains(lblname) && l.Name.Contains("h"))
+                {
+                    l.BackColor = Color.FromArgb(35, 35, 35);
                 }
             }
         }
 
-
+        int red;
         //DIPSHIT UI
         void mleave()
         {
@@ -797,11 +802,16 @@ namespace sudoku
                         l.BackColor = Color.FromArgb(25, 25, 25);
                         l.ForeColor = Color.Gray;
                     }
+                    red = l.BackColor.R;
                 }
 
                 if(l.Text == lbltxt)
                 {
                     l.ForeColor = Color.White;
+                }
+                if(l.Name.Contains(lblname) && l.Name.Contains("h"))
+                {
+                    l.BackColor = Color.FromArgb(red, red, red);
                 }
               
             }
