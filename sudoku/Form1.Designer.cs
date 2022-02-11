@@ -227,6 +227,31 @@ namespace sudoku
             this.fadeout = new System.Windows.Forms.Timer(this.components);
             this.createsudoku = new System.Windows.Forms.Timer(this.components);
             this.removenr = new System.Windows.Forms.Timer(this.components);
+            this.l1r2h1 = new System.Windows.Forms.Label();
+            this.l1r3h1 = new System.Windows.Forms.Label();
+            this.l1r4h1 = new System.Windows.Forms.Label();
+            this.l1r5h1 = new System.Windows.Forms.Label();
+            this.l1r6h1 = new System.Windows.Forms.Label();
+            this.l1r7h1 = new System.Windows.Forms.Label();
+            this.l1r8h1 = new System.Windows.Forms.Label();
+            this.l1r9h1 = new System.Windows.Forms.Label();
+            this.l2r1h1 = new System.Windows.Forms.Label();
+            this.l3r1h1 = new System.Windows.Forms.Label();
+            this.l4r1h1 = new System.Windows.Forms.Label();
+            this.l5r1h1 = new System.Windows.Forms.Label();
+            this.l6r1h1 = new System.Windows.Forms.Label();
+            this.l9r1h1 = new System.Windows.Forms.Label();
+            this.l8r1h1 = new System.Windows.Forms.Label();
+            this.l7r1h1 = new System.Windows.Forms.Label();
+            this.l2r2h9 = new System.Windows.Forms.Label();
+            this.l2r2h8 = new System.Windows.Forms.Label();
+            this.l2r2h7 = new System.Windows.Forms.Label();
+            this.l2r2h6 = new System.Windows.Forms.Label();
+            this.l2r2h5 = new System.Windows.Forms.Label();
+            this.l2r2h4 = new System.Windows.Forms.Label();
+            this.l2r2h3 = new System.Windows.Forms.Label();
+            this.l2r2h2 = new System.Windows.Forms.Label();
+            this.l2r2h1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -697,12 +722,13 @@ namespace sudoku
             this.label14.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(10, 15);
+            this.label14.Location = new System.Drawing.Point(1, 1);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(258, 100);
+            this.label14.Size = new System.Drawing.Size(274, 120);
             this.label14.TabIndex = 31;
             this.label14.Text = "Type in a number to fill an empty cell in\r\nsudoku.\r\nPress SHIFT key and type in a" +
-    " number\r\nto fill in reminders.\r\nType Q to delete a number from a cell.";
+    " number\r\nto fill in reminders.";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel9
             // 
@@ -715,7 +741,7 @@ namespace sudoku
             this.panel9.Controls.Add(this.textBox60);
             this.panel9.Controls.Add(this.textBox61);
             this.panel9.Controls.Add(this.textBox62);
-            this.panel9.Location = new System.Drawing.Point(414, 109);
+            this.panel9.Location = new System.Drawing.Point(420, 30);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(109, 60);
             this.panel9.TabIndex = 28;
@@ -1074,6 +1100,31 @@ namespace sudoku
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel1.Controls.Add(this.l2r2h9);
+            this.panel1.Controls.Add(this.l2r2h8);
+            this.panel1.Controls.Add(this.l2r2h7);
+            this.panel1.Controls.Add(this.l2r2h6);
+            this.panel1.Controls.Add(this.l2r2h5);
+            this.panel1.Controls.Add(this.l2r2h4);
+            this.panel1.Controls.Add(this.l2r2h3);
+            this.panel1.Controls.Add(this.l2r2h2);
+            this.panel1.Controls.Add(this.l2r2h1);
+            this.panel1.Controls.Add(this.l9r1h1);
+            this.panel1.Controls.Add(this.l8r1h1);
+            this.panel1.Controls.Add(this.l7r1h1);
+            this.panel1.Controls.Add(this.l6r1h1);
+            this.panel1.Controls.Add(this.l5r1h1);
+            this.panel1.Controls.Add(this.l4r1h1);
+            this.panel1.Controls.Add(this.l3r1h1);
+            this.panel1.Controls.Add(this.l2r1h1);
+            this.panel1.Controls.Add(this.l1r9h1);
+            this.panel1.Controls.Add(this.l1r8h1);
+            this.panel1.Controls.Add(this.l1r7h1);
+            this.panel1.Controls.Add(this.l1r6h1);
+            this.panel1.Controls.Add(this.l1r5h1);
+            this.panel1.Controls.Add(this.l1r4h1);
+            this.panel1.Controls.Add(this.l1r3h1);
+            this.panel1.Controls.Add(this.l1r2h1);
             this.panel1.Controls.Add(this.l1r1h9);
             this.panel1.Controls.Add(this.l1r1h8);
             this.panel1.Controls.Add(this.l1r1h7);
@@ -1274,7 +1325,7 @@ namespace sudoku
             this.l1r1h3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.l1r1h3.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.l1r1h3.Location = new System.Drawing.Point(29, 2);
+            this.l1r1h3.Location = new System.Drawing.Point(29, 3);
             this.l1r1h3.Name = "l1r1h3";
             this.l1r1h3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.l1r1h3.Size = new System.Drawing.Size(12, 12);
@@ -1287,7 +1338,7 @@ namespace sudoku
             this.l1r1h2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.l1r1h2.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.l1r1h2.Location = new System.Drawing.Point(16, 2);
+            this.l1r1h2.Location = new System.Drawing.Point(16, 3);
             this.l1r1h2.Name = "l1r1h2";
             this.l1r1h2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.l1r1h2.Size = new System.Drawing.Size(12, 12);
@@ -1300,7 +1351,7 @@ namespace sudoku
             this.l1r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.l1r1h1.ForeColor = System.Drawing.Color.Gray;
             this.l1r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.l1r1h1.Location = new System.Drawing.Point(3, 2);
+            this.l1r1h1.Location = new System.Drawing.Point(3, 3);
             this.l1r1h1.Name = "l1r1h1";
             this.l1r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.l1r1h1.Size = new System.Drawing.Size(12, 12);
@@ -2725,6 +2776,7 @@ namespace sudoku
             this.textBox45.Size = new System.Drawing.Size(400, 1);
             this.textBox45.TabIndex = 32;
             this.textBox45.TabStop = false;
+            this.textBox45.TextChanged += new System.EventHandler(this.textBox45_TextChanged);
             // 
             // textBox44
             // 
@@ -3128,6 +3180,335 @@ namespace sudoku
             this.removenr.Interval = 1;
             this.removenr.Tick += new System.EventHandler(this.removenr_Tick);
             // 
+            // l1r2h1
+            // 
+            this.l1r2h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r2h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r2h1.ForeColor = System.Drawing.Color.Gray;
+            this.l1r2h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r2h1.Location = new System.Drawing.Point(46, 3);
+            this.l1r2h1.Name = "l1r2h1";
+            this.l1r2h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r2h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r2h1.TabIndex = 204;
+            this.l1r2h1.Text = "0";
+            // 
+            // l1r3h1
+            // 
+            this.l1r3h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r3h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r3h1.ForeColor = System.Drawing.Color.Gray;
+            this.l1r3h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r3h1.Location = new System.Drawing.Point(90, 3);
+            this.l1r3h1.Name = "l1r3h1";
+            this.l1r3h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r3h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r3h1.TabIndex = 205;
+            this.l1r3h1.Text = "0";
+            this.l1r3h1.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // l1r4h1
+            // 
+            this.l1r4h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r4h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r4h1.ForeColor = System.Drawing.Color.Gray;
+            this.l1r4h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r4h1.Location = new System.Drawing.Point(136, 3);
+            this.l1r4h1.Name = "l1r4h1";
+            this.l1r4h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r4h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r4h1.TabIndex = 206;
+            this.l1r4h1.Text = "0";
+            // 
+            // l1r5h1
+            // 
+            this.l1r5h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r5h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r5h1.ForeColor = System.Drawing.Color.Gray;
+            this.l1r5h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r5h1.Location = new System.Drawing.Point(178, 3);
+            this.l1r5h1.Name = "l1r5h1";
+            this.l1r5h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r5h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r5h1.TabIndex = 207;
+            this.l1r5h1.Text = "0";
+            // 
+            // l1r6h1
+            // 
+            this.l1r6h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r6h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r6h1.ForeColor = System.Drawing.Color.Gray;
+            this.l1r6h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r6h1.Location = new System.Drawing.Point(222, 3);
+            this.l1r6h1.Name = "l1r6h1";
+            this.l1r6h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r6h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r6h1.TabIndex = 208;
+            this.l1r6h1.Text = "0";
+            // 
+            // l1r7h1
+            // 
+            this.l1r7h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r7h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r7h1.ForeColor = System.Drawing.Color.Gray;
+            this.l1r7h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r7h1.Location = new System.Drawing.Point(268, 3);
+            this.l1r7h1.Name = "l1r7h1";
+            this.l1r7h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r7h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r7h1.TabIndex = 209;
+            this.l1r7h1.Text = "0";
+            // 
+            // l1r8h1
+            // 
+            this.l1r8h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r8h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r8h1.ForeColor = System.Drawing.Color.Gray;
+            this.l1r8h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r8h1.Location = new System.Drawing.Point(311, 3);
+            this.l1r8h1.Name = "l1r8h1";
+            this.l1r8h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r8h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r8h1.TabIndex = 210;
+            this.l1r8h1.Text = "0";
+            this.l1r8h1.Click += new System.EventHandler(this.label16_Click_1);
+            // 
+            // l1r9h1
+            // 
+            this.l1r9h1.BackColor = System.Drawing.Color.Transparent;
+            this.l1r9h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l1r9h1.ForeColor = System.Drawing.Color.Gray;
+            this.l1r9h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l1r9h1.Location = new System.Drawing.Point(357, 3);
+            this.l1r9h1.Name = "l1r9h1";
+            this.l1r9h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l1r9h1.Size = new System.Drawing.Size(12, 12);
+            this.l1r9h1.TabIndex = 211;
+            this.l1r9h1.Text = "0";
+            // 
+            // l2r1h1
+            // 
+            this.l2r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l2r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r1h1.ForeColor = System.Drawing.Color.Gray;
+            this.l2r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r1h1.Location = new System.Drawing.Point(3, 46);
+            this.l2r1h1.Name = "l2r1h1";
+            this.l2r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l2r1h1.TabIndex = 212;
+            this.l2r1h1.Text = "0";
+            // 
+            // l3r1h1
+            // 
+            this.l3r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l3r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l3r1h1.ForeColor = System.Drawing.Color.Gray;
+            this.l3r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l3r1h1.Location = new System.Drawing.Point(3, 90);
+            this.l3r1h1.Name = "l3r1h1";
+            this.l3r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l3r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l3r1h1.TabIndex = 213;
+            this.l3r1h1.Text = "0";
+            // 
+            // l4r1h1
+            // 
+            this.l4r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l4r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l4r1h1.ForeColor = System.Drawing.Color.Gray;
+            this.l4r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l4r1h1.Location = new System.Drawing.Point(3, 136);
+            this.l4r1h1.Name = "l4r1h1";
+            this.l4r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l4r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l4r1h1.TabIndex = 214;
+            this.l4r1h1.Text = "0";
+            this.l4r1h1.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // l5r1h1
+            // 
+            this.l5r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l5r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l5r1h1.ForeColor = System.Drawing.Color.Gray;
+            this.l5r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l5r1h1.Location = new System.Drawing.Point(3, 178);
+            this.l5r1h1.Name = "l5r1h1";
+            this.l5r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l5r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l5r1h1.TabIndex = 215;
+            this.l5r1h1.Text = "0";
+            this.l5r1h1.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // l6r1h1
+            // 
+            this.l6r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l6r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l6r1h1.ForeColor = System.Drawing.Color.Gray;
+            this.l6r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l6r1h1.Location = new System.Drawing.Point(3, 222);
+            this.l6r1h1.Name = "l6r1h1";
+            this.l6r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l6r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l6r1h1.TabIndex = 216;
+            this.l6r1h1.Text = "0";
+            // 
+            // l9r1h1
+            // 
+            this.l9r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l9r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l9r1h1.ForeColor = System.Drawing.Color.Gray;
+            this.l9r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l9r1h1.Location = new System.Drawing.Point(3, 357);
+            this.l9r1h1.Name = "l9r1h1";
+            this.l9r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l9r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l9r1h1.TabIndex = 219;
+            this.l9r1h1.Text = "0";
+            // 
+            // l8r1h1
+            // 
+            this.l8r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l8r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l8r1h1.ForeColor = System.Drawing.Color.Gray;
+            this.l8r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l8r1h1.Location = new System.Drawing.Point(3, 311);
+            this.l8r1h1.Name = "l8r1h1";
+            this.l8r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l8r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l8r1h1.TabIndex = 218;
+            this.l8r1h1.Text = "0";
+            // 
+            // l7r1h1
+            // 
+            this.l7r1h1.BackColor = System.Drawing.Color.Transparent;
+            this.l7r1h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l7r1h1.ForeColor = System.Drawing.Color.Gray;
+            this.l7r1h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l7r1h1.Location = new System.Drawing.Point(3, 268);
+            this.l7r1h1.Name = "l7r1h1";
+            this.l7r1h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l7r1h1.Size = new System.Drawing.Size(12, 12);
+            this.l7r1h1.TabIndex = 217;
+            this.l7r1h1.Text = "0";
+            // 
+            // l2r2h9
+            // 
+            this.l2r2h9.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h9.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h9.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h9.Location = new System.Drawing.Point(72, 72);
+            this.l2r2h9.Name = "l2r2h9";
+            this.l2r2h9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h9.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h9.TabIndex = 228;
+            this.l2r2h9.Text = "0";
+            // 
+            // l2r2h8
+            // 
+            this.l2r2h8.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h8.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h8.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h8.Location = new System.Drawing.Point(59, 72);
+            this.l2r2h8.Name = "l2r2h8";
+            this.l2r2h8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h8.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h8.TabIndex = 227;
+            this.l2r2h8.Text = "0";
+            // 
+            // l2r2h7
+            // 
+            this.l2r2h7.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h7.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h7.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h7.Location = new System.Drawing.Point(46, 72);
+            this.l2r2h7.Name = "l2r2h7";
+            this.l2r2h7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h7.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h7.TabIndex = 226;
+            this.l2r2h7.Text = "0";
+            // 
+            // l2r2h6
+            // 
+            this.l2r2h6.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h6.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h6.Location = new System.Drawing.Point(72, 59);
+            this.l2r2h6.Name = "l2r2h6";
+            this.l2r2h6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h6.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h6.TabIndex = 225;
+            this.l2r2h6.Text = "0";
+            // 
+            // l2r2h5
+            // 
+            this.l2r2h5.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h5.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h5.Location = new System.Drawing.Point(59, 59);
+            this.l2r2h5.Name = "l2r2h5";
+            this.l2r2h5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h5.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h5.TabIndex = 224;
+            this.l2r2h5.Text = "0";
+            // 
+            // l2r2h4
+            // 
+            this.l2r2h4.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h4.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h4.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h4.Location = new System.Drawing.Point(46, 59);
+            this.l2r2h4.Name = "l2r2h4";
+            this.l2r2h4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h4.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h4.TabIndex = 223;
+            this.l2r2h4.Text = "0";
+            // 
+            // l2r2h3
+            // 
+            this.l2r2h3.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h3.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h3.Location = new System.Drawing.Point(72, 46);
+            this.l2r2h3.Name = "l2r2h3";
+            this.l2r2h3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h3.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h3.TabIndex = 222;
+            this.l2r2h3.Text = "0";
+            // 
+            // l2r2h2
+            // 
+            this.l2r2h2.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h2.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h2.Location = new System.Drawing.Point(59, 46);
+            this.l2r2h2.Name = "l2r2h2";
+            this.l2r2h2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h2.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h2.TabIndex = 221;
+            this.l2r2h2.Text = "0";
+            // 
+            // l2r2h1
+            // 
+            this.l2r2h1.BackColor = System.Drawing.Color.Transparent;
+            this.l2r2h1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.l2r2h1.ForeColor = System.Drawing.Color.Gray;
+            this.l2r2h1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l2r2h1.Location = new System.Drawing.Point(46, 46);
+            this.l2r2h1.Name = "l2r2h1";
+            this.l2r2h1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.l2r2h1.Size = new System.Drawing.Size(12, 12);
+            this.l2r2h1.TabIndex = 220;
+            this.l2r2h1.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -3384,6 +3765,31 @@ namespace sudoku
         private System.Windows.Forms.Label l1r1h4;
         private System.Windows.Forms.Label l1r1h3;
         private System.Windows.Forms.Label l1r1h2;
+        private System.Windows.Forms.Label l1r2h1;
+        private System.Windows.Forms.Label l1r3h1;
+        private System.Windows.Forms.Label l1r8h1;
+        private System.Windows.Forms.Label l1r7h1;
+        private System.Windows.Forms.Label l1r6h1;
+        private System.Windows.Forms.Label l1r5h1;
+        private System.Windows.Forms.Label l1r4h1;
+        private System.Windows.Forms.Label l1r9h1;
+        private System.Windows.Forms.Label l5r1h1;
+        private System.Windows.Forms.Label l4r1h1;
+        private System.Windows.Forms.Label l3r1h1;
+        private System.Windows.Forms.Label l2r1h1;
+        private System.Windows.Forms.Label l9r1h1;
+        private System.Windows.Forms.Label l8r1h1;
+        private System.Windows.Forms.Label l7r1h1;
+        private System.Windows.Forms.Label l6r1h1;
+        private System.Windows.Forms.Label l2r2h9;
+        private System.Windows.Forms.Label l2r2h8;
+        private System.Windows.Forms.Label l2r2h7;
+        private System.Windows.Forms.Label l2r2h6;
+        private System.Windows.Forms.Label l2r2h5;
+        private System.Windows.Forms.Label l2r2h4;
+        private System.Windows.Forms.Label l2r2h3;
+        private System.Windows.Forms.Label l2r2h2;
+        private System.Windows.Forms.Label l2r2h1;
     }
 }
 

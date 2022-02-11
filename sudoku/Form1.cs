@@ -2498,6 +2498,136 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "1";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "1")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if(bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if(l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "1")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if(l.Text == "1")
                         {
@@ -2517,6 +2647,136 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "2";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "2")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if (bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "2")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if (l.Text == "2")
                         {
@@ -2536,6 +2796,136 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "3";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "3")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if (bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "3")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if (l.Text == "3")
                         {
@@ -2555,6 +2945,136 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "4";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "4")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if (bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "4")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if (l.Text == "4")
                         {
@@ -2574,6 +3094,136 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "5";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "5")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if (bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "5")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if (l.Text == "5")
                         {
@@ -2593,6 +3243,136 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "6";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "6")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if (bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "6")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if (l.Text == "6")
                         {
@@ -2612,6 +3392,136 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "7";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "7")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if (bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "7")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if (l.Text == "7")
                         {
@@ -2631,6 +3541,136 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "8";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "8")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if (bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "8")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if (l.Text == "8")
                         {
@@ -2648,8 +3688,139 @@ namespace sudoku
                     {
                         if (l.Text == "")
                         {
+
                             lesslines1();
                             l.Text = "9";
+                            foreach (Label l2 in panel1.Controls.OfType<Label>())
+                            {
+                                if (l2.Name.Contains(line) || l2.Name.Contains(row))
+                                {
+                                    if (l2.Name.Contains("h"))
+                                    {
+                                        if (l2.Text == "9")
+                                        {
+                                            l2.Text = "";
+                                        }
+                                    }
+                                }
+                                if (bigcell == 1)
+                                {
+                                    if (cell1.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 2)
+                                {
+                                    if (cell2.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 3)
+                                {
+                                    if (cell3.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 4)
+                                {
+                                    if (cell4.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 5)
+                                {
+                                    if (cell5.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 6)
+                                {
+                                    if (cell6.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 7)
+                                {
+                                    if (cell7.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 8)
+                                {
+                                    if (cell8.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                                if (bigcell == 9)
+                                {
+                                    if (cell9.Any(l2.Name.Contains))
+                                    {
+                                        if (l2.Name.Contains("h"))
+                                        {
+                                            if (l2.Text == "9")
+                                            {
+                                                l2.Text = "";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         else if (l.Text == "9")
                         {
@@ -2971,6 +4142,31 @@ namespace sudoku
             {
                 nr9 = false;
             }
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox45_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
