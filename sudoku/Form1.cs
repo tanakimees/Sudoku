@@ -804,7 +804,7 @@ namespace sudoku
                         l.BackColor = Color.FromArgb(25, 25, 25);
                         l.ForeColor = Color.Gray;
                     }
-                    red = l.BackColor.R;
+                    
                 }
 
                 if(l.Text == lbltxt)
@@ -814,13 +814,22 @@ namespace sudoku
                 if(l.Name == lblname)
                 {
                     red = l.BackColor.R;
+                    dotheshitneeded();
                 }
+            }
+        }
+
+        void dotheshitneeded()
+        {
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
                 if(l.Name.Contains(lblname) && l.Name.Contains("h"))
                 {
                     l.BackColor = Color.FromArgb(red, red, red);
                 }
             }
         }
+
         private void l1r1_MouseEnter(object sender, EventArgs e)
         {
             lblname = "l1r1";
