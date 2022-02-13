@@ -28,6 +28,8 @@ namespace sudoku
 
         int bigcell = 0;
 
+        int red1 = 0;
+
         string[] cell1 = { "l1r1","l1r2","l1r3", "l2r1", "l2r2", "l2r3", "l3r1", "l3r2", "l3r3" };
         string[] cell2 = { "l1r4", "l1r5", "l1r6", "l2r4", "l2r5", "l2r6", "l3r4", "l3r5", "l3r6" };
         string[] cell3 = { "l1r7", "l1r8", "l1r9", "l2r7", "l2r8", "l2r9", "l3r7", "l3r8", "l3r9" };
@@ -648,9 +650,9 @@ namespace sudoku
             {
                 if(l.Name == lblname)
                 {
-                    l.ForeColor = Color.White;
-                    l.BackColor = Color.FromArgb(35, 35, 35);
                     red = l.BackColor.R;
+                    l.ForeColor = Color.White;
+                    l.BackColor = Color.FromArgb(35, 35, 35);          
                 }
                 if(l.Name.Contains(lblname) && l.Name.Contains("h"))
                 {
@@ -809,11 +811,14 @@ namespace sudoku
                 {
                     l.ForeColor = Color.White;
                 }
+                if(l.Name == lblname)
+                {
+                    red = l.BackColor.R;
+                }
                 if(l.Name.Contains(lblname) && l.Name.Contains("h"))
                 {
                     l.BackColor = Color.FromArgb(red, red, red);
                 }
-              
             }
         }
         private void l1r1_MouseEnter(object sender, EventArgs e)
