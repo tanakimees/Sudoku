@@ -28,8 +28,6 @@ namespace sudoku
 
         int bigcell = 0;
 
-        int red1 = 0;
-
         string[] cell1 = { "l1r1","l1r2","l1r3", "l2r1", "l2r2", "l2r3", "l3r1", "l3r2", "l3r3" };
         string[] cell2 = { "l1r4", "l1r5", "l1r6", "l2r4", "l2r5", "l2r6", "l3r4", "l3r5", "l3r6" };
         string[] cell3 = { "l1r7", "l1r8", "l1r9", "l2r7", "l2r8", "l2r9", "l3r7", "l3r8", "l3r9" };
@@ -91,6 +89,7 @@ namespace sudoku
 
             base.WndProc(ref m);
         }
+
         private void fadein_Tick(object sender, EventArgs e)
         {
             this.Opacity += 0.02;
