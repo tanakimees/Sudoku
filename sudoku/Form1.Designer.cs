@@ -974,6 +974,7 @@ namespace sudoku
             this.fadeout = new System.Windows.Forms.Timer(this.components);
             this.createsudoku = new System.Windows.Forms.Timer(this.components);
             this.removenr = new System.Windows.Forms.Timer(this.components);
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -1355,6 +1356,7 @@ namespace sudoku
             // gamepanel
             // 
             this.gamepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.gamepanel.Controls.Add(this.panel13);
             this.gamepanel.Controls.Add(this.panel12);
             this.gamepanel.Controls.Add(this.panel11);
             this.gamepanel.Controls.Add(this.panel9);
@@ -14338,6 +14340,14 @@ namespace sudoku
             this.removenr.Interval = 1;
             this.removenr.Tick += new System.EventHandler(this.removenr_Tick);
             // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel13.Location = new System.Drawing.Point(420, 219);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(109, 200);
+            this.panel13.TabIndex = 34;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -15343,6 +15353,7 @@ namespace sudoku
         private System.Windows.Forms.Label all4r;
         private System.Windows.Forms.Label all3r;
         private System.Windows.Forms.Label all2r;
+        private System.Windows.Forms.Panel panel13;
     }
 }
 
