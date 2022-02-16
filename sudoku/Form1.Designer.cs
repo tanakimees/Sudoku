@@ -58,6 +58,15 @@ namespace sudoku
             this.label1 = new System.Windows.Forms.Label();
             this.gamepanel = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.all9r = new System.Windows.Forms.Label();
+            this.all8r = new System.Windows.Forms.Label();
+            this.all6r = new System.Windows.Forms.Label();
+            this.all5r = new System.Windows.Forms.Label();
+            this.all7r = new System.Windows.Forms.Label();
+            this.all4r = new System.Windows.Forms.Label();
+            this.all3r = new System.Windows.Forms.Label();
+            this.all2r = new System.Windows.Forms.Label();
+            this.all1r = new System.Windows.Forms.Label();
             this.textBox80 = new System.Windows.Forms.TextBox();
             this.textBox79 = new System.Windows.Forms.TextBox();
             this.textBox78 = new System.Windows.Forms.TextBox();
@@ -965,7 +974,6 @@ namespace sudoku
             this.fadeout = new System.Windows.Forms.Timer(this.components);
             this.createsudoku = new System.Windows.Forms.Timer(this.components);
             this.removenr = new System.Windows.Forms.Timer(this.components);
-            this.all1r = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -1367,6 +1375,14 @@ namespace sudoku
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel12.Controls.Add(this.all9r);
+            this.panel12.Controls.Add(this.all8r);
+            this.panel12.Controls.Add(this.all6r);
+            this.panel12.Controls.Add(this.all5r);
+            this.panel12.Controls.Add(this.all7r);
+            this.panel12.Controls.Add(this.all4r);
+            this.panel12.Controls.Add(this.all3r);
+            this.panel12.Controls.Add(this.all2r);
             this.panel12.Controls.Add(this.all1r);
             this.panel12.Controls.Add(this.textBox80);
             this.panel12.Controls.Add(this.textBox79);
@@ -1389,6 +1405,123 @@ namespace sudoku
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(109, 109);
             this.panel12.TabIndex = 7;
+            // 
+            // all9r
+            // 
+            this.all9r.BackColor = System.Drawing.Color.Transparent;
+            this.all9r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all9r.ForeColor = System.Drawing.Color.Gray;
+            this.all9r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all9r.Location = new System.Drawing.Point(96, 95);
+            this.all9r.Name = "all9r";
+            this.all9r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all9r.Size = new System.Drawing.Size(12, 12);
+            this.all9r.TabIndex = 932;
+            this.all9r.Text = "0";
+            // 
+            // all8r
+            // 
+            this.all8r.BackColor = System.Drawing.Color.Transparent;
+            this.all8r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all8r.ForeColor = System.Drawing.Color.Gray;
+            this.all8r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all8r.Location = new System.Drawing.Point(60, 95);
+            this.all8r.Name = "all8r";
+            this.all8r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all8r.Size = new System.Drawing.Size(12, 12);
+            this.all8r.TabIndex = 931;
+            this.all8r.Text = "0";
+            // 
+            // all6r
+            // 
+            this.all6r.BackColor = System.Drawing.Color.Transparent;
+            this.all6r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all6r.ForeColor = System.Drawing.Color.Gray;
+            this.all6r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all6r.Location = new System.Drawing.Point(96, 59);
+            this.all6r.Name = "all6r";
+            this.all6r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all6r.Size = new System.Drawing.Size(12, 12);
+            this.all6r.TabIndex = 930;
+            this.all6r.Text = "0";
+            // 
+            // all5r
+            // 
+            this.all5r.BackColor = System.Drawing.Color.Transparent;
+            this.all5r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all5r.ForeColor = System.Drawing.Color.Gray;
+            this.all5r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all5r.Location = new System.Drawing.Point(60, 59);
+            this.all5r.Name = "all5r";
+            this.all5r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all5r.Size = new System.Drawing.Size(12, 12);
+            this.all5r.TabIndex = 929;
+            this.all5r.Text = "0";
+            // 
+            // all7r
+            // 
+            this.all7r.BackColor = System.Drawing.Color.Transparent;
+            this.all7r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all7r.ForeColor = System.Drawing.Color.Gray;
+            this.all7r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all7r.Location = new System.Drawing.Point(24, 95);
+            this.all7r.Name = "all7r";
+            this.all7r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all7r.Size = new System.Drawing.Size(12, 12);
+            this.all7r.TabIndex = 928;
+            this.all7r.Text = "0";
+            // 
+            // all4r
+            // 
+            this.all4r.BackColor = System.Drawing.Color.Transparent;
+            this.all4r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all4r.ForeColor = System.Drawing.Color.Gray;
+            this.all4r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all4r.Location = new System.Drawing.Point(24, 59);
+            this.all4r.Name = "all4r";
+            this.all4r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all4r.Size = new System.Drawing.Size(12, 12);
+            this.all4r.TabIndex = 927;
+            this.all4r.Text = "0";
+            // 
+            // all3r
+            // 
+            this.all3r.BackColor = System.Drawing.Color.Transparent;
+            this.all3r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all3r.ForeColor = System.Drawing.Color.Gray;
+            this.all3r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all3r.Location = new System.Drawing.Point(96, 23);
+            this.all3r.Name = "all3r";
+            this.all3r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all3r.Size = new System.Drawing.Size(12, 12);
+            this.all3r.TabIndex = 926;
+            this.all3r.Text = "0";
+            // 
+            // all2r
+            // 
+            this.all2r.BackColor = System.Drawing.Color.Transparent;
+            this.all2r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all2r.ForeColor = System.Drawing.Color.Gray;
+            this.all2r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all2r.Location = new System.Drawing.Point(60, 23);
+            this.all2r.Name = "all2r";
+            this.all2r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all2r.Size = new System.Drawing.Size(12, 12);
+            this.all2r.TabIndex = 925;
+            this.all2r.Text = "0";
+            // 
+            // all1r
+            // 
+            this.all1r.BackColor = System.Drawing.Color.Transparent;
+            this.all1r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.all1r.ForeColor = System.Drawing.Color.Gray;
+            this.all1r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.all1r.Location = new System.Drawing.Point(24, 23);
+            this.all1r.Name = "all1r";
+            this.all1r.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.all1r.Size = new System.Drawing.Size(12, 12);
+            this.all1r.TabIndex = 924;
+            this.all1r.Text = "0";
             // 
             // textBox80
             // 
@@ -1514,6 +1647,9 @@ namespace sudoku
             this.all9.TabIndex = 39;
             this.all9.Text = "9";
             this.all9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all9.Click += new System.EventHandler(this.all9_Click);
+            this.all9.MouseEnter += new System.EventHandler(this.all9_MouseEnter);
+            this.all9.MouseLeave += new System.EventHandler(this.all9_MouseLeave);
             // 
             // all8
             // 
@@ -1527,6 +1663,9 @@ namespace sudoku
             this.all8.TabIndex = 38;
             this.all8.Text = "8";
             this.all8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all8.Click += new System.EventHandler(this.all8_Click);
+            this.all8.MouseEnter += new System.EventHandler(this.all8_MouseEnter);
+            this.all8.MouseLeave += new System.EventHandler(this.all8_MouseLeave);
             // 
             // all7
             // 
@@ -1540,6 +1679,9 @@ namespace sudoku
             this.all7.TabIndex = 37;
             this.all7.Text = "7";
             this.all7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all7.Click += new System.EventHandler(this.all7_Click);
+            this.all7.MouseEnter += new System.EventHandler(this.all7_MouseEnter);
+            this.all7.MouseLeave += new System.EventHandler(this.all7_MouseLeave);
             // 
             // all6
             // 
@@ -1553,6 +1695,9 @@ namespace sudoku
             this.all6.TabIndex = 36;
             this.all6.Text = "6";
             this.all6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all6.Click += new System.EventHandler(this.all6_Click);
+            this.all6.MouseEnter += new System.EventHandler(this.all6_MouseEnter);
+            this.all6.MouseLeave += new System.EventHandler(this.all6_MouseLeave);
             // 
             // all5
             // 
@@ -1566,6 +1711,9 @@ namespace sudoku
             this.all5.TabIndex = 35;
             this.all5.Text = "5";
             this.all5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all5.Click += new System.EventHandler(this.all5_Click);
+            this.all5.MouseEnter += new System.EventHandler(this.all5_MouseEnter);
+            this.all5.MouseLeave += new System.EventHandler(this.all5_MouseLeave);
             // 
             // all4
             // 
@@ -1579,6 +1727,9 @@ namespace sudoku
             this.all4.TabIndex = 34;
             this.all4.Text = "4";
             this.all4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all4.Click += new System.EventHandler(this.all4_Click);
+            this.all4.MouseEnter += new System.EventHandler(this.all4_MouseEnter);
+            this.all4.MouseLeave += new System.EventHandler(this.all4_MouseLeave);
             // 
             // all3
             // 
@@ -1592,6 +1743,9 @@ namespace sudoku
             this.all3.TabIndex = 33;
             this.all3.Text = "3";
             this.all3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all3.Click += new System.EventHandler(this.all3_Click);
+            this.all3.MouseEnter += new System.EventHandler(this.all3_MouseEnter);
+            this.all3.MouseLeave += new System.EventHandler(this.all3_MouseLeave);
             // 
             // all2
             // 
@@ -1605,6 +1759,9 @@ namespace sudoku
             this.all2.TabIndex = 32;
             this.all2.Text = "2";
             this.all2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all2.Click += new System.EventHandler(this.all2_Click);
+            this.all2.MouseEnter += new System.EventHandler(this.all2_MouseEnter);
+            this.all2.MouseLeave += new System.EventHandler(this.all2_MouseLeave);
             // 
             // all1
             // 
@@ -1618,6 +1775,9 @@ namespace sudoku
             this.all1.TabIndex = 31;
             this.all1.Text = "1";
             this.all1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all1.Click += new System.EventHandler(this.all1_Click);
+            this.all1.MouseEnter += new System.EventHandler(this.all1_MouseEnter);
+            this.all1.MouseLeave += new System.EventHandler(this.all1_MouseLeave);
             // 
             // panel11
             // 
@@ -14205,19 +14365,6 @@ namespace sudoku
             this.removenr.Interval = 1;
             this.removenr.Tick += new System.EventHandler(this.removenr_Tick);
             // 
-            // all1r
-            // 
-            this.all1r.BackColor = System.Drawing.Color.Transparent;
-            this.all1r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.all1r.ForeColor = System.Drawing.Color.Gray;
-            this.all1r.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.all1r.Location = new System.Drawing.Point(24, 22);
-            this.all1r.Name = "all1r";
-            this.all1r.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.all1r.Size = new System.Drawing.Size(12, 12);
-            this.all1r.TabIndex = 924;
-            this.all1r.Text = "0";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -15215,6 +15362,14 @@ namespace sudoku
         private System.Windows.Forms.TextBox textBox78;
         private System.Windows.Forms.TextBox textBox77;
         private System.Windows.Forms.Label all1r;
+        private System.Windows.Forms.Label all9r;
+        private System.Windows.Forms.Label all8r;
+        private System.Windows.Forms.Label all6r;
+        private System.Windows.Forms.Label all5r;
+        private System.Windows.Forms.Label all7r;
+        private System.Windows.Forms.Label all4r;
+        private System.Windows.Forms.Label all3r;
+        private System.Windows.Forms.Label all2r;
     }
 }
 
