@@ -52,6 +52,16 @@ namespace sudoku
         bool nr8;
         bool nr9;
 
+        int nr1c = 0;
+        int nr2c = 0;
+        int nr3c = 0;
+        int nr4c = 0;
+        int nr5c = 0;
+        int nr6c = 0;
+        int nr7c = 0;
+        int nr8c = 0;
+        int nr9c = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -543,6 +553,7 @@ namespace sudoku
                 if(idk > 40)
                 {
                     removenr.Stop();
+                    countnr();
                     sudokualreadycreated = 1;
                     idk = 0;
                 }
@@ -570,6 +581,7 @@ namespace sudoku
                 if (idk > 50)
                 {
                     removenr.Stop();
+                    countnr();
                     sudokualreadycreated = 1;
                     idk = 0;
                 }
@@ -597,9 +609,67 @@ namespace sudoku
                 if (idk > 60)
                 {
                     removenr.Stop();
+                    countnr();
                     sudokualreadycreated = 1;
                     idk = 0;
                 }
+            }
+
+        }
+
+        void countnr()
+        {
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
+             
+                if (!l.Name.Contains("h"))
+                {
+                    if(l.Text == "1")
+                    {
+                        nr1c++;
+                    }
+                    else if (l.Text == "2")
+                    {
+                        nr2c++;
+                    }
+                    else if (l.Text == "3")
+                    {
+                        nr3c++;
+                    }
+                    else if (l.Text == "4")
+                    {
+                        nr4c++;
+                    }
+                    else if (l.Text == "5")
+                    {
+                        nr5c++;
+                    }
+                    else if (l.Text == "6")
+                    {
+                        nr6c++;
+                    }
+                    else if (l.Text == "7")
+                    {
+                        nr7c++;
+                    }
+                    else if (l.Text == "8")
+                    {
+                        nr8c++;
+                    }
+                    else if (l.Text == "9")
+                    {
+                        nr9c++;
+                    }
+                }
+                all1r.Text = nr1c.ToString();
+                all2r.Text = nr2c.ToString();
+                all3r.Text = nr3c.ToString();
+                all4r.Text = nr4c.ToString();
+                all5r.Text = nr5c.ToString();
+                all6r.Text = nr6c.ToString();
+                all7r.Text = nr7c.ToString();
+                all8r.Text = nr8c.ToString();
+                all9r.Text = nr9c.ToString();
             }
         }
 
@@ -642,6 +712,22 @@ namespace sudoku
             }
             selectedcell = "";
             bigcell = 0;
+            nr1c = 0;
+            nr2c = 0;
+            nr3c = 0;
+            nr4c = 0;
+            nr5c = 0;
+            nr6c = 0;
+            nr7c = 0;
+            nr8c = 0;
+            nr9c = 0;
+            foreach(Label l3 in panel12.Controls.OfType<Label>())
+            {
+                if (l3.Name.Contains("r"))
+                {
+                    l3.Text = "0";
+                }
+            }
         }
 
         void menter()
@@ -2522,6 +2608,8 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "1";
+                            nr1c++;
+                            all1r.Text = nr1c.ToString();
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
                             {
                                 if (l2.Name.Contains(line) || l2.Name.Contains(row))
@@ -2656,6 +2744,8 @@ namespace sudoku
                         else if(l.Text == "1")
                         {
                             l.Text = "";
+                            nr1c--;
+                            all1r.Text = nr1c.ToString();
                             lesslines1();
                         }
                     }
@@ -2670,6 +2760,8 @@ namespace sudoku
                         if (l.Text == "")
                         {
                             lesslines1();
+                            nr2c++;
+                            all2r.Text = nr2c.ToString();
                             l.Text = "2";
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
                             {
@@ -2805,6 +2897,8 @@ namespace sudoku
                         else if (l.Text == "2")
                         {
                             l.Text = "";
+                            nr2c--;
+                            all2r.Text = nr2c.ToString();
                             lesslines1();
                         }
                     }
@@ -2820,6 +2914,8 @@ namespace sudoku
                         {
                             lesslines1();
                             l.Text = "3";
+                            nr3c++;
+                            all3r.Text = nr3c.ToString();
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
                             {
                                 if (l2.Name.Contains(line) || l2.Name.Contains(row))
@@ -2954,6 +3050,8 @@ namespace sudoku
                         else if (l.Text == "3")
                         {
                             l.Text = "";
+                            nr3c--;
+                            all3r.Text = nr3c.ToString();
                             lesslines1();
                         }
                     }
@@ -2968,6 +3066,8 @@ namespace sudoku
                         if (l.Text == "")
                         {
                             lesslines1();
+                            nr4c++;
+                            all4r.Text = nr4c.ToString();
                             l.Text = "4";
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
                             {
@@ -3103,6 +3203,8 @@ namespace sudoku
                         else if (l.Text == "4")
                         {
                             l.Text = "";
+                            nr4c--;
+                            all4r.Text = nr4c.ToString();
                             lesslines1();
                         }
                     }
@@ -3117,6 +3219,8 @@ namespace sudoku
                         if (l.Text == "")
                         {
                             lesslines1();
+                            nr5c++;
+                            all5r.Text = nr5c.ToString();
                             l.Text = "5";
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
                             {
@@ -3252,6 +3356,8 @@ namespace sudoku
                         else if (l.Text == "5")
                         {
                             l.Text = "";
+                            nr5c--;
+                            all5r.Text = nr5c.ToString();
                             lesslines1();
                         }
                     }
@@ -3266,6 +3372,8 @@ namespace sudoku
                         if (l.Text == "")
                         {
                             lesslines1();
+                            nr6c++;
+                            all6r.Text = nr6c.ToString();
                             l.Text = "6";
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
                             {
@@ -3401,6 +3509,8 @@ namespace sudoku
                         else if (l.Text == "6")
                         {
                             l.Text = "";
+                            nr6c--;
+                            all6r.Text = nr6c.ToString();
                             lesslines1();
                         }
                     }
@@ -3415,6 +3525,8 @@ namespace sudoku
                         if (l.Text == "")
                         {
                             lesslines1();
+                            nr7c++;
+                            all7r.Text = nr7c.ToString();
                             l.Text = "7";
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
                             {
@@ -3550,6 +3662,8 @@ namespace sudoku
                         else if (l.Text == "7")
                         {
                             l.Text = "";
+                            nr7c--;
+                            all7r.Text = nr7c.ToString();
                             lesslines1();
                         }
                     }
@@ -3564,6 +3678,8 @@ namespace sudoku
                         if (l.Text == "")
                         {
                             lesslines1();
+                            nr8c++;
+                            all8r.Text = nr8c.ToString();
                             l.Text = "8";
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
                             {
@@ -3699,6 +3815,8 @@ namespace sudoku
                         else if (l.Text == "8")
                         {
                             l.Text = "";
+                            nr8c--;
+                            all8r.Text = nr8c.ToString();
                             lesslines1();
                         }
                     }
@@ -3712,7 +3830,8 @@ namespace sudoku
                     {
                         if (l.Text == "")
                         {
-
+                            nr9c++;
+                            all9r.Text = nr9c.ToString();
                             lesslines1();
                             l.Text = "9";
                             foreach (Label l2 in panel1.Controls.OfType<Label>())
@@ -3849,6 +3968,8 @@ namespace sudoku
                         else if (l.Text == "9")
                         {
                             l.Text = "";
+                            nr9c--;
+                            all9r.Text = nr9c.ToString();
                             lesslines1();
                         }
                     }
