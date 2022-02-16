@@ -1638,7 +1638,7 @@ namespace sudoku
             // all9
             // 
             this.all9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all9.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all9.ForeColor = System.Drawing.Color.Gray;
             this.all9.Location = new System.Drawing.Point(73, 72);
@@ -1647,14 +1647,11 @@ namespace sudoku
             this.all9.TabIndex = 39;
             this.all9.Text = "9";
             this.all9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all9.Click += new System.EventHandler(this.all9_Click);
-            this.all9.MouseEnter += new System.EventHandler(this.all9_MouseEnter);
-            this.all9.MouseLeave += new System.EventHandler(this.all9_MouseLeave);
             // 
             // all8
             // 
             this.all8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all8.ForeColor = System.Drawing.Color.Gray;
             this.all8.Location = new System.Drawing.Point(37, 72);
@@ -1663,14 +1660,11 @@ namespace sudoku
             this.all8.TabIndex = 38;
             this.all8.Text = "8";
             this.all8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all8.Click += new System.EventHandler(this.all8_Click);
-            this.all8.MouseEnter += new System.EventHandler(this.all8_MouseEnter);
-            this.all8.MouseLeave += new System.EventHandler(this.all8_MouseLeave);
             // 
             // all7
             // 
             this.all7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all7.ForeColor = System.Drawing.Color.Gray;
             this.all7.Location = new System.Drawing.Point(1, 72);
@@ -1679,14 +1673,11 @@ namespace sudoku
             this.all7.TabIndex = 37;
             this.all7.Text = "7";
             this.all7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all7.Click += new System.EventHandler(this.all7_Click);
-            this.all7.MouseEnter += new System.EventHandler(this.all7_MouseEnter);
-            this.all7.MouseLeave += new System.EventHandler(this.all7_MouseLeave);
             // 
             // all6
             // 
             this.all6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all6.ForeColor = System.Drawing.Color.Gray;
             this.all6.Location = new System.Drawing.Point(73, 36);
@@ -1695,14 +1686,11 @@ namespace sudoku
             this.all6.TabIndex = 36;
             this.all6.Text = "6";
             this.all6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all6.Click += new System.EventHandler(this.all6_Click);
-            this.all6.MouseEnter += new System.EventHandler(this.all6_MouseEnter);
-            this.all6.MouseLeave += new System.EventHandler(this.all6_MouseLeave);
             // 
             // all5
             // 
             this.all5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all5.ForeColor = System.Drawing.Color.Gray;
             this.all5.Location = new System.Drawing.Point(37, 36);
@@ -1711,14 +1699,11 @@ namespace sudoku
             this.all5.TabIndex = 35;
             this.all5.Text = "5";
             this.all5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all5.Click += new System.EventHandler(this.all5_Click);
-            this.all5.MouseEnter += new System.EventHandler(this.all5_MouseEnter);
-            this.all5.MouseLeave += new System.EventHandler(this.all5_MouseLeave);
             // 
             // all4
             // 
             this.all4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all4.ForeColor = System.Drawing.Color.Gray;
             this.all4.Location = new System.Drawing.Point(1, 36);
@@ -1727,14 +1712,11 @@ namespace sudoku
             this.all4.TabIndex = 34;
             this.all4.Text = "4";
             this.all4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all4.Click += new System.EventHandler(this.all4_Click);
-            this.all4.MouseEnter += new System.EventHandler(this.all4_MouseEnter);
-            this.all4.MouseLeave += new System.EventHandler(this.all4_MouseLeave);
             // 
             // all3
             // 
             this.all3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all3.ForeColor = System.Drawing.Color.Gray;
             this.all3.Location = new System.Drawing.Point(73, 1);
@@ -1743,14 +1725,11 @@ namespace sudoku
             this.all3.TabIndex = 33;
             this.all3.Text = "3";
             this.all3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all3.Click += new System.EventHandler(this.all3_Click);
-            this.all3.MouseEnter += new System.EventHandler(this.all3_MouseEnter);
-            this.all3.MouseLeave += new System.EventHandler(this.all3_MouseLeave);
             // 
             // all2
             // 
             this.all2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all2.ForeColor = System.Drawing.Color.Gray;
             this.all2.Location = new System.Drawing.Point(37, 1);
@@ -1759,14 +1738,11 @@ namespace sudoku
             this.all2.TabIndex = 32;
             this.all2.Text = "2";
             this.all2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all2.Click += new System.EventHandler(this.all2_Click);
-            this.all2.MouseEnter += new System.EventHandler(this.all2_MouseEnter);
-            this.all2.MouseLeave += new System.EventHandler(this.all2_MouseLeave);
             // 
             // all1
             // 
             this.all1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.all1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.all1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.all1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.all1.ForeColor = System.Drawing.Color.Gray;
             this.all1.Location = new System.Drawing.Point(1, 1);
@@ -1775,9 +1751,6 @@ namespace sudoku
             this.all1.TabIndex = 31;
             this.all1.Text = "1";
             this.all1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all1.Click += new System.EventHandler(this.all1_Click);
-            this.all1.MouseEnter += new System.EventHandler(this.all1_MouseEnter);
-            this.all1.MouseLeave += new System.EventHandler(this.all1_MouseLeave);
             // 
             // panel11
             // 
