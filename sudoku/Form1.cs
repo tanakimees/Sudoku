@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace sudoku
 {
@@ -4304,6 +4305,43 @@ namespace sudoku
             {
                 nr9 = false;
             }
+        }
+
+        private void label8_MouseEnter(object sender, EventArgs e)
+        {
+            label8.ForeColor = Color.White;
+        }
+
+        private void label8_MouseLeave(object sender, EventArgs e)
+        {
+            label8.ForeColor = Color.Gray;
+        }
+
+        int x = 0;
+        private void label8_Click(object sender, EventArgs e)
+        {
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
+                if(!l.Name.Contains("h"))
+                {
+                    if(l.Text == "")
+                    {
+                        x++;
+                        if(x == 1)
+                        {
+                            MessageBox.Show("Sudoku is wrong or incomplete.", "WRONG", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                    else if(l.Text != "")
+                    {
+                        //count all the numbers from 1-9 and make sure theres 9 of each then correct i guess lol 
+                        //also make sure that there are unique numbers in bigcells and rows/columns
+                        //i could probably save the sudoku before the removenr happens and check it here.
+                        //anyways do it sometimes lol
+                    }
+                }
+            }
+            x = 0;
         }
     }
 }
