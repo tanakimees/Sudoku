@@ -226,7 +226,7 @@ namespace sudoku
 
         private void loop_Tick(object sender, EventArgs e)
         {
-            label8.Text = DateTime.Now.ToString("HH:mm:ss");
+            label21.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
         private void label9_MouseEnter(object sender, EventArgs e)
