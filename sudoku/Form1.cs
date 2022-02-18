@@ -26,20 +26,102 @@ namespace sudoku
 
         string line = "s";
         string row = "s";
+        string[] sudokudata = { };
 
         int bigcell = 0;
 
         string[] cell1 = { "l1r1","l1r2","l1r3", "l2r1", "l2r2", "l2r3", "l3r1", "l3r2", "l3r3" };
         string[] cell2 = { "l1r4", "l1r5", "l1r6", "l2r4", "l2r5", "l2r6", "l3r4", "l3r5", "l3r6" };
         string[] cell3 = { "l1r7", "l1r8", "l1r9", "l2r7", "l2r8", "l2r9", "l3r7", "l3r8", "l3r9" };
-
         string[] cell4 = { "l4r1", "l4r2", "l4r3", "l5r1", "l5r2", "l5r3", "l6r1", "l6r2", "l6r3" };
         string[] cell5 = { "l4r4", "l4r5", "l4r6", "l5r4", "l5r5", "l5r6", "l6r4", "l6r5", "l6r6" };
         string[] cell6 = { "l4r7", "l4r8", "l4r9", "l5r7", "l5r8", "l5r9", "l6r7", "l6r8", "l6r9" };
-
         string[] cell7 = { "l7r1", "l7r2", "l7r3", "l8r1", "l8r2", "l8r3", "l9r1", "l9r2", "l9r3" };
         string[] cell8 = { "l7r4", "l7r5", "l7r6", "l8r4", "l8r5", "l8r6", "l9r4", "l9r5", "l9r6" };
         string[] cell9 = { "l7r7", "l7r8", "l7r9", "l8r7", "l8r8", "l8r9", "l9r7", "l9r8", "l9r9" };
+
+        string c1 = "";
+        string c2 = "";
+        string c3 = "";
+        string c4 = "";
+        string c5 = "";
+        string c6 = "";
+        string c7 = "";
+        string c8 = "";
+        string c9 = "";
+        string c10 = "";
+        string c11 = "";
+        string c12 = "";
+        string c13 = "";
+        string c14 = "";
+        string c15 = "";
+        string c16 = "";
+        string c17 = "";
+        string c18 = "";
+        string c19 = "";
+        string c20 = "";
+        string c21 = "";
+        string c22 = "";
+        string c23 = "";
+        string c24 = "";
+        string c25 = "";
+        string c26 = "";
+        string c27 = "";
+        string c28 = "";
+        string c29 = "";
+        string c30 = "";
+        string c31 = "";
+        string c32 = "";
+        string c33 = "";
+        string c34 = "";
+        string c35 = "";
+        string c36 = "";
+        string c37 = "";
+        string c38 = "";
+        string c39 = "";
+        string c40 = "";
+        string c41 = "";
+        string c42 = "";
+        string c43 = "";
+        string c44 = "";
+        string c45 = "";
+        string c46 = "";
+        string c47 = "";
+        string c48 = "";
+        string c49 = "";
+        string c50 = "";
+        string c51 = "";
+        string c52 = "";
+        string c53 = "";
+        string c54 = "";
+        string c55 = "";
+        string c56 = "";
+        string c57 = "";
+        string c58 = "";
+        string c59 = "";
+        string c60 = "";
+        string c61 = "";
+        string c62 = "";
+        string c63 = "";
+        string c64 = "";
+        string c65 = "";
+        string c66 = "";
+        string c67 = "";
+        string c68 = "";
+        string c69 = "";
+        string c70 = "";
+        string c71 = "";
+        string c72 = "";
+        string c73 = "";
+        string c74 = "";
+        string c75 = "";
+        string c76 = "";
+        string c77 = "";
+        string c78 = "";
+        string c79 = "";
+        string c80 = "";
+        string c81 = "";
+
 
         bool shift;
         bool nr1;
@@ -367,9 +449,25 @@ namespace sudoku
                 l9r8.Text = l8r2.Text;
                 l9r9.Text = l8r3.Text;
 
-
-                removenr.Start();
+                savedata();
             }
+        }
+
+        void savedata()
+        {
+            c1 = l1r1.Text;
+            c2 = l1r2.Text;
+            c3 = l1r3.Text;
+
+            ////
+            ////
+            ///
+            ///
+            ////////////
+            ///
+            ////
+
+            removenr.Start();
         }
 
         private void label4_MouseEnter(object sender, EventArgs e)
@@ -4334,10 +4432,17 @@ namespace sudoku
                     }
                     else if(l.Text != "")
                     {
-                        //count all the numbers from 1-9 and make sure theres 9 of each then correct i guess lol 
-                        //also make sure that there are unique numbers in bigcells and rows/columns
                         //i could probably save the sudoku before the removenr happens and check it here.
                         //anyways do it sometimes lol
+                        //
+                        //
+                        //
+                        //
+                        //
+                        //
+                        //
+                        //
+                        //
                     }
                 }
             }

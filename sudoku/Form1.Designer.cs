@@ -998,6 +998,7 @@ namespace sudoku
             this.textBox67 = new System.Windows.Forms.TextBox();
             this.textBox68 = new System.Windows.Forms.TextBox();
             this.settingspanel = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
             this.aboutpanel = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -1016,7 +1017,6 @@ namespace sudoku
             this.fadeout = new System.Windows.Forms.Timer(this.components);
             this.createsudoku = new System.Windows.Forms.Timer(this.components);
             this.removenr = new System.Windows.Forms.Timer(this.components);
-            this.panel18 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -1056,9 +1056,9 @@ namespace sudoku
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.gamepanel);
             this.panel2.Controls.Add(this.settingspanel);
             this.panel2.Controls.Add(this.aboutpanel);
-            this.panel2.Controls.Add(this.gamepanel);
             this.panel2.Location = new System.Drawing.Point(10, 40);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(560, 620);
@@ -14770,6 +14770,14 @@ namespace sudoku
             this.settingspanel.Size = new System.Drawing.Size(538, 554);
             this.settingspanel.TabIndex = 9;
             // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel18.Location = new System.Drawing.Point(10, 10);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(200, 100);
+            this.panel18.TabIndex = 0;
+            // 
             // aboutpanel
             // 
             this.aboutpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
@@ -14967,14 +14975,6 @@ namespace sudoku
             // 
             this.removenr.Interval = 1;
             this.removenr.Tick += new System.EventHandler(this.removenr_Tick);
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.panel18.Location = new System.Drawing.Point(10, 10);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(200, 100);
-            this.panel18.TabIndex = 0;
             // 
             // Form1
             // 
