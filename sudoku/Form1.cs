@@ -458,15 +458,84 @@ namespace sudoku
             c1 = l1r1.Text;
             c2 = l1r2.Text;
             c3 = l1r3.Text;
-
-            ////
-            ////
-            ///
-            ///
-            ////////////
-            ///
-            ////
-
+            c4 = l1r4.Text;
+            c5 = l1r5.Text;
+            c6 = l1r6.Text;
+            c7 = l1r7.Text;
+            c8 = l1r8.Text;
+            c9 = l1r9.Text;
+            c10 = l2r1.Text;
+            c11 = l2r2.Text;
+            c12 = l2r3.Text;
+            c13 = l2r4.Text;
+            c14 = l2r5.Text;
+            c15 = l2r6.Text;
+            c16 = l2r7.Text;
+            c17 = l2r8.Text;
+            c18 = l2r9.Text;
+            c19 = l3r1.Text;
+            c20 = l3r2.Text;
+            c21 = l3r3.Text;
+            c22 = l3r4.Text;
+            c23 = l3r5.Text;
+            c24 = l3r6.Text;
+            c25 = l3r7.Text;
+            c26 = l3r8.Text;
+            c27 = l3r9.Text;
+            c28 = l4r1.Text;
+            c29 = l4r2.Text;
+            c30 = l4r3.Text;
+            c31 = l4r4.Text;
+            c32 = l4r5.Text;
+            c33 = l4r6.Text;
+            c34 = l4r7.Text;
+            c35 = l4r8.Text;
+            c36 = l4r9.Text;
+            c37 = l5r1.Text;
+            c38 = l5r2.Text;
+            c39 = l5r3.Text;
+            c40 = l5r4.Text;
+            c41 = l5r5.Text;
+            c42 = l5r6.Text;
+            c43 = l5r7.Text;
+            c44 = l5r8.Text;
+            c45 = l5r9.Text;
+            c46 = l6r1.Text;
+            c47 = l6r2.Text;
+            c48 = l6r3.Text;
+            c49 = l6r4.Text;
+            c50 = l6r5.Text;
+            c51 = l6r6.Text;
+            c52 = l6r7.Text;
+            c53 = l6r8.Text;
+            c54 = l6r9.Text;
+            c55 = l7r1.Text;
+            c56 = l7r2.Text;
+            c57 = l7r3.Text;
+            c58 = l7r4.Text;
+            c59 = l7r5.Text;
+            c60 = l7r6.Text;
+            c61 = l7r7.Text;
+            c62 = l7r8.Text;
+            c63 = l7r9.Text;
+            c64 = l8r1.Text;
+            c65 = l8r2.Text;
+            c66 = l8r3.Text;
+            c67 = l8r4.Text;
+            c68 = l8r5.Text;
+            c69 = l8r6.Text;
+            c70 = l8r7.Text;
+            c71 = l8r8.Text;
+            c72 = l8r9.Text;
+            c73 = l9r1.Text;
+            c74 = l9r2.Text;
+            c75 = l9r3.Text;
+            c76 = l9r4.Text;
+            c77 = l9r5.Text;
+            c78 = l9r6.Text;
+            c79 = l9r7.Text;
+            c80 = l9r8.Text;
+            c81 = l9r9.Text;
             removenr.Start();
         }
 
@@ -4432,17 +4501,39 @@ namespace sudoku
                     }
                     else if(l.Text != "")
                     {
-                        //i could probably save the sudoku before the removenr happens and check it here.
-                        //anyways do it sometimes lol
-                        //
-                        //
-                        //
-                        //
-                        //
-                        //
-                        //
-                        //
-                        //
+                        if(l1r1.Text == c1 && l1r2.Text == c2 && l1r3.Text == c3 && l1r4.Text == c4 && l1r5.Text == c5 && l1r6.Text == c6 && l1r7.Text == c7 && l1r8.Text == c8 && l1r9.Text == c9)
+                        {
+                            if (l2r1.Text == c10 && l2r2.Text == c11 && l2r3.Text == c12 && l2r4.Text == c13 && l2r5.Text == c14 && l2r6.Text == c15 && l2r7.Text == c16 && l2r8.Text == c17 && l2r9.Text == c18)
+                            {
+                                if (l3r1.Text == c19 && l3r2.Text == c20 && l3r3.Text == c21 && l3r4.Text == c22 && l3r5.Text == c23 && l3r6.Text == c24 && l3r7.Text == c25 && l3r8.Text == c26 && l3r9.Text == c27)
+                                {
+                                    if (l4r1.Text == c28 && l4r2.Text == c29 && l4r3.Text == c30 && l4r4.Text == c31 && l4r5.Text == c32 && l4r6.Text == c33 && l4r7.Text == c34 && l4r8.Text == c35 && l4r9.Text == c36)
+                                    {
+                                        if (l5r1.Text == c37 && l5r2.Text == c38 && l5r3.Text == c39 && l5r4.Text == c40 && l5r5.Text == c41 && l5r6.Text == c42 && l5r7.Text == c43 && l5r8.Text == c44 && l5r9.Text == c45)
+                                        {
+                                            if (l6r1.Text == c46 && l6r2.Text == c47 && l6r3.Text == c48 && l6r4.Text == c49 && l6r5.Text == c50 && l6r6.Text == c51 && l6r7.Text == c52 && l6r8.Text == c53 && l6r9.Text == c54)
+                                            {
+                                                if (l7r1.Text == c55 && l7r2.Text == c56 && l7r3.Text == c57 && l7r4.Text == c58 && l7r5.Text == c59 && l7r6.Text == c60 && l7r7.Text == c61 && l7r8.Text == c62 && l7r9.Text == c63)
+                                                {
+                                                    if (l8r1.Text == c64 && l8r2.Text == c65 && l8r3.Text == c66 && l8r4.Text == c67 && l8r5.Text == c68 && l8r6.Text == c69 && l8r7.Text == c70 && l8r8.Text == c71 && l8r9.Text == c72)
+                                                    {
+                                                        if (l9r1.Text == c73 && l9r2.Text == c74 && l9r3.Text == c75 && l9r4.Text == c76 && l9r5.Text == c77 && l9r6.Text == c78 && l9r7.Text == c79 && l9r8.Text == c80 && l9r9.Text == c81)
+                                                        {
+                                                            MessageBox.Show("Sudoku complete");
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        else
+                        {
+                            MessageBox.Show("sudoku wron lol");
+                        }
                     }
                 }
             }
