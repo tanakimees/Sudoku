@@ -144,6 +144,8 @@ namespace sudoku
         int nr8c = 0;
         int nr9c = 0;
 
+        double opacity = 1;
+
         public Form1()
         {
             InitializeComponent();
@@ -4519,7 +4521,10 @@ namespace sudoku
                                                     {
                                                         if (l9r1.Text == c73 && l9r2.Text == c74 && l9r3.Text == c75 && l9r4.Text == c76 && l9r5.Text == c77 && l9r6.Text == c78 && l9r7.Text == c79 && l9r8.Text == c80 && l9r9.Text == c81)
                                                         {
-                                                            MessageBox.Show("Sudoku complete");
+                                                            if(x == 0)
+                                                            {
+                                                                MessageBox.Show("Sudoku is complete.", "CORRECT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -4532,12 +4537,55 @@ namespace sudoku
 
                         else
                         {
-                            MessageBox.Show("sudoku wron lol");
+                            if (x == 0)
+                            {
+                                MessageBox.Show("Sudoku is wrong or incomplete.", "WRONG", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }    
                         }
                     }
                 }
             }
             x = 0;
+        }
+
+        private void label26_MouseEnter(object sender, EventArgs e)
+        {
+            label26.ForeColor = Color.White;
+        }
+
+        private void label26_MouseLeave(object sender, EventArgs e)
+        {
+            label26.ForeColor = Color.Gray;
+        }
+
+        private void label27_MouseEnter(object sender, EventArgs e)
+        {
+            label27.ForeColor = Color.White;
+        }
+
+        private void label27_MouseLeave(object sender, EventArgs e)
+        {
+            label27.ForeColor = Color.Gray;
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+            if (opacity <= 0.9)
+            {
+                opacity += 0.1;
+                this.Opacity = opacity;
+                label28.Text = opacity.ToString();
+            }
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+            if (opacity >= 0.6)
+            {
+                opacity -= 0.1;
+                this.Opacity = opacity;
+                label28.Text = opacity.ToString();
+            }
         }
     }
 }
