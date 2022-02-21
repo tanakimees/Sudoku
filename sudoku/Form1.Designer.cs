@@ -15543,7 +15543,7 @@ namespace sudoku
             // 
             this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel23.Controls.Add(this.label42);
-            this.panel23.Location = new System.Drawing.Point(145, 10);
+            this.panel23.Location = new System.Drawing.Point(130, 10);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(51, 27);
             this.panel23.TabIndex = 47;
