@@ -1051,6 +1051,11 @@ namespace sudoku
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox122 = new System.Windows.Forms.TextBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -1077,6 +1082,8 @@ namespace sudoku
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel23.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -1576,6 +1583,9 @@ namespace sudoku
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel19.Controls.Add(this.panel23);
+            this.panel19.Controls.Add(this.textBox122);
+            this.panel19.Controls.Add(this.panel22);
             this.panel19.Controls.Add(this.label39);
             this.panel19.Controls.Add(this.label40);
             this.panel19.Controls.Add(this.label37);
@@ -15346,7 +15356,7 @@ namespace sudoku
             this.label29.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.Red;
-            this.label29.Location = new System.Drawing.Point(5, 5);
+            this.label29.Location = new System.Drawing.Point(10, 10);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(16, 17);
             this.label29.TabIndex = 31;
@@ -15359,7 +15369,7 @@ namespace sudoku
             this.label30.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.Lime;
-            this.label30.Location = new System.Drawing.Point(5, 22);
+            this.label30.Location = new System.Drawing.Point(10, 27);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(17, 17);
             this.label30.TabIndex = 38;
@@ -15372,7 +15382,7 @@ namespace sudoku
             this.label31.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label31.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label31.Location = new System.Drawing.Point(5, 39);
+            this.label31.Location = new System.Drawing.Point(10, 44);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(15, 17);
             this.label31.TabIndex = 39;
@@ -15384,7 +15394,7 @@ namespace sudoku
             this.label32.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.Gray;
-            this.label32.Location = new System.Drawing.Point(35, 5);
+            this.label32.Location = new System.Drawing.Point(40, 10);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(40, 17);
             this.label32.TabIndex = 31;
@@ -15396,7 +15406,7 @@ namespace sudoku
             this.label33.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label33.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.Gray;
-            this.label33.Location = new System.Drawing.Point(35, 22);
+            this.label33.Location = new System.Drawing.Point(40, 27);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(40, 17);
             this.label33.TabIndex = 40;
@@ -15408,7 +15418,7 @@ namespace sudoku
             this.label34.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label34.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.Gray;
-            this.label34.Location = new System.Drawing.Point(35, 39);
+            this.label34.Location = new System.Drawing.Point(40, 44);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(40, 17);
             this.label34.TabIndex = 41;
@@ -15421,7 +15431,7 @@ namespace sudoku
             this.label35.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label35.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.Gray;
-            this.label35.Location = new System.Drawing.Point(102, 5);
+            this.label35.Location = new System.Drawing.Point(107, 10);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(13, 17);
             this.label35.TabIndex = 32;
@@ -15434,7 +15444,7 @@ namespace sudoku
             this.label36.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label36.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.Gray;
-            this.label36.Location = new System.Drawing.Point(85, 5);
+            this.label36.Location = new System.Drawing.Point(90, 10);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(17, 17);
             this.label36.TabIndex = 31;
@@ -15447,7 +15457,7 @@ namespace sudoku
             this.label37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label37.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.Gray;
-            this.label37.Location = new System.Drawing.Point(102, 22);
+            this.label37.Location = new System.Drawing.Point(107, 27);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(13, 17);
             this.label37.TabIndex = 43;
@@ -15460,7 +15470,7 @@ namespace sudoku
             this.label38.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label38.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.Gray;
-            this.label38.Location = new System.Drawing.Point(85, 22);
+            this.label38.Location = new System.Drawing.Point(90, 27);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(17, 17);
             this.label38.TabIndex = 42;
@@ -15473,7 +15483,7 @@ namespace sudoku
             this.label39.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label39.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.Gray;
-            this.label39.Location = new System.Drawing.Point(102, 39);
+            this.label39.Location = new System.Drawing.Point(107, 44);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(13, 17);
             this.label39.TabIndex = 45;
@@ -15486,12 +15496,70 @@ namespace sudoku
             this.label40.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label40.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.Gray;
-            this.label40.Location = new System.Drawing.Point(85, 39);
+            this.label40.Location = new System.Drawing.Point(90, 44);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(17, 17);
             this.label40.TabIndex = 44;
             this.label40.Text = "+";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel22.Controls.Add(this.label41);
+            this.panel22.Location = new System.Drawing.Point(10, 122);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(51, 27);
+            this.panel22.TabIndex = 46;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label41.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Gray;
+            this.label41.Location = new System.Drawing.Point(5, 5);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(41, 17);
+            this.label41.TabIndex = 31;
+            this.label41.Text = "Apply";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox122
+            // 
+            this.textBox122.BackColor = System.Drawing.Color.Gray;
+            this.textBox122.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox122.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox122.Enabled = false;
+            this.textBox122.Location = new System.Drawing.Point(0, 70);
+            this.textBox122.Multiline = true;
+            this.textBox122.Name = "textBox122";
+            this.textBox122.ReadOnly = true;
+            this.textBox122.Size = new System.Drawing.Size(1, 80);
+            this.textBox122.TabIndex = 39;
+            this.textBox122.TabStop = false;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel23.Controls.Add(this.label42);
+            this.panel23.Location = new System.Drawing.Point(145, 10);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(51, 27);
+            this.panel23.TabIndex = 47;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label42.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.Gray;
+            this.label42.Location = new System.Drawing.Point(5, 5);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(41, 17);
+            this.label42.TabIndex = 31;
+            this.label42.Text = "Apply";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -15569,6 +15637,10 @@ namespace sudoku
             this.panel10.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -16595,6 +16667,11 @@ namespace sudoku
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox122;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label42;
     }
 }
 
