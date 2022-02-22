@@ -24,6 +24,10 @@ namespace sudoku
         string lbltxt = "a";
         string selectedcell = "";
 
+        int easycomplete = 0;
+        int mediumcomplete = 0;
+        int hardcomplete = 0;
+
         string line = "s";
         string row = "s";
         string[] sudokudata = { };
@@ -145,6 +149,8 @@ namespace sudoku
         int nr9c = 0;
 
         double opacity = 1;
+
+        int selectedcolor = 1;
 
         public Form1()
         {
@@ -4524,6 +4530,21 @@ namespace sudoku
                                                             if(x == 0)
                                                             {
                                                                 MessageBox.Show("Sudoku is complete.", "CORRECT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                                if(difficulty == 1)
+                                                                {
+                                                                    easycomplete += 1;
+                                                                    label22.Text = easycomplete.ToString();
+                                                                }
+                                                                else if (difficulty == 2)
+                                                                {
+                                                                    mediumcomplete += 1;
+                                                                    label23.Text = mediumcomplete.ToString();
+                                                                }
+                                                                else if (difficulty == 3)
+                                                                {
+                                                                    hardcomplete += 1;
+                                                                    label24.Text = hardcomplete.ToString();
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -4585,6 +4606,374 @@ namespace sudoku
                 opacity -= 0.1;
                 this.Opacity = opacity;
                 label28.Text = opacity.ToString();
+            }
+        }
+
+        private void label30_MouseEnter(object sender, EventArgs e)
+        {
+            label30.ForeColor = Color.White;
+            label30.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label30_MouseLeave(object sender, EventArgs e)
+        {
+            if(selectedcolor != 1)
+            {
+                label30.ForeColor = Color.Gray;
+                label30.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label30.ForeColor = Color.White;
+                label30.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label31_MouseEnter(object sender, EventArgs e)
+        {
+            label31.ForeColor = Color.White;
+            label31.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label31_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 2)
+            {
+                label31.ForeColor = Color.Gray;
+                label31.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label31.ForeColor = Color.White;
+                label31.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        void makelabelok()
+        {
+            foreach(Label l in panel22.Controls.OfType<Label>())
+            {
+                    l.BackColor = Color.FromArgb(35, 35, 35);
+                    l.ForeColor = Color.Gray;
+            }
+        }
+
+        private void label30_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 1;
+            makelabelok();
+            label30.ForeColor = Color.White;
+            label30.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 2;
+            makelabelok();
+            label31.ForeColor = Color.White;
+            label31.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 3;
+            makelabelok();
+            label32.ForeColor = Color.White;
+            label32.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 4;
+            makelabelok();
+            label33.ForeColor = Color.White;
+            label33.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 5;
+            makelabelok();
+            label34.ForeColor = Color.White;
+            label34.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 6;
+            makelabelok();
+            label35.ForeColor = Color.White;
+            label35.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 7;
+            makelabelok();
+            label36.ForeColor = Color.White;
+            label36.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 8;
+            makelabelok();
+            label37.ForeColor = Color.White;
+            label37.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label38_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 9;
+            makelabelok();
+            label38.ForeColor = Color.White;
+            label38.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label39_Click(object sender, EventArgs e)
+        {
+            selectedcolor = 10;
+            makelabelok();
+            label39.ForeColor = Color.White;
+            label39.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label32_MouseEnter(object sender, EventArgs e)
+        {
+            label32.ForeColor = Color.White;
+            label32.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label32_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 3)
+            {
+                label32.ForeColor = Color.Gray;
+                label32.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label32.ForeColor = Color.White;
+                label32.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label33_MouseEnter(object sender, EventArgs e)
+        {
+            label33.ForeColor = Color.White;
+            label33.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label33_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 4)
+            {
+                label33.ForeColor = Color.Gray;
+                label33.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label33.ForeColor = Color.White;
+                label33.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label34_MouseEnter(object sender, EventArgs e)
+        {
+            label34.ForeColor = Color.White;
+            label34.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label34_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 5)
+            {
+                label34.ForeColor = Color.Gray;
+                label34.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label34.ForeColor = Color.White;
+                label34.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label35_MouseEnter(object sender, EventArgs e)
+        {
+            label35.ForeColor = Color.White;
+            label35.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label35_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 6)
+            {
+                label35.ForeColor = Color.Gray;
+                label35.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label35.ForeColor = Color.White;
+                label35.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label36_MouseEnter(object sender, EventArgs e)
+        {
+            label36.ForeColor = Color.White;
+            label36.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label36_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 7)
+            {
+                label36.ForeColor = Color.Gray;
+                label36.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label36.ForeColor = Color.White;
+                label36.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label37_MouseEnter(object sender, EventArgs e)
+        {
+            label37.ForeColor = Color.White;
+            label37.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label37_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 8)
+            {
+                label37.ForeColor = Color.Gray;
+                label37.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label37.ForeColor = Color.White;
+                label37.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label38_MouseEnter(object sender, EventArgs e)
+        {
+            label38.ForeColor = Color.White;
+            label38.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label38_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 9)
+            {
+                label38.ForeColor = Color.Gray;
+                label38.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label38.ForeColor = Color.White;
+                label38.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label39_MouseEnter(object sender, EventArgs e)
+        {
+            label39.ForeColor = Color.White;
+            label39.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label39_MouseLeave(object sender, EventArgs e)
+        {
+            if (selectedcolor != 10)
+            {
+                label39.ForeColor = Color.Gray;
+                label39.BackColor = Color.FromArgb(35, 35, 35);
+            }
+            else
+            {
+                label39.ForeColor = Color.White;
+                label39.BackColor = Color.FromArgb(45, 45, 45);
+            }
+        }
+
+        private void label40_MouseEnter(object sender, EventArgs e)
+        {
+            label40.ForeColor = Color.White;
+            label40.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label40_MouseLeave(object sender, EventArgs e)
+        {
+            label40.ForeColor = Color.Gray;
+            label40.BackColor = Color.FromArgb(35,35,35);
+        }
+
+        private void label41_MouseEnter(object sender, EventArgs e)
+        {
+            label41.ForeColor = Color.White;
+            label41.BackColor = Color.FromArgb(45, 45, 45);
+        }
+
+        private void label41_MouseLeave(object sender, EventArgs e)
+        {
+            label41.ForeColor = Color.Gray;
+            label41.BackColor = Color.FromArgb(35, 35, 35);
+        }
+
+        private void label40_Click(object sender, EventArgs e)
+        {
+            string fileName = @"C:\Temp\sudoku.txt";
+            FileInfo fi = new FileInfo(fileName);
+
+            try
+            {     
+                if (fi.Exists)
+                {
+                    fi.Delete();
+                }
+
+  
+                using (StreamWriter sw = fi.CreateText())
+                {
+                    sw.WriteLine("Save file created: {0}", DateTime.Now.ToString());
+                    sw.WriteLine("Made by: Kristo Tänak");
+                    sw.WriteLine(easycomplete.ToString());
+                    //easy sudokus completed
+                    sw.WriteLine(mediumcomplete.ToString());
+                    //medium sudokus completed
+                    sw.WriteLine(hardcomplete.ToString());
+                    //hard sudokus completed
+                    sw.WriteLine(difficulty.ToString());
+                    //difficulty
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
+        }
+
+        string[] datafromsavefile;
+        private void label41_Click(object sender, EventArgs e)
+        {
+            string fileName = @"C:\Temp\sudoku.txt";
+            FileInfo fi = new FileInfo(fileName);
+
+            try
+            {
+                if (fi.Exists)
+                {
+                    StreamReader st = new StreamReader(fileName);
+                    Console.WriteLine(st.ReadToEnd());
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
             }
         }
     }
