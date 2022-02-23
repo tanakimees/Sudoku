@@ -152,6 +152,11 @@ namespace sudoku
 
         int selectedcolor = 1;
 
+        Color dim0 = Color.FromArgb(25, 25, 25);
+        Color dim1 = Color.FromArgb(35, 35, 35);
+        Color dim2 = Color.FromArgb(45, 45, 45);
+        Color bright0 = Color.FromArgb(128, 128, 128);
+        Color bright1 = Color.FromArgb(255, 255, 255);
         public Form1()
         {
             InitializeComponent();
@@ -164,11 +169,11 @@ namespace sudoku
 
             foreach(Label l in panel1.Controls.OfType<Label>())
             {
-                l.BackColor = Color.FromArgb(25,25,25);
+                l.BackColor = dim0;
                 l.AutoSize = false;
                 l.Text = "";
                 l.Cursor = Cursors.Hand;
-                l.ForeColor = Color.Gray;
+                l.ForeColor = bright0;
                 string containslol = "h";
                 if(l.Name.Contains(containslol))
                 {
@@ -201,51 +206,51 @@ namespace sudoku
         }
         private void label1_MouseEnter(object sender, EventArgs e)
         {
-            label1.ForeColor = Color.White;
+            label1.ForeColor = bright1;
         }
         private void label1_MouseLeave(object sender, EventArgs e)
         {
             if(selectedshit != 1)
             {
-                label1.ForeColor = Color.Gray;
+                label1.ForeColor = bright0;
             }
             else
             {
-                label1.ForeColor = Color.White;
+                label1.ForeColor = bright1;
             }
         }
 
         private void label2_MouseEnter(object sender, EventArgs e)
         {
-            label2.ForeColor = Color.White;
+            label2.ForeColor = bright1;
         }
 
         private void label2_MouseLeave(object sender, EventArgs e)
         {
             if (selectedshit != 2)
             {
-                label2.ForeColor = Color.Gray;
+                label2.ForeColor = bright0;
             }
             else
             {
-                label2.ForeColor = Color.White;
+                label2.ForeColor = bright1;
             }
         }
 
         private void label3_MouseEnter(object sender, EventArgs e)
         {
-            label3.ForeColor = Color.White;
+            label3.ForeColor = bright1;
         }
 
         private void label3_MouseLeave(object sender, EventArgs e)
         {
             if (selectedshit != 3)
             {
-                label3.ForeColor = Color.Gray;
+                label3.ForeColor = bright0;
             }
             else
             {
-                label3.ForeColor = Color.White;
+                label3.ForeColor = bright1;
             }
         }
 
@@ -253,12 +258,12 @@ namespace sudoku
         {
             selectedshit = 1;
             gamepanel.BringToFront();
-            label1.ForeColor = Color.White;
-            label2.ForeColor = Color.Gray;
-            label3.ForeColor = Color.Gray;
-            panel4.BackColor = Color.FromArgb(35, 35, 35);
-            panel5.BackColor = Color.FromArgb(45, 45, 45);
-            panel6.BackColor = Color.FromArgb(45, 45, 45);
+            label1.ForeColor = bright1;
+            label2.ForeColor = bright0;
+            label3.ForeColor = bright0;
+            panel4.BackColor = dim1;
+            panel5.BackColor = dim2;
+            panel6.BackColor = dim2;
             textBox5.Visible = true;
             textBox10.Visible = true;
             textBox11.Visible = false;
@@ -275,12 +280,12 @@ namespace sudoku
         {
             selectedshit = 2;
             settingspanel.BringToFront();
-            label1.ForeColor = Color.Gray;
-            label2.ForeColor = Color.White;
-            label3.ForeColor = Color.Gray;
-            panel4.BackColor = Color.FromArgb(45, 45, 45);
-            panel5.BackColor = Color.FromArgb(35, 35, 35);
-            panel6.BackColor = Color.FromArgb(45, 45, 45);
+            label1.ForeColor = bright0;
+            label2.ForeColor = bright1;
+            label3.ForeColor = bright0;
+            panel4.BackColor = dim2;
+            panel5.BackColor = dim1;
+            panel6.BackColor = dim2;
             textBox5.Visible = false;
             textBox10.Visible = false;
             textBox11.Visible = true;
@@ -297,12 +302,12 @@ namespace sudoku
         {
             selectedshit = 3;
             aboutpanel.BringToFront();
-            label1.ForeColor = Color.Gray;
-            label2.ForeColor = Color.Gray;
-            label3.ForeColor = Color.White;
-            panel4.BackColor = Color.FromArgb(45, 45, 45);
-            panel5.BackColor = Color.FromArgb(45, 45, 45);
-            panel6.BackColor = Color.FromArgb(35, 35, 35);
+            label1.ForeColor = bright0;
+            label2.ForeColor = bright0;
+            label3.ForeColor = bright1;
+            panel4.BackColor = dim2;
+            panel5.BackColor = dim2;
+            panel6.BackColor = dim1;
             textBox5.Visible = false;
             textBox10.Visible = false;
             textBox11.Visible = true;
@@ -322,12 +327,12 @@ namespace sudoku
 
         private void label9_MouseEnter(object sender, EventArgs e)
         {
-            label9.ForeColor = Color.White;
+            label9.ForeColor = bright1;
         }
 
         private void label9_MouseLeave(object sender, EventArgs e)
         {
-            label9.ForeColor = Color.Gray;
+            label9.ForeColor = bright0;
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -549,18 +554,18 @@ namespace sudoku
 
         private void label4_MouseEnter(object sender, EventArgs e)
         {
-            label4.ForeColor = Color.White;
+            label4.ForeColor = bright1;
         }
 
         private void label4_MouseLeave(object sender, EventArgs e)
         {
             if(label4.Text == "Difficulty ↑")
             {
-                label4.ForeColor = Color.White;
+                label4.ForeColor = bright1;
             }
             else
             {
-                label4.ForeColor = Color.Gray;
+                label4.ForeColor = bright0;
             }
         }
 
@@ -580,12 +585,12 @@ namespace sudoku
 
         private void label13_MouseEnter(object sender, EventArgs e)
         {
-            label13.ForeColor = Color.White;
+            label13.ForeColor = bright1;
         }
 
         private void label13_MouseLeave(object sender, EventArgs e)
         {
-            label13.ForeColor = Color.Gray;
+            label13.ForeColor = bright0;
         }
 
         private void label13_Click(object sender, EventArgs e)
@@ -605,8 +610,8 @@ namespace sudoku
                     foreach (Label l in panel1.Controls.OfType<Label>())
                     {              
                         l.Text = "";
-                        l.ForeColor = Color.Gray;
-                        l.BackColor = Color.FromArgb(25, 25, 25);
+                        l.ForeColor = bright0;
+                        l.BackColor = dim0;
                         row = "s";
                         line = "s";
                         lblname = "";
@@ -648,74 +653,74 @@ namespace sudoku
 
         private void label10_MouseEnter(object sender, EventArgs e)
         {
-            label10.ForeColor = Color.White;
+            label10.ForeColor = bright1;
         }
 
         private void label10_MouseLeave(object sender, EventArgs e)
         {
             if(difficulty == 1)
             {
-                label10.ForeColor = Color.White;
+                label10.ForeColor = bright1;
             }
             else
             {
-                label10.ForeColor = Color.Gray;
+                label10.ForeColor = bright0;
             }
         }
 
         private void label11_MouseEnter(object sender, EventArgs e)
         {
-            label11.ForeColor = Color.White;
+            label11.ForeColor = bright1;
         }
 
         private void label11_MouseLeave(object sender, EventArgs e)
         {
             if (difficulty == 2)
             {
-                label11.ForeColor = Color.White;
+                label11.ForeColor = bright1;
             }
             else
             {
-                label11.ForeColor = Color.Gray;
+                label11.ForeColor = bright0;
             }
         }
 
         private void label12_MouseEnter(object sender, EventArgs e)
         {
-            label12.ForeColor = Color.White;
+            label12.ForeColor = bright1;
         }
 
         private void label12_MouseLeave(object sender, EventArgs e)
         {
             if (difficulty == 3)
             {
-                label12.ForeColor = Color.White;
+                label12.ForeColor = bright1;
             }
             else
             {
-                label12.ForeColor = Color.Gray;
+                label12.ForeColor = bright0;
             }
         }
 
         private void label10_Click(object sender, EventArgs e)
         {
             difficulty = 1;
-            label11.ForeColor = Color.Gray;
-            label12.ForeColor = Color.Gray;
+            label11.ForeColor = bright0;
+            label12.ForeColor = bright0;
         }
 
         private void label11_Click(object sender, EventArgs e)
         {
             difficulty = 2;
-            label10.ForeColor = Color.Gray;
-            label12.ForeColor = Color.Gray;
+            label10.ForeColor = bright0;
+            label12.ForeColor = bright0;
         }
 
         private void label12_Click(object sender, EventArgs e)
         {
             difficulty = 3;
-            label11.ForeColor = Color.Gray;
-            label10.ForeColor = Color.Gray;
+            label11.ForeColor = bright0;
+            label10.ForeColor = bright0;
         }
         
         private void removenr_Tick(object sender, EventArgs e)
@@ -868,12 +873,12 @@ namespace sudoku
 
         private void label15_MouseEnter(object sender, EventArgs e)
         {
-            label15.ForeColor = Color.White;
+            label15.ForeColor = bright1;
         }
 
         private void label15_MouseLeave(object sender, EventArgs e)
         {
-            label15.ForeColor = Color.Gray;
+            label15.ForeColor = bright0;
         }
 
         private void label15_Click(object sender, EventArgs e)
@@ -888,8 +893,8 @@ namespace sudoku
             foreach(Label l in panel1.Controls.OfType<Label>())
             {
                 l.Text = "";
-                l.ForeColor = Color.Gray;
-                l.BackColor = Color.FromArgb(25, 25, 25);
+                l.ForeColor = bright0;
+                l.BackColor = dim0;
                 row = "s";
                 line = "s";
                 lblname = "";
@@ -930,12 +935,12 @@ namespace sudoku
                 if(l.Name == lblname)
                 {
                     red = l.BackColor.R;
-                    l.ForeColor = Color.White;
-                    l.BackColor = Color.FromArgb(35, 35, 35);          
+                    l.ForeColor = bright1;
+                    l.BackColor = dim1;          
                 }
                 if(l.Name.Contains(lblname) && l.Name.Contains("h"))
                 {
-                    l.BackColor = Color.FromArgb(35, 35, 35);
+                    l.BackColor = dim1;
                 }
             }
         }
@@ -950,13 +955,13 @@ namespace sudoku
                 {
                     if (l.Name.Contains(line) || l.Name.Contains(row))
                     {
-                        l.ForeColor = Color.White;
-                        l.BackColor = Color.FromArgb(35, 35, 35);
+                        l.ForeColor = bright1;
+                        l.BackColor = dim1;
                     }
-                    else if (l.Text != lbltxt && l.ForeColor != Color.White && l.BackColor != Color.FromArgb(35,35,35))
+                    else if (l.Text != lbltxt && l.ForeColor != Color.White && l.BackColor != dim1)
                     {
-                        l.BackColor = Color.FromArgb(25, 25, 25);
-                        l.ForeColor = Color.Gray;
+                        l.BackColor = dim0;
+                        l.ForeColor = bright0;
                     }
                     else if(bigcell != 0)
                     {
@@ -964,131 +969,131 @@ namespace sudoku
                         {
                             if (cell1.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                         else if (bigcell == 2)
                         {
                             if (cell2.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                         else if (bigcell == 3)
                         {
                             if (cell3.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                         else if (bigcell == 4)
                         {
                             if (cell4.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                         else if (bigcell == 5)
                         {
                             if (cell5.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                         else if (bigcell == 6)
                         {
                             if (cell6.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                         else if (bigcell == 7)
                         {
                             if (cell7.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                         else if (bigcell == 8)
                         {
                             if (cell8.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                         else if (bigcell == 9)
                         {
                             if (cell9.Contains(l.Name))
                             {
-                                l.BackColor = Color.FromArgb(35, 35, 35);
-                                l.ForeColor = Color.White;
+                                l.BackColor = dim1;
+                                l.ForeColor = bright1;
                             }
                             else
                             {
-                                l.BackColor = Color.FromArgb(25, 25, 25);
-                                l.ForeColor = Color.Gray;
+                                l.BackColor = dim0;
+                                l.ForeColor = bright0;
                             }
                         }
                     }
                     else
                     {
-                        l.BackColor = Color.FromArgb(25, 25, 25);
-                        l.ForeColor = Color.Gray;
+                        l.BackColor = dim0;
+                        l.ForeColor = bright0;
                     }
                     
                 }
 
                 if(l.Text == lbltxt)
                 {
-                    l.ForeColor = Color.White;
+                    l.ForeColor = bright1;
                 }
                 if(l.Name == lblname)
                 {
@@ -1808,33 +1813,33 @@ namespace sudoku
                 //iga cell millel sama nr
                 if(l.Text == lbltxt)
                 {
-                    l.ForeColor = Color.White;
+                    l.ForeColor = bright1;
                 }
                 //iga cell reas ja kolumis
                 if(l.Name.Contains(line) || l.Name.Contains(row))
                 {
-                    l.BackColor = Color.FromArgb(35, 35, 35);
-                    l.ForeColor = Color.White;
+                    l.BackColor = dim1;
+                    l.ForeColor = bright1;
                 }
                 //iga cell mis ei ole reas ega columis
                 else if(!l.Name.Contains(line) || !l.Name.Contains(row))
                 {
                     if(l.Text != lbltxt)
                     {
-                        l.BackColor = Color.FromArgb(25, 25, 25);
-                        l.ForeColor = Color.Gray;
+                        l.BackColor = dim0;
+                        l.ForeColor = bright0;
                     }
                     else
                     {
-                        l.ForeColor = Color.White;
-                        l.BackColor = Color.FromArgb(25, 25, 25);
+                        l.ForeColor = bright1;
+                        l.BackColor = dim0;
                     }
                 }
                 //kui none
                 else
                 {
-                    l.ForeColor = Color.Gray;
-                    l.BackColor = Color.FromArgb(25, 25, 25);
+                    l.ForeColor = bright0;
+                    l.BackColor = dim0;
                 }
             }
 
@@ -1846,72 +1851,72 @@ namespace sudoku
                     {
                         if (cell1.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                     else if (bigcell == 2)
                     {
                         if (cell2.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                     else if (bigcell == 3)
                     {
                         if (cell3.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                     else if (bigcell == 4)
                     {
                         if (cell4.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                     else if (bigcell == 5)
                     {
                         if (cell5.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                     else if (bigcell == 6)
                     {
                         if (cell6.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                     else if (bigcell == 7)
                     {
                         if (cell7.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                     else if (bigcell == 8)
                     {
                         if (cell8.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                     else if (bigcell == 9)
                     {
                         if (cell9.Contains(l.Name))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -1925,8 +1930,8 @@ namespace sudoku
                     {
                         if(l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -1936,8 +1941,8 @@ namespace sudoku
                     {
                         if (l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -1947,8 +1952,8 @@ namespace sudoku
                     {
                         if (l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -1958,8 +1963,8 @@ namespace sudoku
                     {
                         if (l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -1969,8 +1974,8 @@ namespace sudoku
                     {
                         if (l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -1980,8 +1985,8 @@ namespace sudoku
                     {
                         if (l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -1991,8 +1996,8 @@ namespace sudoku
                     {
                         if (l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -2002,8 +2007,8 @@ namespace sudoku
                     {
                         if (l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -2013,8 +2018,8 @@ namespace sudoku
                     {
                         if (l.Name.Contains("h"))
                         {
-                            l.BackColor = Color.FromArgb(35, 35, 35);
-                            l.ForeColor = Color.White;
+                            l.BackColor = dim1;
+                            l.ForeColor = bright1;
                         }
                     }
                 }
@@ -4484,12 +4489,12 @@ namespace sudoku
 
         private void label8_MouseEnter(object sender, EventArgs e)
         {
-            label8.ForeColor = Color.White;
+            label8.ForeColor = bright1;
         }
 
         private void label8_MouseLeave(object sender, EventArgs e)
         {
-            label8.ForeColor = Color.Gray;
+            label8.ForeColor = bright0;
         }
 
         int x = 0;
@@ -4571,22 +4576,22 @@ namespace sudoku
 
         private void label26_MouseEnter(object sender, EventArgs e)
         {
-            label26.ForeColor = Color.White;
+            label26.ForeColor = bright1;
         }
 
         private void label26_MouseLeave(object sender, EventArgs e)
         {
-            label26.ForeColor = Color.Gray;
+            label26.ForeColor = bright0;
         }
 
         private void label27_MouseEnter(object sender, EventArgs e)
         {
-            label27.ForeColor = Color.White;
+            label27.ForeColor = bright1;
         }
 
         private void label27_MouseLeave(object sender, EventArgs e)
         {
-            label27.ForeColor = Color.Gray;
+            label27.ForeColor = bright0;
         }
 
         private void label26_Click(object sender, EventArgs e)
@@ -4611,41 +4616,41 @@ namespace sudoku
 
         private void label30_MouseEnter(object sender, EventArgs e)
         {
-            label30.ForeColor = Color.White;
-            label30.BackColor = Color.FromArgb(45, 45, 45);
+            label30.ForeColor = bright1;
+            label30.BackColor = dim2;
         }
 
         private void label30_MouseLeave(object sender, EventArgs e)
         {
             if(selectedcolor != 1)
             {
-                label30.ForeColor = Color.Gray;
-                label30.BackColor = Color.FromArgb(35, 35, 35);
+                label30.ForeColor = bright0;
+                label30.BackColor = dim1;
             }
             else
             {
-                label30.ForeColor = Color.White;
-                label30.BackColor = Color.FromArgb(45, 45, 45);
+                label30.ForeColor = bright1;
+                label30.BackColor = dim2;
             }
         }
 
         private void label31_MouseEnter(object sender, EventArgs e)
         {
-            label31.ForeColor = Color.White;
-            label31.BackColor = Color.FromArgb(45, 45, 45);
+            label31.ForeColor = bright1;
+            label31.BackColor = dim2;
         }
 
         private void label31_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 2)
             {
-                label31.ForeColor = Color.Gray;
-                label31.BackColor = Color.FromArgb(35, 35, 35);
+                label31.ForeColor = bright0;
+                label31.BackColor = dim1;
             }
             else
             {
-                label31.ForeColor = Color.White;
-                label31.BackColor = Color.FromArgb(45, 45, 45);
+                label31.ForeColor = bright1;
+                label31.BackColor = dim2;
             }
         }
 
@@ -4653,273 +4658,293 @@ namespace sudoku
         {
             foreach(Label l in panel22.Controls.OfType<Label>())
             {
-                    l.BackColor = Color.FromArgb(35, 35, 35);
-                    l.ForeColor = Color.Gray;
+                    l.BackColor = dim1;
+                    l.ForeColor = bright0;
             }
         }
 
         private void label30_Click(object sender, EventArgs e)
         {
+            //dark mode
             selectedcolor = 1;
             makelabelok();
-            label30.ForeColor = Color.White;
-            label30.BackColor = Color.FromArgb(45, 45, 45);
+            label30.ForeColor = bright1;
+            label30.BackColor = dim2;
+
+            dim0 = Color.FromArgb(25, 25, 25);
+            dim1 = Color.FromArgb(35, 35, 35);
+            dim2 = Color.FromArgb(45, 45, 45);
+            bright0 = Color.FromArgb(128, 128, 128);
+            bright1 = Color.FromArgb(255, 255, 255);
+
+            this.BackColor = dim1;
+            foreach(TextBox tb in this.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
         }
 
         private void label31_Click(object sender, EventArgs e)
         {
+            //light mode
             selectedcolor = 2;
             makelabelok();
-            label31.ForeColor = Color.White;
-            label31.BackColor = Color.FromArgb(45, 45, 45);
+            label31.ForeColor = bright1;
+            label31.BackColor = dim2;
+
+            this.BackColor = bright1;
+            foreach (TextBox tb in this.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = Color.Black;
+            }
         }
 
         private void label32_Click(object sender, EventArgs e)
         {
             selectedcolor = 3;
             makelabelok();
-            label32.ForeColor = Color.White;
-            label32.BackColor = Color.FromArgb(45, 45, 45);
+            label32.ForeColor = bright1;
+            label32.BackColor = dim2;
         }
 
         private void label33_Click(object sender, EventArgs e)
         {
             selectedcolor = 4;
             makelabelok();
-            label33.ForeColor = Color.White;
-            label33.BackColor = Color.FromArgb(45, 45, 45);
+            label33.ForeColor = bright1;
+            label33.BackColor = dim2;
         }
 
         private void label34_Click(object sender, EventArgs e)
         {
             selectedcolor = 5;
             makelabelok();
-            label34.ForeColor = Color.White;
-            label34.BackColor = Color.FromArgb(45, 45, 45);
+            label34.ForeColor = bright1;
+            label34.BackColor = dim2;
         }
 
         private void label35_Click(object sender, EventArgs e)
         {
             selectedcolor = 6;
             makelabelok();
-            label35.ForeColor = Color.White;
-            label35.BackColor = Color.FromArgb(45, 45, 45);
+            label35.ForeColor = bright1;
+            label35.BackColor = dim2;
         }
 
         private void label36_Click(object sender, EventArgs e)
         {
             selectedcolor = 7;
             makelabelok();
-            label36.ForeColor = Color.White;
-            label36.BackColor = Color.FromArgb(45, 45, 45);
+            label36.ForeColor = bright1;
+            label36.BackColor = dim2;
         }
 
         private void label37_Click(object sender, EventArgs e)
         {
             selectedcolor = 8;
             makelabelok();
-            label37.ForeColor = Color.White;
-            label37.BackColor = Color.FromArgb(45, 45, 45);
+            label37.ForeColor = bright1;
+            label37.BackColor = dim2;
         }
 
         private void label38_Click(object sender, EventArgs e)
         {
             selectedcolor = 9;
             makelabelok();
-            label38.ForeColor = Color.White;
-            label38.BackColor = Color.FromArgb(45, 45, 45);
+            label38.ForeColor = bright1;
+            label38.BackColor = dim2;
         }
 
         private void label39_Click(object sender, EventArgs e)
         {
             selectedcolor = 10;
             makelabelok();
-            label39.ForeColor = Color.White;
-            label39.BackColor = Color.FromArgb(45, 45, 45);
+            label39.ForeColor = bright1;
+            label39.BackColor = dim2;
         }
 
         private void label32_MouseEnter(object sender, EventArgs e)
         {
-            label32.ForeColor = Color.White;
-            label32.BackColor = Color.FromArgb(45, 45, 45);
+            label32.ForeColor = bright1;
+            label32.BackColor = dim2;
         }
 
         private void label32_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 3)
             {
-                label32.ForeColor = Color.Gray;
-                label32.BackColor = Color.FromArgb(35, 35, 35);
+                label32.ForeColor = bright0;
+                label32.BackColor = dim1;
             }
             else
             {
-                label32.ForeColor = Color.White;
-                label32.BackColor = Color.FromArgb(45, 45, 45);
+                label32.ForeColor = bright1;
+                label32.BackColor = dim2;
             }
         }
 
         private void label33_MouseEnter(object sender, EventArgs e)
         {
-            label33.ForeColor = Color.White;
-            label33.BackColor = Color.FromArgb(45, 45, 45);
+            label33.ForeColor = bright1;
+            label33.BackColor = dim2;
         }
 
         private void label33_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 4)
             {
-                label33.ForeColor = Color.Gray;
-                label33.BackColor = Color.FromArgb(35, 35, 35);
+                label33.ForeColor = bright0;
+                label33.BackColor = dim1;
             }
             else
             {
-                label33.ForeColor = Color.White;
-                label33.BackColor = Color.FromArgb(45, 45, 45);
+                label33.ForeColor = bright1;
+                label33.BackColor = dim2;
             }
         }
 
         private void label34_MouseEnter(object sender, EventArgs e)
         {
-            label34.ForeColor = Color.White;
-            label34.BackColor = Color.FromArgb(45, 45, 45);
+            label34.ForeColor = bright1;
+            label34.BackColor = dim2;
         }
 
         private void label34_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 5)
             {
-                label34.ForeColor = Color.Gray;
-                label34.BackColor = Color.FromArgb(35, 35, 35);
+                label34.ForeColor = bright0;
+                label34.BackColor = dim1;
             }
             else
             {
-                label34.ForeColor = Color.White;
-                label34.BackColor = Color.FromArgb(45, 45, 45);
+                label34.ForeColor = bright1;
+                label34.BackColor = dim2;
             }
         }
 
         private void label35_MouseEnter(object sender, EventArgs e)
         {
-            label35.ForeColor = Color.White;
-            label35.BackColor = Color.FromArgb(45, 45, 45);
+            label35.ForeColor = bright1;
+            label35.BackColor = dim2;
         }
 
         private void label35_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 6)
             {
-                label35.ForeColor = Color.Gray;
-                label35.BackColor = Color.FromArgb(35, 35, 35);
+                label35.ForeColor = bright0;
+                label35.BackColor = dim1;
             }
             else
             {
-                label35.ForeColor = Color.White;
-                label35.BackColor = Color.FromArgb(45, 45, 45);
+                label35.ForeColor = bright1;
+                label35.BackColor = dim2;
             }
         }
 
         private void label36_MouseEnter(object sender, EventArgs e)
         {
-            label36.ForeColor = Color.White;
-            label36.BackColor = Color.FromArgb(45, 45, 45);
+            label36.ForeColor = bright1;
+            label36.BackColor = dim2;
         }
 
         private void label36_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 7)
             {
-                label36.ForeColor = Color.Gray;
-                label36.BackColor = Color.FromArgb(35, 35, 35);
+                label36.ForeColor = bright0;
+                label36.BackColor = dim1;
             }
             else
             {
-                label36.ForeColor = Color.White;
-                label36.BackColor = Color.FromArgb(45, 45, 45);
+                label36.ForeColor = bright1;
+                label36.BackColor = dim2;
             }
         }
 
         private void label37_MouseEnter(object sender, EventArgs e)
         {
-            label37.ForeColor = Color.White;
-            label37.BackColor = Color.FromArgb(45, 45, 45);
+            label37.ForeColor = bright1;
+            label37.BackColor = dim2;
         }
 
         private void label37_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 8)
             {
-                label37.ForeColor = Color.Gray;
-                label37.BackColor = Color.FromArgb(35, 35, 35);
+                label37.ForeColor = bright0;
+                label37.BackColor = dim1;
             }
             else
             {
-                label37.ForeColor = Color.White;
-                label37.BackColor = Color.FromArgb(45, 45, 45);
+                label37.ForeColor = bright1;
+                label37.BackColor = dim2;
             }
         }
 
         private void label38_MouseEnter(object sender, EventArgs e)
         {
-            label38.ForeColor = Color.White;
-            label38.BackColor = Color.FromArgb(45, 45, 45);
+            label38.ForeColor = bright1;
+            label38.BackColor = dim2;
         }
 
         private void label38_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 9)
             {
-                label38.ForeColor = Color.Gray;
-                label38.BackColor = Color.FromArgb(35, 35, 35);
+                label38.ForeColor = bright0;
+                label38.BackColor = dim1;
             }
             else
             {
-                label38.ForeColor = Color.White;
-                label38.BackColor = Color.FromArgb(45, 45, 45);
+                label38.ForeColor = bright1;
+                label38.BackColor = dim2;
             }
         }
 
         private void label39_MouseEnter(object sender, EventArgs e)
         {
-            label39.ForeColor = Color.White;
-            label39.BackColor = Color.FromArgb(45, 45, 45);
+            label39.ForeColor = bright1;
+            label39.BackColor = dim2;
         }
 
         private void label39_MouseLeave(object sender, EventArgs e)
         {
             if (selectedcolor != 10)
             {
-                label39.ForeColor = Color.Gray;
-                label39.BackColor = Color.FromArgb(35, 35, 35);
+                label39.ForeColor = bright0;
+                label39.BackColor = dim1;
             }
             else
             {
-                label39.ForeColor = Color.White;
-                label39.BackColor = Color.FromArgb(45, 45, 45);
+                label39.ForeColor = bright1;
+                label39.BackColor = dim2;
             }
         }
 
         private void label40_MouseEnter(object sender, EventArgs e)
         {
-            label40.ForeColor = Color.White;
-            label40.BackColor = Color.FromArgb(45, 45, 45);
+            label40.ForeColor = bright1;
+            label40.BackColor = dim2;
         }
 
         private void label40_MouseLeave(object sender, EventArgs e)
         {
-            label40.ForeColor = Color.Gray;
-            label40.BackColor = Color.FromArgb(35,35,35);
+            label40.ForeColor = bright0;
+            label40.BackColor = dim1;
         }
 
         private void label41_MouseEnter(object sender, EventArgs e)
         {
-            label41.ForeColor = Color.White;
-            label41.BackColor = Color.FromArgb(45, 45, 45);
+            label41.ForeColor = bright1;
+            label41.BackColor = dim2;
         }
 
         private void label41_MouseLeave(object sender, EventArgs e)
         {
-            label41.ForeColor = Color.Gray;
-            label41.BackColor = Color.FromArgb(35, 35, 35);
+            label41.ForeColor = bright0;
+            label41.BackColor = dim1;
         }
 
         private void label40_Click(object sender, EventArgs e)
@@ -4984,18 +5009,18 @@ namespace sudoku
                     difficulty = Convert.ToInt32(datalmao[5]);
                     if(difficulty == 1)
                     {
-                        label11.ForeColor = Color.Gray;
-                        label12.ForeColor = Color.Gray;
+                        label11.ForeColor = bright0;
+                        label12.ForeColor = bright0;
                     }
                     if (difficulty == 2)
                     {
-                        label10.ForeColor = Color.Gray;
-                        label12.ForeColor = Color.Gray;
+                        label10.ForeColor = bright0;
+                        label12.ForeColor = bright0;
                     }
                     if (difficulty == 3)
                     {
-                        label10.ForeColor = Color.Gray;
-                        label11.ForeColor = Color.Gray;
+                        label10.ForeColor = bright0;
+                        label11.ForeColor = bright0;
                     }
                     //opacity
                     opacity = Convert.ToDouble(datalmao[6]);

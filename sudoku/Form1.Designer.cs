@@ -1909,7 +1909,7 @@ namespace sudoku
             this.label34.ForeColor = System.Drawing.Color.Gray;
             this.label34.Location = new System.Drawing.Point(1, 84);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(100, 20);
+            this.label34.Size = new System.Drawing.Size(100, 21);
             this.label34.TabIndex = 45;
             this.label34.Text = "Red";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1925,7 +1925,7 @@ namespace sudoku
             this.label33.ForeColor = System.Drawing.Color.Gray;
             this.label33.Location = new System.Drawing.Point(1, 64);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(100, 20);
+            this.label33.Size = new System.Drawing.Size(100, 21);
             this.label33.TabIndex = 44;
             this.label33.Text = "Blue";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1941,7 +1941,7 @@ namespace sudoku
             this.label32.ForeColor = System.Drawing.Color.Gray;
             this.label32.Location = new System.Drawing.Point(1, 44);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(100, 20);
+            this.label32.Size = new System.Drawing.Size(100, 21);
             this.label32.TabIndex = 43;
             this.label32.Text = "Green";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1957,7 +1957,7 @@ namespace sudoku
             this.label31.ForeColor = System.Drawing.Color.Gray;
             this.label31.Location = new System.Drawing.Point(1, 22);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(100, 20);
+            this.label31.Size = new System.Drawing.Size(100, 22);
             this.label31.TabIndex = 42;
             this.label31.Text = "Light mode";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1973,7 +1973,7 @@ namespace sudoku
             this.label30.ForeColor = System.Drawing.Color.White;
             this.label30.Location = new System.Drawing.Point(1, 1);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(100, 20);
+            this.label30.Size = new System.Drawing.Size(100, 21);
             this.label30.TabIndex = 41;
             this.label30.Text = "Dark mode";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
