@@ -4933,7 +4933,6 @@ namespace sudoku
                 {
                     fi.Delete();
                 }
-
   
                 using (StreamWriter sw = fi.CreateText())
                 {
@@ -4947,6 +4946,9 @@ namespace sudoku
                     //hard sudokus completed
                     sw.WriteLine(difficulty.ToString());
                     //difficulty
+                    sw.WriteLine(opacity.ToString());
+                    //opacity
+                    sw.Close();
                 }
 
             }
@@ -4956,20 +4958,52 @@ namespace sudoku
             }
         }
 
-        string[] datafromsavefile;
         private void label41_Click(object sender, EventArgs e)
         {
-            string fileName = @"C:\Temp\sudoku.txt";
-            FileInfo fi = new FileInfo(fileName);
+            string fileName1 = @"C:\Temp\sudoku.txt";
+            FileInfo fi = new FileInfo(fileName1);
 
             try
             {
                 if (fi.Exists)
                 {
-                    StreamReader st = new StreamReader(fileName);
+                    StreamReader st = new StreamReader(fileName1);
                     Console.WriteLine(st.ReadToEnd());
-                }
+                    string[] datalmao = File.ReadAllLines(fileName1);
 
+                    //easy
+                    label22.Text = datalmao[2].ToString();
+                    easycomplete = Convert.ToInt32(datalmao[2]);
+                    //medium
+                    label23.Text = datalmao[3].ToString(); 
+                    mediumcomplete = Convert.ToInt32(datalmao[3]);
+                    //hard
+                    label24.Text = datalmao[4].ToString();
+                    hardcomplete = Convert.ToInt32(datalmao[4]);
+                    //difficulty
+                    difficulty = Convert.ToInt32(datalmao[5]);
+                    if(difficulty == 1)
+                    {
+                        label11.ForeColor = Color.Gray;
+                        label12.ForeColor = Color.Gray;
+                    }
+                    if (difficulty == 2)
+                    {
+                        label10.ForeColor = Color.Gray;
+                        label12.ForeColor = Color.Gray;
+                    }
+                    if (difficulty == 3)
+                    {
+                        label10.ForeColor = Color.Gray;
+                        label11.ForeColor = Color.Gray;
+                    }
+                    //opacity
+                    opacity = Convert.ToDouble(datalmao[6]);
+                    this.Opacity = opacity;
+                    label28.Text = opacity.ToString();
+
+                    st.Close();
+                }
             }
             catch (Exception Ex)
             {

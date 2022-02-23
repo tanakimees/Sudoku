@@ -1295,7 +1295,7 @@ namespace sudoku
             this.label3.ForeColor = System.Drawing.Color.Gray;
             this.label3.Location = new System.Drawing.Point(5, 5);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 32);
+            this.label3.Size = new System.Drawing.Size(80, 32);
             this.label3.TabIndex = 1;
             this.label3.Text = "About";
             this.label3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label3_MouseClick);
@@ -1366,7 +1366,7 @@ namespace sudoku
             this.label2.ForeColor = System.Drawing.Color.Gray;
             this.label2.Location = new System.Drawing.Point(5, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 32);
+            this.label2.Size = new System.Drawing.Size(101, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Settings";
             this.label2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label2_MouseClick);
@@ -1436,7 +1436,7 @@ namespace sudoku
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(5, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 32);
+            this.label1.Size = new System.Drawing.Size(77, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Game";
             this.label1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label1_MouseClick);
@@ -2197,7 +2197,7 @@ namespace sudoku
             this.label6.ForeColor = System.Drawing.Color.Gray;
             this.label6.Location = new System.Drawing.Point(92, 125);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 32);
+            this.label6.Size = new System.Drawing.Size(77, 32);
             this.label6.TabIndex = 1;
             this.label6.Text = "about";
             // 
