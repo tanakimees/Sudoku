@@ -4671,17 +4671,12 @@ namespace sudoku
             label30.ForeColor = bright1;
             label30.BackColor = dim2;
 
+
             dim0 = Color.FromArgb(25, 25, 25);
             dim1 = Color.FromArgb(35, 35, 35);
             dim2 = Color.FromArgb(45, 45, 45);
             bright0 = Color.FromArgb(128, 128, 128);
             bright1 = Color.FromArgb(255, 255, 255);
-
-            this.BackColor = dim1;
-            foreach(TextBox tb in this.Controls.OfType<TextBox>())
-            {
-                tb.BackColor = bright0;
-            }
         }
 
         private void label31_Click(object sender, EventArgs e)
@@ -4692,11 +4687,11 @@ namespace sudoku
             label31.ForeColor = bright1;
             label31.BackColor = dim2;
 
-            this.BackColor = bright1;
-            foreach (TextBox tb in this.Controls.OfType<TextBox>())
-            {
-                tb.BackColor = Color.Black;
-            }
+            dim0 = Color.FromArgb(255, 255, 255);
+            dim1 = Color.FromArgb(220, 220, 220);
+            dim2 = Color.FromArgb(190, 190, 190);
+            bright0 = Color.FromArgb(50, 50, 50);
+            bright1 = Color.FromArgb(0, 0, 0);
         }
 
         private void label32_Click(object sender, EventArgs e)
