@@ -117,6 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Hello, my name is Kristo Tänak.
+
+I'm from Estonia and as of writing this I am 16 years old. This Sudoku app contains approx. 5000 lines of code.
+
+Written in C#, this program is my largest programming project I've taken on. I have spent approx. 50 hours programming and designing this thing. About 100 coffees consumed and 3 joints smoked.</value>
+  </data>
   <metadata name="fadein.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

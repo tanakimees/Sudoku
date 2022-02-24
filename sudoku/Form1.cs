@@ -149,6 +149,7 @@ namespace sudoku
         int nr9c = 0;
 
         double opacity = 1;
+        int topmost = 1;
 
         int selectedcolor = 1;
 
@@ -4663,13 +4664,233 @@ namespace sudoku
             }
         }
 
+        void resetcolor()
+        {
+            label30.ForeColor = bright1;
+            label30.BackColor = dim2;
+            this.BackColor = dim1;
+            textBox1.BackColor = bright0;
+            textBox2.BackColor = bright0;
+            textBox3.BackColor = bright0;
+            textBox4.BackColor = bright0;
+            panel3.BackColor = dim2;
+            foreach(TextBox tb in panel3.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label7.ForeColor = bright1;
+            label9.ForeColor = bright0;
+            panel2.BackColor = dim2;
+            foreach(TextBox tb in panel2.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            panel4.BackColor = dim2;
+            foreach(TextBox tb in panel4.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label1.ForeColor = bright0;
+            panel5.BackColor = dim1;
+            foreach (TextBox tb in panel5.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label2.ForeColor = bright1;
+            panel6.BackColor = dim2;
+            foreach (TextBox tb in panel6.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label3.ForeColor = bright0;
+            settingspanel.BackColor = dim1;
+            gamepanel.BackColor = dim1;
+            aboutpanel.BackColor = dim1;
+            panel18.BackColor = dim0;
+            foreach (TextBox tb in panel18.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach(Label l in panel18.Controls.OfType<Label>())
+            {
+                l.ForeColor = bright0;
+            }
+            panel19.BackColor = dim0;
+            foreach (TextBox tb in panel19.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label29.ForeColor = bright0;
+            foreach (TextBox tb in panel22.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (Label l in panel22.Controls.OfType<Label>())
+            {
+                l.ForeColor = bright0;
+                l.BackColor = dim1;
+            }
+            panel14.BackColor = dim0;
+            foreach (TextBox tb in panel14.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label25.ForeColor = bright0;
+            foreach (TextBox tb in panel16.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (Label l in panel16.Controls.OfType<Label>())
+            {
+                l.ForeColor = bright0;
+                l.BackColor = dim1;
+            }
+            panel20.BackColor = dim0;
+            foreach (TextBox tb in panel20.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (TextBox tb in panel21.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (Label l in panel21.Controls.OfType<Label>())
+            {
+                l.ForeColor = bright0;
+                l.BackColor = dim1;
+            }
+            label42.ForeColor = bright0;
+            panel23.BackColor = dim0;
+            panel24.BackColor = dim0;
+            panel25.BackColor = dim0;
+            foreach (TextBox tb in panel23.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (TextBox tb in panel24.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (TextBox tb in panel25.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            panel26.BackColor = dim0;
+            foreach (TextBox tb in panel26.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label6.ForeColor = bright0;
+            panel27.BackColor = dim0;
+            foreach (TextBox tb in panel27.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label44.ForeColor = bright0;
+            label45.ForeColor = bright0;
+            panel28.BackColor = dim0;
+            foreach (TextBox tb in panel28.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            panel29.BackColor = dim0;
+            foreach (TextBox tb in panel29.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (TextBox tb in panel1.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (TextBox tb in gamepanel.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach(Label l in panel1.Controls.OfType<Label>())
+            {
+                l.BackColor = dim0;
+                l.ForeColor = bright0;
+            }
+            foreach (TextBox tb in panel11.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label14.ForeColor = bright0;
+            label14.BackColor = dim0;
+            foreach (TextBox tb in panel13.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label8.ForeColor = bright0;
+            panel13.BackColor = dim0;
+            panel17.BackColor = dim0;
+            foreach (TextBox tb in panel17.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            panel15.BackColor = dim0;
+            foreach (TextBox tb in panel15.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            infopanel.BackColor = dim0;
+            foreach (TextBox tb in infopanel.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label16.ForeColor = bright1;
+            label17.ForeColor = bright0;
+            label18.ForeColor = bright0;
+            label19.ForeColor = bright0;
+            label20.ForeColor = bright0;
+            label21.ForeColor = bright1;
+            label22.ForeColor = bright1;
+            label23.ForeColor = bright1;
+            label24.ForeColor = bright1;
+            foreach (TextBox tb in panel12.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (Label l in panel12.Controls.OfType<Label>())
+            {
+                l.BackColor = dim0;
+                l.ForeColor = bright0;
+            }
+            panel9.BackColor = dim0;
+            foreach (TextBox tb in panel9.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            foreach (Label l in panel9.Controls.OfType<Label>())
+            {
+                l.BackColor = dim0;
+                l.ForeColor = bright0;
+            }
+            foreach (TextBox tb in panel7.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label4.BackColor = dim0;
+            label4.ForeColor = bright0;
+            foreach (TextBox tb in panel8.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label13.ForeColor = bright0;
+            label13.BackColor = dim0;
+            foreach (TextBox tb in panel10.Controls.OfType<TextBox>())
+            {
+                tb.BackColor = bright0;
+            }
+            label15.ForeColor = bright0;
+            label15.BackColor = dim0;
+        }
+
         private void label30_Click(object sender, EventArgs e)
         {
             //dark mode
             selectedcolor = 1;
             makelabelok();
-            label30.ForeColor = bright1;
-            label30.BackColor = dim2;
 
 
             dim0 = Color.FromArgb(25, 25, 25);
@@ -4677,6 +4898,8 @@ namespace sudoku
             dim2 = Color.FromArgb(45, 45, 45);
             bright0 = Color.FromArgb(128, 128, 128);
             bright1 = Color.FromArgb(255, 255, 255);
+
+            resetcolor();
         }
 
         private void label31_Click(object sender, EventArgs e)
@@ -4684,14 +4907,14 @@ namespace sudoku
             //light mode
             selectedcolor = 2;
             makelabelok();
-            label31.ForeColor = bright1;
-            label31.BackColor = dim2;
 
             dim0 = Color.FromArgb(255, 255, 255);
             dim1 = Color.FromArgb(220, 220, 220);
             dim2 = Color.FromArgb(190, 190, 190);
             bright0 = Color.FromArgb(50, 50, 50);
             bright1 = Color.FromArgb(0, 0, 0);
+
+            resetcolor();
         }
 
         private void label32_Click(object sender, EventArgs e)
@@ -5029,6 +5252,62 @@ namespace sudoku
             {
                 Console.WriteLine(Ex.ToString());
             }
+        }
+
+        private void label43_MouseEnter(object sender, EventArgs e)
+        {
+            label43.ForeColor = bright1;
+        }
+
+        private void label43_MouseLeave(object sender, EventArgs e)
+        {
+            label43.ForeColor = bright0;
+        }
+
+        private void label43_Click(object sender, EventArgs e)
+        {
+            if(label43.Text == "Enabled")
+            {
+                topmost = 0;
+                label43.Text = "Disabled";
+                this.TopMost = false;
+            }
+            else
+            {
+                topmost = 1;
+                label43.Text = "Enabled";
+                this.TopMost = true;
+            }
+        }
+
+        private void label44_MouseEnter(object sender, EventArgs e)
+        {
+            label44.ForeColor = bright1;
+        }
+
+        private void label44_MouseLeave(object sender, EventArgs e)
+        {
+            label44.ForeColor = bright0;
+        }
+
+        private void label45_MouseEnter(object sender, EventArgs e)
+        {
+            label45.ForeColor = bright1;
+        }
+
+        private void label45_MouseLeave(object sender, EventArgs e)
+        {
+            label45.ForeColor = bright0;
+        }
+
+        private void label44_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/tanakimees");
+        }
+
+        private void label45_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://tanakimees.github.io/");
         }
     }
 }
