@@ -1110,7 +1110,7 @@ namespace sudoku
             {
                 if(l.Name.Contains(lblname) && l.Name.Contains("h"))
                 {
-                    l.BackColor = Color.FromArgb(red, red, red);
+                    l.BackColor = dim0;
                 }
             }
         }
@@ -4919,10 +4919,19 @@ namespace sudoku
 
         private void label32_Click(object sender, EventArgs e)
         {
+            //green
             selectedcolor = 3;
             makelabelok();
             label32.ForeColor = bright1;
             label32.BackColor = dim2;
+
+            dim0 = Color.FromArgb(25, 35, 25);
+            dim1 = Color.FromArgb(35, 45, 35);
+            dim2 = Color.FromArgb(45, 55, 45);
+            bright0 = Color.FromArgb(0,128,0);
+            bright1 = Color.FromArgb(0,255,0);
+
+            resetcolor();
         }
 
         private void label33_Click(object sender, EventArgs e)
@@ -4931,6 +4940,14 @@ namespace sudoku
             makelabelok();
             label33.ForeColor = bright1;
             label33.BackColor = dim2;
+
+            dim0 = Color.FromArgb(0, 0, 35);
+            dim1 = Color.FromArgb(0, 0, 45);
+            dim2 = Color.FromArgb(0, 0, 55);
+            bright0 = Color.FromArgb(0, 0, 128);
+            bright1 = Color.FromArgb(0, 0, 255);
+
+            resetcolor();
         }
 
         private void label34_Click(object sender, EventArgs e)
@@ -4939,6 +4956,14 @@ namespace sudoku
             makelabelok();
             label34.ForeColor = bright1;
             label34.BackColor = dim2;
+
+            dim0 = Color.FromArgb(35, 0, 0);
+            dim1 = Color.FromArgb(45, 0, 0);
+            dim2 = Color.FromArgb(55, 0, 0);
+            bright0 = Color.FromArgb(128, 0, 0);
+            bright1 = Color.FromArgb(255, 0, 10);
+
+            resetcolor();
         }
 
         private void label35_Click(object sender, EventArgs e)
@@ -4947,6 +4972,14 @@ namespace sudoku
             makelabelok();
             label35.ForeColor = bright1;
             label35.BackColor = dim2;
+
+            dim0 = Color.FromArgb(35, 5, 0);
+            dim1 = Color.FromArgb(45, 15, 0);
+            dim2 = Color.FromArgb(55, 25, 0);
+            bright0 = Color.FromArgb(128, 60, 0);
+            bright1 = Color.FromArgb(255, 100, 0);
+
+            resetcolor();
         }
 
         private void label36_Click(object sender, EventArgs e)
@@ -4955,6 +4988,14 @@ namespace sudoku
             makelabelok();
             label36.ForeColor = bright1;
             label36.BackColor = dim2;
+
+            dim0 = Color.FromArgb(0, 35, 35);
+            dim1 = Color.FromArgb(0, 45, 45);
+            dim2 = Color.FromArgb(0, 55, 55);
+            bright0 = Color.FromArgb(0, 128, 128);
+            bright1 = Color.FromArgb(0, 255, 255);
+
+            resetcolor();
         }
 
         private void label37_Click(object sender, EventArgs e)
@@ -4963,6 +5004,14 @@ namespace sudoku
             makelabelok();
             label37.ForeColor = bright1;
             label37.BackColor = dim2;
+
+            dim0 = Color.FromArgb(35, 0, 35);
+            dim1 = Color.FromArgb(45, 0, 45);
+            dim2 = Color.FromArgb(55, 0, 55);
+            bright0 = Color.FromArgb(128, 0, 128);
+            bright1 = Color.FromArgb(255, 0, 255);
+
+            resetcolor();
         }
 
         private void label38_Click(object sender, EventArgs e)
@@ -4971,6 +5020,14 @@ namespace sudoku
             makelabelok();
             label38.ForeColor = bright1;
             label38.BackColor = dim2;
+
+            dim0 = Color.FromArgb(0, 35, 25);
+            dim1 = Color.FromArgb(0, 45, 35);
+            dim2 = Color.FromArgb(0, 55, 45);
+            bright0 = Color.FromArgb(0, 128, 100);
+            bright1 = Color.FromArgb(0, 255, 158);
+
+            resetcolor();
         }
 
         private void label39_Click(object sender, EventArgs e)
@@ -4979,6 +5036,14 @@ namespace sudoku
             makelabelok();
             label39.ForeColor = bright1;
             label39.BackColor = dim2;
+
+            dim0 = Color.FromArgb(25, 25, 0);
+            dim1 = Color.FromArgb(35, 35, 0);
+            dim2 = Color.FromArgb(45, 45, 0);
+            bright0 = Color.FromArgb(128, 128, 0);
+            bright1 = Color.FromArgb(255, 255, 0);
+
+            resetcolor();
         }
 
         private void label32_MouseEnter(object sender, EventArgs e)
@@ -5191,6 +5256,10 @@ namespace sudoku
                     //difficulty
                     sw.WriteLine(opacity.ToString());
                     //opacity
+                    sw.WriteLine(topmost);
+                    //topmost
+                    sw.WriteLine(selectedcolor);
+                    //colors
                     sw.Close();
                 }
 
@@ -5244,7 +5313,120 @@ namespace sudoku
                     opacity = Convert.ToDouble(datalmao[6]);
                     this.Opacity = opacity;
                     label28.Text = opacity.ToString();
-
+                    //topmost
+                    topmost = Convert.ToInt32(datalmao[7]);
+                    if(topmost == 1)
+                    {
+                        this.TopMost = true;
+                        label43.Text = "Enabled";
+                    }
+                    if(topmost == 0)
+                    {
+                        this.TopMost = false;
+                        label43.Text = "Disabled";
+                    }
+                    //colors
+                    selectedcolor = Convert.ToInt32(datalmao[8]);
+                    if(selectedcolor == 1)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(25, 25, 25);
+                        dim1 = Color.FromArgb(35, 35, 35);
+                        dim2 = Color.FromArgb(45, 45, 45);
+                        bright0 = Color.FromArgb(128, 128, 128);
+                        bright1 = Color.FromArgb(255, 255, 255);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 2)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(255, 255, 255);
+                        dim1 = Color.FromArgb(220, 220, 220);
+                        dim2 = Color.FromArgb(190, 190, 190);
+                        bright0 = Color.FromArgb(50, 50, 50);
+                        bright1 = Color.FromArgb(0, 0, 0);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 3)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(25, 35, 25);
+                        dim1 = Color.FromArgb(35, 45, 35);
+                        dim2 = Color.FromArgb(45, 55, 45);
+                        bright0 = Color.FromArgb(0, 128, 0);
+                        bright1 = Color.FromArgb(0, 255, 0);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 4)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(0, 0, 35);
+                        dim1 = Color.FromArgb(0, 0, 45);
+                        dim2 = Color.FromArgb(0, 0, 55);
+                        bright0 = Color.FromArgb(0, 0, 128);
+                        bright1 = Color.FromArgb(0, 0, 255);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 5)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(35, 0, 0);
+                        dim1 = Color.FromArgb(45, 0, 0);
+                        dim2 = Color.FromArgb(55, 0, 0);
+                        bright0 = Color.FromArgb(128, 0, 0);
+                        bright1 = Color.FromArgb(255, 0, 10);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 6)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(35, 5, 0);
+                        dim1 = Color.FromArgb(45, 15, 0);
+                        dim2 = Color.FromArgb(55, 25, 0);
+                        bright0 = Color.FromArgb(128, 60, 0);
+                        bright1 = Color.FromArgb(255, 100, 0);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 7)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(0, 35, 35);
+                        dim1 = Color.FromArgb(0, 45, 45);
+                        dim2 = Color.FromArgb(0, 55, 55);
+                        bright0 = Color.FromArgb(0, 128, 128);
+                        bright1 = Color.FromArgb(0, 255, 255);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 8)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(35, 0, 35);
+                        dim1 = Color.FromArgb(45, 0, 45);
+                        dim2 = Color.FromArgb(55, 0, 55);
+                        bright0 = Color.FromArgb(128, 0, 128);
+                        bright1 = Color.FromArgb(255, 0, 255);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 9)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(0, 35, 25);
+                        dim1 = Color.FromArgb(0, 45, 35);
+                        dim2 = Color.FromArgb(0, 55, 45);
+                        bright0 = Color.FromArgb(0, 128, 100);
+                        bright1 = Color.FromArgb(0, 255, 158);
+                        resetcolor();
+                    }
+                    if(selectedcolor == 10)
+                    {
+                        makelabelok();
+                        dim0 = Color.FromArgb(25, 25, 0);
+                        dim1 = Color.FromArgb(35, 35, 0);
+                        dim2 = Color.FromArgb(45, 45, 0);
+                        bright0 = Color.FromArgb(128, 128, 0);
+                        bright1 = Color.FromArgb(255, 255, 0);
+                        resetcolor();
+                    }
                     st.Close();
                 }
             }
