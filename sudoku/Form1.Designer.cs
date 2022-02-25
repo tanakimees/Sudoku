@@ -1158,9 +1158,9 @@ namespace sudoku
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.aboutpanel);
             this.panel2.Controls.Add(this.gamepanel);
             this.panel2.Controls.Add(this.settingspanel);
-            this.panel2.Controls.Add(this.aboutpanel);
             this.panel2.Location = new System.Drawing.Point(10, 40);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(560, 620);
