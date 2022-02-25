@@ -1923,7 +1923,7 @@ namespace sudoku
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::sudoku.Properties.Resources.logo;
+            this.pictureBox1.Image = global::Sudoku.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(10, 94);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 89);
@@ -16184,7 +16184,7 @@ namespace sudoku
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::sudoku.Properties.Resources.lol;
+            this.pictureBox2.Image = global::Sudoku.Properties.Resources.lol;
             this.pictureBox2.Location = new System.Drawing.Point(10, 10);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(200, 200);
